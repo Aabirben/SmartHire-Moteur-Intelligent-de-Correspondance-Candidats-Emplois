@@ -1,0 +1,63 @@
+{
+  "job_id": "JOB-0023-2025",
+  "title": "Cloud DevOps Engineer",
+  "domain": "CLOUD",
+  "company": {
+    "name": "Webhelp Morocco",
+    "city": "Casablanca",
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-18",
+  "description": "Join us as a Cloud DevOps Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Optimize cloud costs and resource utilization",
+    "Monitor and troubleshoot cloud services",
+    "Provide technical guidance on cloud best practices",
+    "Design cloud-native architectures",
+    "Automate cloud infrastructure management",
+    "Implement high availability and disaster recovery"
+  ],
+  "required_skills": [
+    "Azure",
+    "Kubernetes",
+    "Docker",
+    "AWS",
+    "EC2"
+  ],
+  "preferred_skills": [
+    "Terraform",
+    "CloudFormation",
+    "Lambda",
+    "S3"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Health insurance coverage",
+    "Stock options",
+    "Parental leave",
+    "Professional development budget",
+    "Latest technology equipment",
+    "Paid vacation and holidays",
+    "Competitive salary package",
+    "Team building activities",
+    "Performance bonuses",
+    "Flexible working hours"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@webhelpmorocco.ma"
+}

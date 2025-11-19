@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0018-2025",
+  "title": "Site Reliability Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Accenture Morocco",
+    "city": "Casablanca",
+    "sector": "Consulting & Technology",
+    "size": "5,000+ employees",
+    "description": "Management consulting and information technology services company"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-10-27",
+  "description": "As a Site Reliability Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Troubleshoot production issues and incidents",
+    "Monitor system performance and implement alerting",
+    "Document infrastructure and processes",
+    "Build and maintain CI/CD pipelines",
+    "Implement security best practices and compliance",
+    "Automate infrastructure provisioning using IaC tools",
+    "Manage cloud infrastructure and resources"
+  ],
+  "required_skills": [
+    "GCP",
+    "Ansible",
+    "Jenkins",
+    "Kubernetes",
+    "Swift"
+  ],
+  "preferred_skills": [
+    "GitLab CI",
+    "Docker",
+    "Terraform"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Latest technology equipment",
+    "Paid vacation and holidays",
+    "Performance bonuses",
+    "Professional development budget",
+    "Team building activities",
+    "Health insurance coverage",
+    "Career advancement opportunities",
+    "Remote work options",
+    "Gym membership"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@accenturemorocco.ma"
+}

@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0034-2025",
+  "title": "Data Scientist",
+  "domain": "DATA",
+  "company": {
+    "name": "Webhelp Morocco",
+    "city": "Casablanca",
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-10-31",
+  "description": "We are hiring a Data Scientist to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "responsibilities": [
+    "Optimize data processing and storage",
+    "Collaborate with data scientists and analysts",
+    "Document data workflows and models",
+    "Deploy ML models to production",
+    "Implement data quality checks and monitoring",
+    "Develop machine learning models and algorithms",
+    "Design and build scalable data pipelines",
+    "Process and analyze large datasets"
+  ],
+  "required_skills": [
+    "Scikit-learn",
+    "NumPy",
+    "Pandas",
+    "Hadoop",
+    "GCP",
+    "Ansible"
+  ],
+  "preferred_skills": [
+    "Spark",
+    "PyTorch",
+    "Airflow"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Competitive salary package",
+    "Gym membership",
+    "Performance bonuses",
+    "Career advancement opportunities",
+    "Stock options",
+    "Modern office environment",
+    "Team building activities",
+    "Parental leave"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@webhelpmorocco.ma"
+}

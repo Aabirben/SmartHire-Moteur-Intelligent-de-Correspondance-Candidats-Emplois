@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0006-2025",
+  "title": "React Native Developer",
+  "domain": "MOBILE",
+  "company": {
+    "name": "BMCE Bank Tech Hub",
+    "city": "Casablanca",
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-10-20",
+  "description": "We're looking for an experienced React Native Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "responsibilities": [
+    "Implement mobile UI/UX following platform guidelines",
+    "Integrate with backend APIs and third-party services",
+    "Optimize app performance and battery usage",
+    "Debug and resolve mobile-specific issues",
+    "Develop native or cross-platform mobile applications",
+    "Implement push notifications and analytics"
+  ],
+  "required_skills": [
+    "Swift",
+    "Flutter",
+    "iOS",
+    "React Native"
+  ],
+  "preferred_skills": [
+    "Java",
+    "Android",
+    "Kotlin"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Gym membership",
+    "Flexible working hours",
+    "Remote work options",
+    "Paid vacation and holidays",
+    "Modern office environment",
+    "Parental leave",
+    "Professional development budget",
+    "Performance bonuses",
+    "Latest technology equipment"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@bmcebanktechhub.ma"
+}

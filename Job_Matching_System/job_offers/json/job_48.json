@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0048-2025",
+  "title": "Computer Vision Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "Capgemini Morocco",
+    "city": "Casablanca",
+    "sector": "Consulting & Technology",
+    "size": "10,000+ employees",
+    "description": "Global leader in consulting, technology services and digital transformation"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-08",
+  "description": "As a Computer Vision Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Conduct experiments and analyze results",
+    "Process and prepare datasets for training",
+    "Research and implement state-of-the-art algorithms",
+    "Collaborate with cross-functional teams",
+    "Implement deep learning architectures",
+    "Deploy models to production environments",
+    "Develop and train machine learning models",
+    "Optimize model performance and accuracy"
+  ],
+  "required_skills": [
+    "PyTorch",
+    "Scikit-learn",
+    "BERT",
+    "NLP",
+    "Deep Learning",
+    "Docker",
+    "EC2"
+  ],
+  "preferred_skills": [
+    "Computer Vision",
+    "Machine Learning"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Paid vacation and holidays",
+    "Stock options",
+    "Latest technology equipment",
+    "Gym membership",
+    "Remote work options",
+    "Modern office environment",
+    "Annual training allowance",
+    "Team building activities"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@capgeminimorocco.ma"
+}

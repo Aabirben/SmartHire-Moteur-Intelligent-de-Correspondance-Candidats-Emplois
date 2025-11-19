@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0035-2025",
+  "title": "AWS Solutions Architect",
+  "domain": "CLOUD",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-10-25",
+  "description": "Join us as a AWS Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Optimize cloud costs and resource utilization",
+    "Implement high availability and disaster recovery",
+    "Automate cloud infrastructure management",
+    "Provide technical guidance on cloud best practices",
+    "Monitor and troubleshoot cloud services",
+    "Ensure security and compliance in cloud environments",
+    "Design cloud-native architectures",
+    "Migrate on-premise applications to cloud"
+  ],
+  "required_skills": [
+    "Terraform",
+    "GCP",
+    "CloudFormation"
+  ],
+  "preferred_skills": [
+    "S3",
+    "EC2",
+    "Docker",
+    "Kubernetes"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Annual training allowance",
+    "Team building activities",
+    "Stock options",
+    "Competitive salary package",
+    "Latest technology equipment",
+    "Performance bonuses",
+    "Career advancement opportunities",
+    "Health insurance coverage",
+    "Remote work options"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

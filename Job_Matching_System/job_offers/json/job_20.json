@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0020-2025",
+  "title": "AI Engineer",
+  "domain": "DATA",
+  "company": {
+    "name": "BMCE Bank Tech Hub",
+    "city": "Casablanca",
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-15",
+  "description": "We are hiring a AI Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "responsibilities": [
+    "Process and analyze large datasets",
+    "Implement data quality checks and monitoring",
+    "Develop machine learning models and algorithms",
+    "Design and build scalable data pipelines",
+    "Optimize data processing and storage",
+    "Collaborate with data scientists and analysts",
+    "Deploy ML models to production",
+    "Document data workflows and models"
+  ],
+  "required_skills": [
+    "SQL",
+    "TensorFlow",
+    "PyTorch",
+    "Python",
+    "GCP",
+    "Terraform"
+  ],
+  "preferred_skills": [
+    "Pandas",
+    "Hadoop"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Annual training allowance",
+    "Performance bonuses",
+    "Team building activities",
+    "Career advancement opportunities",
+    "Professional development budget",
+    "Health insurance coverage",
+    "Gym membership",
+    "Parental leave",
+    "Flexible working hours"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@bmcebanktechhub.ma"
+}

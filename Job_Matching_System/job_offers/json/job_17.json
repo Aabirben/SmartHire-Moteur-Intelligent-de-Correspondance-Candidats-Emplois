@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0017-2025",
+  "title": "Flutter Developer",
+  "domain": "MOBILE",
+  "company": {
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-03",
+  "description": "We're looking for an experienced Flutter Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "responsibilities": [
+    "Implement offline-first architecture",
+    "Handle app store submissions and updates",
+    "Implement mobile UI/UX following platform guidelines",
+    "Implement push notifications and analytics",
+    "Debug and resolve mobile-specific issues",
+    "Integrate with backend APIs and third-party services",
+    "Develop native or cross-platform mobile applications"
+  ],
+  "required_skills": [
+    "React Native",
+    "Flutter",
+    "iOS",
+    "Java",
+    "Kotlin",
+    "Android",
+    "AWS"
+  ],
+  "preferred_skills": [
+    "Swift"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Parental leave",
+    "Stock options",
+    "Modern office environment",
+    "Competitive salary package",
+    "Gym membership",
+    "Career advancement opportunities",
+    "Paid vacation and holidays",
+    "Latest technology equipment",
+    "Annual training allowance"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@maroctelecomit.ma"
+}

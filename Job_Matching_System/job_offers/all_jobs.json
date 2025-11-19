@@ -1,0 +1,3020 @@
+[
+  {
+    "job_id": "JOB-0001-2025",
+    "title": "Java Spring Boot Developer",
+    "domain": "BACKEND",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-10-20",
+    "description": "We are seeking a talented Java Spring Boot Developer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+    "responsibilities": [
+      "Optimize database queries and ensure data integrity",
+      "Implement authentication and authorization mechanisms",
+      "Monitor application performance and troubleshoot issues",
+      "Collaborate with frontend developers to integrate APIs",
+      "Write clean, maintainable, and well-documented code",
+      "Design and implement scalable backend services and RESTful APIs"
+    ],
+    "required_skills": [
+      "Microservices",
+      "Java",
+      "GraphQL",
+      "Java"
+    ],
+    "preferred_skills": [
+      "RabbitMQ",
+      "Python",
+      "MongoDB",
+      "FastAPI"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Professional development budget",
+      "Health insurance coverage",
+      "Stock options",
+      "Team building activities",
+      "Latest technology equipment",
+      "Annual training allowance",
+      "Parental leave"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0002-2025",
+    "title": "Data Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-10-31",
+    "description": "We are hiring a Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Develop machine learning models and algorithms",
+      "Process and analyze large datasets",
+      "Design and build scalable data pipelines",
+      "Implement data quality checks and monitoring",
+      "Optimize data processing and storage",
+      "Document data workflows and models",
+      "Collaborate with data scientists and analysts"
+    ],
+    "required_skills": [
+      "PyTorch",
+      "TensorFlow",
+      "Python",
+      "Hadoop",
+      "Pandas",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Spark",
+      "Airflow",
+      "Scikit-learn",
+      "NumPy"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Annual training allowance",
+      "Paid vacation and holidays",
+      "Parental leave",
+      "Health insurance coverage",
+      "Professional development budget",
+      "Performance bonuses",
+      "Team building activities",
+      "Remote work options",
+      "Gym membership",
+      "Competitive salary package"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0003-2025",
+    "title": "MLOps Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "Capgemini Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "10,000+ employees",
+      "description": "Global leader in consulting, technology services and digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-05",
+    "description": "We are hiring a MLOps Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Process and analyze large datasets",
+      "Document data workflows and models",
+      "Design and build scalable data pipelines",
+      "Implement data quality checks and monitoring",
+      "Deploy ML models to production"
+    ],
+    "required_skills": [
+      "PyTorch",
+      "Scikit-learn",
+      "TensorFlow",
+      "Terraform",
+      "EC2"
+    ],
+    "preferred_skills": [
+      "Hadoop",
+      "Airflow",
+      "Python",
+      "SQL"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Stock options",
+      "Health insurance coverage",
+      "Gym membership",
+      "Performance bonuses",
+      "Remote work options",
+      "Modern office environment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@capgeminimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0004-2025",
+    "title": "Site Reliability Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-05",
+    "description": "As a Site Reliability Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Automate infrastructure provisioning using IaC tools",
+      "Monitor system performance and implement alerting",
+      "Troubleshoot production issues and incidents",
+      "Document infrastructure and processes",
+      "Implement security best practices and compliance"
+    ],
+    "required_skills": [
+      "Terraform",
+      "Ansible",
+      "Jenkins",
+      "Docker",
+      "Prometheus",
+      "Azure",
+      "Scikit-learn",
+      "PyTorch"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Grafana"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Stock options",
+      "Health insurance coverage",
+      "Career advancement opportunities",
+      "Parental leave",
+      "Flexible working hours",
+      "Remote work options",
+      "Annual training allowance",
+      "Competitive salary package",
+      "Professional development budget",
+      "Paid vacation and holidays"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0005-2025",
+    "title": "Security Architect",
+    "domain": "SECURITY",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-12",
+    "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Develop security policies and procedures",
+      "Implement security controls and monitoring",
+      "Stay updated on latest security threats and trends",
+      "Conduct security assessments and penetration testing",
+      "Review code and architecture for security issues"
+    ],
+    "required_skills": [
+      "SIEM",
+      "Kali Linux",
+      "Firewall",
+      "Go",
+      "Microservices"
+    ],
+    "preferred_skills": [
+      "OWASP",
+      "Security Auditing",
+      "Network Security"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Competitive salary package",
+      "Performance bonuses",
+      "Career advancement opportunities",
+      "Gym membership",
+      "Paid vacation and holidays",
+      "Stock options",
+      "Team building activities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0006-2025",
+    "title": "React Native Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-10-20",
+    "description": "We're looking for an experienced React Native Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Implement mobile UI/UX following platform guidelines",
+      "Integrate with backend APIs and third-party services",
+      "Optimize app performance and battery usage",
+      "Debug and resolve mobile-specific issues",
+      "Develop native or cross-platform mobile applications",
+      "Implement push notifications and analytics"
+    ],
+    "required_skills": [
+      "Swift",
+      "Flutter",
+      "iOS",
+      "React Native"
+    ],
+    "preferred_skills": [
+      "Java",
+      "Android",
+      "Kotlin"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Gym membership",
+      "Flexible working hours",
+      "Remote work options",
+      "Paid vacation and holidays",
+      "Modern office environment",
+      "Parental leave",
+      "Professional development budget",
+      "Performance bonuses",
+      "Latest technology equipment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0007-2025",
+    "title": "Machine Learning Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-05",
+    "description": "We are hiring a Machine Learning Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Develop machine learning models and algorithms",
+      "Collaborate with data scientists and analysts",
+      "Document data workflows and models",
+      "Design and build scalable data pipelines",
+      "Process and analyze large datasets",
+      "Implement data quality checks and monitoring",
+      "Deploy ML models to production",
+      "Optimize data processing and storage"
+    ],
+    "required_skills": [
+      "PyTorch",
+      "Spark",
+      "Python",
+      "Hadoop",
+      "Scikit-learn",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "TensorFlow",
+      "Pandas"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Gym membership",
+      "Parental leave",
+      "Competitive salary package",
+      "Performance bonuses",
+      "Team building activities",
+      "Stock options",
+      "Latest technology equipment",
+      "Health insurance coverage"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0008-2025",
+    "title": "React Native Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "CGI Morocco",
+      "city": "Rabat",
+      "sector": "IT Services",
+      "size": "3,000+ employees",
+      "description": "Canadian IT consulting and systems integration company"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-04",
+    "description": "We're looking for an experienced React Native Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Handle app store submissions and updates",
+      "Optimize app performance and battery usage",
+      "Debug and resolve mobile-specific issues",
+      "Develop native or cross-platform mobile applications",
+      "Integrate with backend APIs and third-party services",
+      "Implement offline-first architecture"
+    ],
+    "required_skills": [
+      "React Native",
+      "Flutter",
+      "Android",
+      "Java",
+      "iOS",
+      "Swift",
+      "EC2",
+      "S3"
+    ],
+    "preferred_skills": [
+      "Kotlin"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Annual training allowance",
+      "Competitive salary package",
+      "Parental leave",
+      "Modern office environment",
+      "Performance bonuses",
+      "Stock options",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@cgimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0009-2025",
+    "title": "Cloud Infrastructure Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-10-29",
+    "description": "As a Cloud Infrastructure Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Troubleshoot production issues and incidents",
+      "Manage cloud infrastructure and resources",
+      "Automate infrastructure provisioning using IaC tools",
+      "Document infrastructure and processes",
+      "Build and maintain CI/CD pipelines",
+      "Monitor system performance and implement alerting",
+      "Optimize deployment processes and reduce downtime"
+    ],
+    "required_skills": [
+      "AWS",
+      "Prometheus",
+      "GCP",
+      "Kubernetes",
+      "GitLab CI"
+    ],
+    "preferred_skills": [
+      "Grafana",
+      "Jenkins"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Stock options",
+      "Gym membership",
+      "Parental leave",
+      "Latest technology equipment",
+      "Professional development budget",
+      "Health insurance coverage",
+      "Competitive salary package"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0010-2025",
+    "title": "Flutter Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-31",
+    "description": "We're looking for an experienced Flutter Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Develop native or cross-platform mobile applications",
+      "Implement push notifications and analytics",
+      "Implement offline-first architecture",
+      "Integrate with backend APIs and third-party services",
+      "Implement mobile UI/UX following platform guidelines"
+    ],
+    "required_skills": [
+      "Swift",
+      "React Native",
+      "Android",
+      "Java",
+      "Flutter"
+    ],
+    "preferred_skills": [
+      "Kotlin",
+      "iOS"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Flexible working hours",
+      "Parental leave",
+      "Paid vacation and holidays",
+      "Remote work options",
+      "Annual training allowance",
+      "Team building activities",
+      "Gym membership",
+      "Health insurance coverage"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0011-2025",
+    "title": "iOS Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-27",
+    "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Implement push notifications and analytics",
+      "Implement offline-first architecture",
+      "Develop native or cross-platform mobile applications",
+      "Implement mobile UI/UX following platform guidelines",
+      "Optimize app performance and battery usage",
+      "Handle app store submissions and updates",
+      "Debug and resolve mobile-specific issues",
+      "Integrate with backend APIs and third-party services"
+    ],
+    "required_skills": [
+      "Kotlin",
+      "React Native",
+      "Flutter",
+      "iOS",
+      "Swift",
+      "Firewall"
+    ],
+    "preferred_skills": [
+      "Android",
+      "Java"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Gym membership",
+      "Latest technology equipment",
+      "Professional development budget",
+      "Annual training allowance",
+      "Career advancement opportunities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0012-2025",
+    "title": "React Native Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "Attijariwafa Bank Digital",
+      "city": "Casablanca",
+      "sector": "Banking & Finance",
+      "size": "10,000+ employees",
+      "description": "Leading Maghreb bank with strong digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-10",
+    "description": "We're looking for an experienced React Native Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Debug and resolve mobile-specific issues",
+      "Implement mobile UI/UX following platform guidelines",
+      "Implement offline-first architecture",
+      "Implement push notifications and analytics",
+      "Integrate with backend APIs and third-party services"
+    ],
+    "required_skills": [
+      "Swift",
+      "Android",
+      "React Native",
+      "GCP"
+    ],
+    "preferred_skills": [
+      "iOS",
+      "Java",
+      "Kotlin"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Career advancement opportunities",
+      "Remote work options",
+      "Parental leave",
+      "Performance bonuses",
+      "Modern office environment",
+      "Health insurance coverage",
+      "Team building activities",
+      "Paid vacation and holidays",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@attijariwafabankdigital.ma"
+  },
+  {
+    "job_id": "JOB-0013-2025",
+    "title": "Big Data Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "Maroc Telecom IT",
+      "city": "Rabat",
+      "sector": "Telecommunications",
+      "size": "11,000+ employees",
+      "description": "Leading telecom operator in Morocco and Africa"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-10-26",
+    "description": "We are hiring a Big Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Implement data quality checks and monitoring",
+      "Document data workflows and models",
+      "Optimize data processing and storage",
+      "Design and build scalable data pipelines",
+      "Deploy ML models to production",
+      "Develop machine learning models and algorithms",
+      "Collaborate with data scientists and analysts",
+      "Process and analyze large datasets"
+    ],
+    "required_skills": [
+      "Hadoop",
+      "Airflow",
+      "SQL",
+      "Spark",
+      "Python",
+      "PyTorch",
+      "Java",
+      "Flutter"
+    ],
+    "preferred_skills": [
+      "TensorFlow",
+      "NumPy"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Career advancement opportunities",
+      "Annual training allowance",
+      "Modern office environment",
+      "Gym membership",
+      "Professional development budget"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@maroctelecomit.ma"
+  },
+  {
+    "job_id": "JOB-0014-2025",
+    "title": "Security Architect",
+    "domain": "SECURITY",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-21",
+    "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Implement security controls and monitoring",
+      "Stay updated on latest security threats and trends",
+      "Review code and architecture for security issues",
+      "Conduct security awareness training",
+      "Develop security policies and procedures",
+      "Conduct security assessments and penetration testing",
+      "Respond to security incidents and threats"
+    ],
+    "required_skills": [
+      "Penetration Testing",
+      "SIEM",
+      "Firewall",
+      "Security Auditing",
+      "Network Security"
+    ],
+    "preferred_skills": [
+      "Kali Linux",
+      "OWASP"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Annual training allowance",
+      "Latest technology equipment",
+      "Competitive salary package",
+      "Career advancement opportunities",
+      "Team building activities",
+      "Flexible working hours",
+      "Parental leave"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0015-2025",
+    "title": "MLOps Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "Attijariwafa Bank Digital",
+      "city": "Casablanca",
+      "sector": "Banking & Finance",
+      "size": "10,000+ employees",
+      "description": "Leading Maghreb bank with strong digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-13",
+    "description": "We are hiring a MLOps Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Deploy ML models to production",
+      "Process and analyze large datasets",
+      "Design and build scalable data pipelines",
+      "Document data workflows and models",
+      "Develop machine learning models and algorithms"
+    ],
+    "required_skills": [
+      "Python",
+      "Airflow",
+      "Spark",
+      "NumPy",
+      "SQL",
+      "Bootstrap",
+      "CSS"
+    ],
+    "preferred_skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Hadoop"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Team building activities",
+      "Gym membership",
+      "Parental leave",
+      "Career advancement opportunities",
+      "Remote work options",
+      "Latest technology equipment",
+      "Health insurance coverage"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@attijariwafabankdigital.ma"
+  },
+  {
+    "job_id": "JOB-0016-2025",
+    "title": "iOS Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-30",
+    "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Implement push notifications and analytics",
+      "Handle app store submissions and updates",
+      "Integrate with backend APIs and third-party services",
+      "Optimize app performance and battery usage",
+      "Implement offline-first architecture"
+    ],
+    "required_skills": [
+      "Swift",
+      "iOS",
+      "Java",
+      "Flutter"
+    ],
+    "preferred_skills": [
+      "React Native",
+      "Kotlin",
+      "Android"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Parental leave",
+      "Paid vacation and holidays",
+      "Latest technology equipment",
+      "Gym membership",
+      "Modern office environment",
+      "Team building activities",
+      "Stock options",
+      "Career advancement opportunities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0017-2025",
+    "title": "Flutter Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "Maroc Telecom IT",
+      "city": "Rabat",
+      "sector": "Telecommunications",
+      "size": "11,000+ employees",
+      "description": "Leading telecom operator in Morocco and Africa"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-03",
+    "description": "We're looking for an experienced Flutter Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Implement offline-first architecture",
+      "Handle app store submissions and updates",
+      "Implement mobile UI/UX following platform guidelines",
+      "Implement push notifications and analytics",
+      "Debug and resolve mobile-specific issues",
+      "Integrate with backend APIs and third-party services",
+      "Develop native or cross-platform mobile applications"
+    ],
+    "required_skills": [
+      "React Native",
+      "Flutter",
+      "iOS",
+      "Java",
+      "Kotlin",
+      "Android",
+      "AWS"
+    ],
+    "preferred_skills": [
+      "Swift"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Parental leave",
+      "Stock options",
+      "Modern office environment",
+      "Competitive salary package",
+      "Gym membership",
+      "Career advancement opportunities",
+      "Paid vacation and holidays",
+      "Latest technology equipment",
+      "Annual training allowance"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@maroctelecomit.ma"
+  },
+  {
+    "job_id": "JOB-0018-2025",
+    "title": "Site Reliability Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Accenture Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "5,000+ employees",
+      "description": "Management consulting and information technology services company"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-10-27",
+    "description": "As a Site Reliability Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Troubleshoot production issues and incidents",
+      "Monitor system performance and implement alerting",
+      "Document infrastructure and processes",
+      "Build and maintain CI/CD pipelines",
+      "Implement security best practices and compliance",
+      "Automate infrastructure provisioning using IaC tools",
+      "Manage cloud infrastructure and resources"
+    ],
+    "required_skills": [
+      "GCP",
+      "Ansible",
+      "Jenkins",
+      "Kubernetes",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "GitLab CI",
+      "Docker",
+      "Terraform"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Latest technology equipment",
+      "Paid vacation and holidays",
+      "Performance bonuses",
+      "Professional development budget",
+      "Team building activities",
+      "Health insurance coverage",
+      "Career advancement opportunities",
+      "Remote work options",
+      "Gym membership"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@accenturemorocco.ma"
+  },
+  {
+    "job_id": "JOB-0019-2025",
+    "title": "AI Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "CGI Morocco",
+      "city": "Rabat",
+      "sector": "IT Services",
+      "size": "3,000+ employees",
+      "description": "Canadian IT consulting and systems integration company"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-10",
+    "description": "We are hiring a AI Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Optimize data processing and storage",
+      "Collaborate with data scientists and analysts",
+      "Process and analyze large datasets",
+      "Document data workflows and models",
+      "Design and build scalable data pipelines",
+      "Implement data quality checks and monitoring",
+      "Deploy ML models to production"
+    ],
+    "required_skills": [
+      "PyTorch",
+      "Python",
+      "Pandas",
+      "Azure",
+      "AWS"
+    ],
+    "preferred_skills": [
+      "TensorFlow",
+      "Kafka",
+      "Scikit-learn"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Paid vacation and holidays",
+      "Professional development budget",
+      "Stock options",
+      "Performance bonuses",
+      "Latest technology equipment",
+      "Modern office environment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@cgimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0020-2025",
+    "title": "AI Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-15",
+    "description": "We are hiring a AI Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Process and analyze large datasets",
+      "Implement data quality checks and monitoring",
+      "Develop machine learning models and algorithms",
+      "Design and build scalable data pipelines",
+      "Optimize data processing and storage",
+      "Collaborate with data scientists and analysts",
+      "Deploy ML models to production",
+      "Document data workflows and models"
+    ],
+    "required_skills": [
+      "SQL",
+      "TensorFlow",
+      "PyTorch",
+      "Python",
+      "GCP",
+      "Terraform"
+    ],
+    "preferred_skills": [
+      "Pandas",
+      "Hadoop"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Annual training allowance",
+      "Performance bonuses",
+      "Team building activities",
+      "Career advancement opportunities",
+      "Professional development budget",
+      "Health insurance coverage",
+      "Gym membership",
+      "Parental leave",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0021-2025",
+    "title": "Azure Cloud Engineer",
+    "domain": "CLOUD",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-11-01",
+    "description": "Join us as a Azure Cloud Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Automate cloud infrastructure management",
+      "Monitor and troubleshoot cloud services",
+      "Ensure security and compliance in cloud environments",
+      "Migrate on-premise applications to cloud",
+      "Implement high availability and disaster recovery",
+      "Optimize cloud costs and resource utilization"
+    ],
+    "required_skills": [
+      "EC2",
+      "Kubernetes",
+      "CloudFormation"
+    ],
+    "preferred_skills": [
+      "Lambda",
+      "GCP",
+      "Azure",
+      "AWS"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Gym membership",
+      "Professional development budget",
+      "Competitive salary package",
+      "Team building activities",
+      "Health insurance coverage",
+      "Annual training allowance",
+      "Paid vacation and holidays",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0022-2025",
+    "title": "Penetration Tester",
+    "domain": "SECURITY",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-21",
+    "description": "We need a Penetration Tester to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Stay updated on latest security threats and trends",
+      "Review code and architecture for security issues",
+      "Conduct security awareness training",
+      "Develop security policies and procedures",
+      "Respond to security incidents and threats",
+      "Perform vulnerability scanning and remediation",
+      "Conduct security assessments and penetration testing"
+    ],
+    "required_skills": [
+      "Kali Linux",
+      "Network Security",
+      "Penetration Testing",
+      "OWASP",
+      "Firewall",
+      "jQuery",
+      "React"
+    ],
+    "preferred_skills": [
+      "SIEM",
+      "Security Auditing"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Professional development budget",
+      "Annual training allowance",
+      "Health insurance coverage",
+      "Latest technology equipment",
+      "Stock options",
+      "Paid vacation and holidays",
+      "Gym membership",
+      "Modern office environment",
+      "Career advancement opportunities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0023-2025",
+    "title": "Cloud DevOps Engineer",
+    "domain": "CLOUD",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-18",
+    "description": "Join us as a Cloud DevOps Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Optimize cloud costs and resource utilization",
+      "Monitor and troubleshoot cloud services",
+      "Provide technical guidance on cloud best practices",
+      "Design cloud-native architectures",
+      "Automate cloud infrastructure management",
+      "Implement high availability and disaster recovery"
+    ],
+    "required_skills": [
+      "Azure",
+      "Kubernetes",
+      "Docker",
+      "AWS",
+      "EC2"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "CloudFormation",
+      "Lambda",
+      "S3"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Stock options",
+      "Parental leave",
+      "Professional development budget",
+      "Latest technology equipment",
+      "Paid vacation and holidays",
+      "Competitive salary package",
+      "Team building activities",
+      "Performance bonuses",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0024-2025",
+    "title": "Platform Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-11-05",
+    "description": "As a Platform Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Troubleshoot production issues and incidents",
+      "Manage cloud infrastructure and resources",
+      "Implement security best practices and compliance",
+      "Automate infrastructure provisioning using IaC tools",
+      "Optimize deployment processes and reduce downtime",
+      "Build and maintain CI/CD pipelines"
+    ],
+    "required_skills": [
+      "Prometheus",
+      "Azure",
+      "Grafana",
+      "GCP",
+      "Ansible",
+      "CI/CD",
+      "Spark"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Jenkins"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Parental leave",
+      "Gym membership",
+      "Performance bonuses",
+      "Paid vacation and holidays",
+      "Health insurance coverage",
+      "Latest technology equipment",
+      "Modern office environment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0025-2025",
+    "title": "Microservices Engineer",
+    "domain": "BACKEND",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-11-12",
+    "description": "We are seeking a talented Microservices Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+    "responsibilities": [
+      "Write clean, maintainable, and well-documented code",
+      "Monitor application performance and troubleshoot issues",
+      "Develop microservices architecture using modern frameworks",
+      "Collaborate with frontend developers to integrate APIs",
+      "Optimize database queries and ensure data integrity",
+      "Implement authentication and authorization mechanisms",
+      "Participate in code reviews and technical discussions",
+      "Design and implement scalable backend services and RESTful APIs"
+    ],
+    "required_skills": [
+      "PostgreSQL",
+      "FastAPI",
+      "Django",
+      "Flutter"
+    ],
+    "preferred_skills": [
+      "RabbitMQ",
+      "MongoDB",
+      "Java",
+      "Redis"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Career advancement opportunities",
+      "Gym membership",
+      "Performance bonuses",
+      "Stock options",
+      "Team building activities",
+      "Flexible working hours",
+      "Competitive salary package"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0026-2025",
+    "title": "Cloud Solutions Architect",
+    "domain": "CLOUD",
+    "company": {
+      "name": "BMCE Bank Tech Hub",
+      "city": "Casablanca",
+      "sector": "Banking & Technology",
+      "size": "8,000+ employees",
+      "description": "Innovative bank with cutting-edge technology hub"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-15",
+    "description": "Join us as a Cloud Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Migrate on-premise applications to cloud",
+      "Monitor and troubleshoot cloud services",
+      "Design cloud-native architectures",
+      "Automate cloud infrastructure management",
+      "Provide technical guidance on cloud best practices",
+      "Implement high availability and disaster recovery",
+      "Optimize cloud costs and resource utilization"
+    ],
+    "required_skills": [
+      "AWS",
+      "S3",
+      "Kubernetes",
+      "Terraform",
+      "CloudFormation",
+      "Azure"
+    ],
+    "preferred_skills": [
+      "Lambda",
+      "GCP"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Stock options",
+      "Gym membership",
+      "Team building activities",
+      "Flexible working hours",
+      "Parental leave",
+      "Annual training allowance",
+      "Competitive salary package"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@bmcebanktechhub.ma"
+  },
+  {
+    "job_id": "JOB-0027-2025",
+    "title": "Python Backend Engineer",
+    "domain": "BACKEND",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-05",
+    "description": "We are seeking a talented Python Backend Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+    "responsibilities": [
+      "Design and implement scalable backend services and RESTful APIs",
+      "Monitor application performance and troubleshoot issues",
+      "Develop microservices architecture using modern frameworks",
+      "Optimize database queries and ensure data integrity",
+      "Participate in code reviews and technical discussions"
+    ],
+    "required_skills": [
+      "REST API",
+      "Django",
+      "Microservices",
+      "RabbitMQ",
+      "Go",
+      "Grafana"
+    ],
+    "preferred_skills": [
+      "Java",
+      "Spring Boot",
+      "Python",
+      "Express.js"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Modern office environment",
+      "Remote work options",
+      "Performance bonuses",
+      "Annual training allowance",
+      "Career advancement opportunities",
+      "Team building activities",
+      "Parental leave",
+      "Flexible working hours",
+      "Professional development budget",
+      "Latest technology equipment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0028-2025",
+    "title": "Java Spring Boot Developer",
+    "domain": "BACKEND",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-10-21",
+    "description": "We are seeking a talented Java Spring Boot Developer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+    "responsibilities": [
+      "Develop microservices architecture using modern frameworks",
+      "Implement authentication and authorization mechanisms",
+      "Write clean, maintainable, and well-documented code",
+      "Participate in code reviews and technical discussions",
+      "Monitor application performance and troubleshoot issues",
+      "Design and implement scalable backend services and RESTful APIs",
+      "Collaborate with frontend developers to integrate APIs"
+    ],
+    "required_skills": [
+      "PostgreSQL",
+      "FastAPI",
+      "Express.js",
+      "Webpack"
+    ],
+    "preferred_skills": [
+      "Node.js",
+      "MongoDB"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Modern office environment",
+      "Team building activities",
+      "Stock options",
+      "Latest technology equipment",
+      "Health insurance coverage",
+      "Career advancement opportunities",
+      "Gym membership"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0029-2025",
+    "title": "Platform Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Sqli Morocco",
+      "city": "Casablanca",
+      "sector": "Digital Services",
+      "size": "2,000+ employees",
+      "description": "Digital transformation and e-commerce specialist"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-26",
+    "description": "As a Platform Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Troubleshoot production issues and incidents",
+      "Build and maintain CI/CD pipelines",
+      "Monitor system performance and implement alerting",
+      "Optimize deployment processes and reduce downtime",
+      "Document infrastructure and processes"
+    ],
+    "required_skills": [
+      "Ansible",
+      "Azure",
+      "CI/CD",
+      "Jenkins",
+      "Kubernetes",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "GCP",
+      "Terraform",
+      "GitLab CI"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Modern office environment",
+      "Remote work options",
+      "Parental leave",
+      "Annual training allowance",
+      "Professional development budget",
+      "Stock options",
+      "Paid vacation and holidays",
+      "Team building activities",
+      "Latest technology equipment",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@sqlimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0030-2025",
+    "title": "Cloud Infrastructure Engineer",
+    "domain": "CLOUD",
+    "company": {
+      "name": "Capgemini Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "10,000+ employees",
+      "description": "Global leader in consulting, technology services and digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-31",
+    "description": "Join us as a Cloud Infrastructure Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Design cloud-native architectures",
+      "Automate cloud infrastructure management",
+      "Ensure security and compliance in cloud environments",
+      "Monitor and troubleshoot cloud services",
+      "Provide technical guidance on cloud best practices",
+      "Implement high availability and disaster recovery",
+      "Optimize cloud costs and resource utilization",
+      "Migrate on-premise applications to cloud"
+    ],
+    "required_skills": [
+      "Kubernetes",
+      "Azure",
+      "Lambda",
+      "AWS",
+      "OWASP"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "CloudFormation",
+      "Terraform"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Remote work options",
+      "Parental leave",
+      "Team building activities",
+      "Health insurance coverage",
+      "Career advancement opportunities",
+      "Competitive salary package",
+      "Latest technology equipment",
+      "Modern office environment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@capgeminimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0031-2025",
+    "title": "CI/CD Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Maroc Telecom IT",
+      "city": "Rabat",
+      "sector": "Telecommunications",
+      "size": "11,000+ employees",
+      "description": "Leading telecom operator in Morocco and Africa"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-12",
+    "description": "As a CI/CD Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Automate infrastructure provisioning using IaC tools",
+      "Build and maintain CI/CD pipelines",
+      "Manage cloud infrastructure and resources",
+      "Optimize deployment processes and reduce downtime",
+      "Implement security best practices and compliance"
+    ],
+    "required_skills": [
+      "Docker",
+      "GitLab CI",
+      "Kubernetes",
+      "NLP",
+      "Computer Vision"
+    ],
+    "preferred_skills": [
+      "Prometheus",
+      "Grafana",
+      "Azure",
+      "Jenkins"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Latest technology equipment",
+      "Career advancement opportunities",
+      "Competitive salary package",
+      "Annual training allowance",
+      "Performance bonuses",
+      "Stock options"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@maroctelecomit.ma"
+  },
+  {
+    "job_id": "JOB-0032-2025",
+    "title": "Infrastructure Automation Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Accenture Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "5,000+ employees",
+      "description": "Management consulting and information technology services company"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-13",
+    "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Automate infrastructure provisioning using IaC tools",
+      "Document infrastructure and processes",
+      "Monitor system performance and implement alerting",
+      "Manage cloud infrastructure and resources",
+      "Troubleshoot production issues and incidents",
+      "Build and maintain CI/CD pipelines",
+      "Implement security best practices and compliance",
+      "Optimize deployment processes and reduce downtime"
+    ],
+    "required_skills": [
+      "Terraform",
+      "CI/CD",
+      "Azure",
+      "Swift",
+      "Java"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Prometheus"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Remote work options",
+      "Stock options",
+      "Performance bonuses",
+      "Professional development budget",
+      "Annual training allowance",
+      "Flexible working hours",
+      "Team building activities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@accenturemorocco.ma"
+  },
+  {
+    "job_id": "JOB-0033-2025",
+    "title": "iOS Developer",
+    "domain": "MOBILE",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-02",
+    "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+    "responsibilities": [
+      "Integrate with backend APIs and third-party services",
+      "Implement mobile UI/UX following platform guidelines",
+      "Optimize app performance and battery usage",
+      "Debug and resolve mobile-specific issues",
+      "Develop native or cross-platform mobile applications"
+    ],
+    "required_skills": [
+      "Android",
+      "iOS",
+      "Swift",
+      "GCP"
+    ],
+    "preferred_skills": [
+      "React Native",
+      "Flutter"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Gym membership",
+      "Remote work options",
+      "Professional development budget",
+      "Team building activities",
+      "Flexible working hours",
+      "Competitive salary package"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0034-2025",
+    "title": "Data Scientist",
+    "domain": "DATA",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-10-31",
+    "description": "We are hiring a Data Scientist to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Optimize data processing and storage",
+      "Collaborate with data scientists and analysts",
+      "Document data workflows and models",
+      "Deploy ML models to production",
+      "Implement data quality checks and monitoring",
+      "Develop machine learning models and algorithms",
+      "Design and build scalable data pipelines",
+      "Process and analyze large datasets"
+    ],
+    "required_skills": [
+      "Scikit-learn",
+      "NumPy",
+      "Pandas",
+      "Hadoop",
+      "GCP",
+      "Ansible"
+    ],
+    "preferred_skills": [
+      "Spark",
+      "PyTorch",
+      "Airflow"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Competitive salary package",
+      "Gym membership",
+      "Performance bonuses",
+      "Career advancement opportunities",
+      "Stock options",
+      "Modern office environment",
+      "Team building activities",
+      "Parental leave"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0035-2025",
+    "title": "AWS Solutions Architect",
+    "domain": "CLOUD",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-25",
+    "description": "Join us as a AWS Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Optimize cloud costs and resource utilization",
+      "Implement high availability and disaster recovery",
+      "Automate cloud infrastructure management",
+      "Provide technical guidance on cloud best practices",
+      "Monitor and troubleshoot cloud services",
+      "Ensure security and compliance in cloud environments",
+      "Design cloud-native architectures",
+      "Migrate on-premise applications to cloud"
+    ],
+    "required_skills": [
+      "Terraform",
+      "GCP",
+      "CloudFormation"
+    ],
+    "preferred_skills": [
+      "S3",
+      "EC2",
+      "Docker",
+      "Kubernetes"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Annual training allowance",
+      "Team building activities",
+      "Stock options",
+      "Competitive salary package",
+      "Latest technology equipment",
+      "Performance bonuses",
+      "Career advancement opportunities",
+      "Health insurance coverage",
+      "Remote work options"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0036-2025",
+    "title": "Infrastructure Automation Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-21",
+    "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Manage cloud infrastructure and resources",
+      "Build and maintain CI/CD pipelines",
+      "Monitor system performance and implement alerting",
+      "Document infrastructure and processes",
+      "Troubleshoot production issues and incidents",
+      "Automate infrastructure provisioning using IaC tools",
+      "Optimize deployment processes and reduce downtime",
+      "Implement security best practices and compliance"
+    ],
+    "required_skills": [
+      "GCP",
+      "AWS",
+      "CI/CD",
+      "Prometheus",
+      "Kubernetes",
+      "Ansible"
+    ],
+    "preferred_skills": [
+      "Jenkins",
+      "Azure",
+      "Terraform"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Latest technology equipment",
+      "Health insurance coverage",
+      "Professional development budget",
+      "Performance bonuses",
+      "Flexible working hours",
+      "Parental leave"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  },
+  {
+    "job_id": "JOB-0037-2025",
+    "title": "Infrastructure Automation Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Maroc Telecom IT",
+      "city": "Rabat",
+      "sector": "Telecommunications",
+      "size": "11,000+ employees",
+      "description": "Leading telecom operator in Morocco and Africa"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-10-31",
+    "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Troubleshoot production issues and incidents",
+      "Build and maintain CI/CD pipelines",
+      "Implement security best practices and compliance",
+      "Automate infrastructure provisioning using IaC tools",
+      "Document infrastructure and processes"
+    ],
+    "required_skills": [
+      "Grafana",
+      "Docker",
+      "Azure",
+      "Microservices",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "Ansible",
+      "GCP",
+      "Kubernetes",
+      "Prometheus"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Stock options",
+      "Modern office environment",
+      "Professional development budget",
+      "Competitive salary package",
+      "Performance bonuses",
+      "Career advancement opportunities",
+      "Flexible working hours",
+      "Team building activities",
+      "Remote work options"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@maroctelecomit.ma"
+  },
+  {
+    "job_id": "JOB-0038-2025",
+    "title": "AWS Solutions Architect",
+    "domain": "CLOUD",
+    "company": {
+      "name": "CGI Morocco",
+      "city": "Rabat",
+      "sector": "IT Services",
+      "size": "3,000+ employees",
+      "description": "Canadian IT consulting and systems integration company"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-10-21",
+    "description": "Join us as a AWS Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Ensure security and compliance in cloud environments",
+      "Optimize cloud costs and resource utilization",
+      "Design cloud-native architectures",
+      "Provide technical guidance on cloud best practices",
+      "Monitor and troubleshoot cloud services"
+    ],
+    "required_skills": [
+      "Lambda",
+      "Docker",
+      "GCP",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "Swift"
+    ],
+    "preferred_skills": [
+      "S3",
+      "Azure",
+      "EC2",
+      "CloudFormation"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Career advancement opportunities",
+      "Annual training allowance",
+      "Stock options",
+      "Gym membership",
+      "Latest technology equipment",
+      "Parental leave",
+      "Professional development budget",
+      "Flexible working hours",
+      "Team building activities",
+      "Performance bonuses"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@cgimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0039-2025",
+    "title": "Cybersecurity Analyst",
+    "domain": "SECURITY",
+    "company": {
+      "name": "OCP Group IT Division",
+      "city": "Casablanca",
+      "sector": "Industry & Technology",
+      "size": "20,000+ employees",
+      "description": "World leader in phosphates with an innovative IT division"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-12",
+    "description": "We need a Cybersecurity Analyst to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Respond to security incidents and threats",
+      "Conduct security assessments and penetration testing",
+      "Perform vulnerability scanning and remediation",
+      "Conduct security awareness training",
+      "Stay updated on latest security threats and trends",
+      "Review code and architecture for security issues"
+    ],
+    "required_skills": [
+      "Penetration Testing",
+      "SIEM",
+      "Firewall",
+      "NLP"
+    ],
+    "preferred_skills": [
+      "Kali Linux",
+      "Network Security",
+      "Security Auditing"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Professional development budget",
+      "Team building activities",
+      "Latest technology equipment",
+      "Remote work options",
+      "Flexible working hours",
+      "Health insurance coverage",
+      "Annual training allowance",
+      "Career advancement opportunities",
+      "Gym membership",
+      "Paid vacation and holidays"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@ocpgroupitdivision.ma"
+  },
+  {
+    "job_id": "JOB-0040-2025",
+    "title": "Security Architect",
+    "domain": "SECURITY",
+    "company": {
+      "name": "Capgemini Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "10,000+ employees",
+      "description": "Global leader in consulting, technology services and digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-01",
+    "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Conduct security awareness training",
+      "Stay updated on latest security threats and trends",
+      "Conduct security assessments and penetration testing",
+      "Implement security controls and monitoring",
+      "Perform vulnerability scanning and remediation",
+      "Develop security policies and procedures",
+      "Respond to security incidents and threats",
+      "Review code and architecture for security issues"
+    ],
+    "required_skills": [
+      "Penetration Testing",
+      "Kali Linux",
+      "Security Auditing"
+    ],
+    "preferred_skills": [
+      "OWASP",
+      "Network Security",
+      "Firewall",
+      "SIEM"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Team building activities",
+      "Competitive salary package",
+      "Latest technology equipment",
+      "Parental leave",
+      "Flexible working hours",
+      "Remote work options",
+      "Career advancement opportunities",
+      "Annual training allowance"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@capgeminimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0041-2025",
+    "title": "Site Reliability Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Mid-Level",
+    "salary": "15,000 - 25,000 MAD/month",
+    "posted_date": "2025-10-27",
+    "description": "As a Site Reliability Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Monitor system performance and implement alerting",
+      "Implement security best practices and compliance",
+      "Document infrastructure and processes",
+      "Optimize deployment processes and reduce downtime",
+      "Automate infrastructure provisioning using IaC tools",
+      "Build and maintain CI/CD pipelines",
+      "Troubleshoot production issues and incidents"
+    ],
+    "required_skills": [
+      "Terraform",
+      "Jenkins",
+      "Docker",
+      "Grafana",
+      "Pandas",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Azure",
+      "CI/CD",
+      "AWS",
+      "GCP"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "3-5 years of professional experience",
+      "Proven track record of delivering projects"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Team building activities",
+      "Performance bonuses",
+      "Annual training allowance",
+      "Career advancement opportunities",
+      "Stock options",
+      "Professional development budget",
+      "Flexible working hours",
+      "Modern office environment"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0042-2025",
+    "title": "MLOps Engineer",
+    "domain": "DATA",
+    "company": {
+      "name": "Sqli Morocco",
+      "city": "Casablanca",
+      "sector": "Digital Services",
+      "size": "2,000+ employees",
+      "description": "Digital transformation and e-commerce specialist"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-18",
+    "description": "We are hiring a MLOps Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+    "responsibilities": [
+      "Deploy ML models to production",
+      "Optimize data processing and storage",
+      "Process and analyze large datasets",
+      "Design and build scalable data pipelines",
+      "Implement data quality checks and monitoring"
+    ],
+    "required_skills": [
+      "Scikit-learn",
+      "Python",
+      "Spark",
+      "NumPy",
+      "TensorFlow",
+      "PostgreSQL",
+      "RabbitMQ"
+    ],
+    "preferred_skills": [
+      "Hadoop",
+      "Pandas",
+      "Kafka",
+      "PyTorch"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Health insurance coverage",
+      "Remote work options",
+      "Latest technology equipment",
+      "Modern office environment",
+      "Annual training allowance",
+      "Gym membership",
+      "Paid vacation and holidays",
+      "Performance bonuses",
+      "Parental leave"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@sqlimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0043-2025",
+    "title": "Security Architect",
+    "domain": "SECURITY",
+    "company": {
+      "name": "Accenture Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "5,000+ employees",
+      "description": "Management consulting and information technology services company"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-06",
+    "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Stay updated on latest security threats and trends",
+      "Develop security policies and procedures",
+      "Conduct security awareness training",
+      "Implement security controls and monitoring",
+      "Conduct security assessments and penetration testing",
+      "Respond to security incidents and threats",
+      "Perform vulnerability scanning and remediation",
+      "Review code and architecture for security issues"
+    ],
+    "required_skills": [
+      "Security Auditing",
+      "Kali Linux",
+      "Network Security",
+      "OWASP",
+      "Penetration Testing",
+      "SIEM",
+      "NumPy",
+      "Hadoop"
+    ],
+    "preferred_skills": [
+      "Firewall"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Parental leave",
+      "Stock options",
+      "Annual training allowance",
+      "Paid vacation and holidays",
+      "Latest technology equipment",
+      "Career advancement opportunities",
+      "Performance bonuses",
+      "Team building activities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@accenturemorocco.ma"
+  },
+  {
+    "job_id": "JOB-0044-2025",
+    "title": "Cloud Infrastructure Engineer",
+    "domain": "CLOUD",
+    "company": {
+      "name": "CGI Morocco",
+      "city": "Rabat",
+      "sector": "IT Services",
+      "size": "3,000+ employees",
+      "description": "Canadian IT consulting and systems integration company"
+    },
+    "location": "Rabat, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-23",
+    "description": "Join us as a Cloud Infrastructure Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+    "responsibilities": [
+      "Monitor and troubleshoot cloud services",
+      "Implement high availability and disaster recovery",
+      "Design cloud-native architectures",
+      "Automate cloud infrastructure management",
+      "Ensure security and compliance in cloud environments",
+      "Migrate on-premise applications to cloud"
+    ],
+    "required_skills": [
+      "GCP",
+      "AWS",
+      "Kubernetes",
+      "S3",
+      "CloudFormation",
+      "Azure",
+      "PyTorch"
+    ],
+    "preferred_skills": [
+      "Lambda",
+      "EC2",
+      "Terraform",
+      "Docker"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Gym membership",
+      "Career advancement opportunities",
+      "Annual training allowance",
+      "Performance bonuses",
+      "Parental leave",
+      "Competitive salary package",
+      "Remote work options"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@cgimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0045-2025",
+    "title": "Security Architect",
+    "domain": "SECURITY",
+    "company": {
+      "name": "Sqli Morocco",
+      "city": "Casablanca",
+      "sector": "Digital Services",
+      "size": "2,000+ employees",
+      "description": "Digital transformation and e-commerce specialist"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-10-20",
+    "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+    "responsibilities": [
+      "Develop security policies and procedures",
+      "Implement security controls and monitoring",
+      "Review code and architecture for security issues",
+      "Conduct security awareness training",
+      "Perform vulnerability scanning and remediation"
+    ],
+    "required_skills": [
+      "OWASP",
+      "Firewall",
+      "Security Auditing",
+      "Lambda",
+      "GCP"
+    ],
+    "preferred_skills": [
+      "Kali Linux",
+      "Penetration Testing"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Latest technology equipment",
+      "Modern office environment",
+      "Paid vacation and holidays",
+      "Team building activities",
+      "Gym membership",
+      "Performance bonuses",
+      "Stock options",
+      "Competitive salary package",
+      "Professional development budget"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@sqlimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0046-2025",
+    "title": "Microservices Engineer",
+    "domain": "BACKEND",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-29",
+    "description": "We are seeking a talented Microservices Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+    "responsibilities": [
+      "Design and implement scalable backend services and RESTful APIs",
+      "Collaborate with frontend developers to integrate APIs",
+      "Write clean, maintainable, and well-documented code",
+      "Implement authentication and authorization mechanisms",
+      "Develop microservices architecture using modern frameworks",
+      "Optimize database queries and ensure data integrity"
+    ],
+    "required_skills": [
+      "RabbitMQ",
+      "Redis",
+      "GraphQL",
+      "Spring Boot",
+      "REST API",
+      "Angular",
+      "Tailwind"
+    ],
+    "preferred_skills": [
+      "Express.js",
+      "Python"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Paid vacation and holidays",
+      "Professional development budget",
+      "Parental leave",
+      "Annual training allowance",
+      "Remote work options",
+      "Team building activities",
+      "Health insurance coverage"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0047-2025",
+    "title": "AI Research Engineer",
+    "domain": "ML_AI",
+    "company": {
+      "name": "Orange Digital Center",
+      "city": "Casablanca",
+      "sector": "Telecom & Digital",
+      "size": "1,000+ employees",
+      "description": "Orange's digital innovation center for Africa and Middle East"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "On-site",
+    "contract_type": "Freelance/Contract",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-10-25",
+    "description": "As a AI Research Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+    "responsibilities": [
+      "Collaborate with cross-functional teams",
+      "Develop and train machine learning models",
+      "Optimize model performance and accuracy",
+      "Deploy models to production environments",
+      "Research and implement state-of-the-art algorithms"
+    ],
+    "required_skills": [
+      "TensorFlow",
+      "Computer Vision",
+      "BERT",
+      "NLP",
+      "TypeScript"
+    ],
+    "preferred_skills": [
+      "Scikit-learn",
+      "PyTorch",
+      "Machine Learning"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Remote work options",
+      "Modern office environment",
+      "Performance bonuses",
+      "Paid vacation and holidays",
+      "Latest technology equipment",
+      "Professional development budget"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@orangedigitalcenter.ma"
+  },
+  {
+    "job_id": "JOB-0048-2025",
+    "title": "Computer Vision Engineer",
+    "domain": "ML_AI",
+    "company": {
+      "name": "Capgemini Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "10,000+ employees",
+      "description": "Global leader in consulting, technology services and digital transformation"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Junior",
+    "salary": "8,000 - 15,000 MAD/month",
+    "posted_date": "2025-11-08",
+    "description": "As a Computer Vision Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+    "responsibilities": [
+      "Conduct experiments and analyze results",
+      "Process and prepare datasets for training",
+      "Research and implement state-of-the-art algorithms",
+      "Collaborate with cross-functional teams",
+      "Implement deep learning architectures",
+      "Deploy models to production environments",
+      "Develop and train machine learning models",
+      "Optimize model performance and accuracy"
+    ],
+    "required_skills": [
+      "PyTorch",
+      "Scikit-learn",
+      "BERT",
+      "NLP",
+      "Deep Learning",
+      "Docker",
+      "EC2"
+    ],
+    "preferred_skills": [
+      "Computer Vision",
+      "Machine Learning"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "0-2 years of professional experience",
+      "Understanding of software development fundamentals"
+    ],
+    "benefits": [
+      "Paid vacation and holidays",
+      "Stock options",
+      "Latest technology equipment",
+      "Gym membership",
+      "Remote work options",
+      "Modern office environment",
+      "Annual training allowance",
+      "Team building activities"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@capgeminimorocco.ma"
+  },
+  {
+    "job_id": "JOB-0049-2025",
+    "title": "Cloud Infrastructure Engineer",
+    "domain": "DEVOPS",
+    "company": {
+      "name": "Accenture Morocco",
+      "city": "Casablanca",
+      "sector": "Consulting & Technology",
+      "size": "5,000+ employees",
+      "description": "Management consulting and information technology services company"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Hybrid",
+    "contract_type": "CDI (Permanent)",
+    "experience_level": "Senior",
+    "salary": "25,000 - 40,000 MAD/month",
+    "posted_date": "2025-11-02",
+    "description": "As a Cloud Infrastructure Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+    "responsibilities": [
+      "Manage cloud infrastructure and resources",
+      "Build and maintain CI/CD pipelines",
+      "Troubleshoot production issues and incidents",
+      "Implement security best practices and compliance",
+      "Automate infrastructure provisioning using IaC tools",
+      "Optimize deployment processes and reduce downtime",
+      "Document infrastructure and processes",
+      "Monitor system performance and implement alerting"
+    ],
+    "required_skills": [
+      "Terraform",
+      "GitLab CI",
+      "CI/CD",
+      "Ansible",
+      "S3",
+      "Azure"
+    ],
+    "preferred_skills": [
+      "GCP",
+      "Kubernetes",
+      "AWS"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "5+ years of professional experience",
+      "Experience mentoring junior developers",
+      "Strong leadership and architectural skills"
+    ],
+    "benefits": [
+      "Flexible working hours",
+      "Stock options",
+      "Latest technology equipment",
+      "Remote work options",
+      "Gym membership",
+      "Health insurance coverage"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@accenturemorocco.ma"
+  },
+  {
+    "job_id": "JOB-0050-2025",
+    "title": "React Developer",
+    "domain": "FRONTEND",
+    "company": {
+      "name": "Webhelp Morocco",
+      "city": "Casablanca",
+      "sector": "BPO & Technology",
+      "size": "15,000+ employees",
+      "description": "Global leader in customer experience and digital services"
+    },
+    "location": "Casablanca, Morocco",
+    "work_mode": "Remote",
+    "contract_type": "CDD (Fixed-term)",
+    "experience_level": "Expert",
+    "salary": "40,000 - 60,000 MAD/month",
+    "posted_date": "2025-11-04",
+    "description": "Join our team as a React Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
+    "responsibilities": [
+      "Optimize frontend performance and loading times",
+      "Implement state management solutions",
+      "Develop reusable UI components using modern frameworks",
+      "Build responsive and intuitive user interfaces",
+      "Collaborate with designers to implement pixel-perfect designs"
+    ],
+    "required_skills": [
+      "JavaScript",
+      "CSS",
+      "TypeScript",
+      "HTML",
+      "Vue.js",
+      "Network Security",
+      "Security Auditing"
+    ],
+    "preferred_skills": [
+      "jQuery",
+      "React",
+      "Bootstrap",
+      "Tailwind"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Strong problem-solving and analytical skills",
+      "Excellent communication and teamwork abilities",
+      "Passion for technology and continuous learning",
+      "8+ years of professional experience",
+      "Extensive experience leading technical initiatives",
+      "Thought leadership in the field"
+    ],
+    "benefits": [
+      "Competitive salary package",
+      "Career advancement opportunities",
+      "Modern office environment",
+      "Parental leave",
+      "Stock options",
+      "Flexible working hours"
+    ],
+    "application_deadline": "2025-12-19",
+    "contact_email": "careers@webhelpmorocco.ma"
+  }
+]

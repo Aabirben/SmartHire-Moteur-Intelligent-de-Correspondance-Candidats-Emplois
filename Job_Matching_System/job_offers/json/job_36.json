@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0036-2025",
+  "title": "Infrastructure Automation Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Webhelp Morocco",
+    "city": "Casablanca",
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-10-21",
+  "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Manage cloud infrastructure and resources",
+    "Build and maintain CI/CD pipelines",
+    "Monitor system performance and implement alerting",
+    "Document infrastructure and processes",
+    "Troubleshoot production issues and incidents",
+    "Automate infrastructure provisioning using IaC tools",
+    "Optimize deployment processes and reduce downtime",
+    "Implement security best practices and compliance"
+  ],
+  "required_skills": [
+    "GCP",
+    "AWS",
+    "CI/CD",
+    "Prometheus",
+    "Kubernetes",
+    "Ansible"
+  ],
+  "preferred_skills": [
+    "Jenkins",
+    "Azure",
+    "Terraform"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Latest technology equipment",
+    "Health insurance coverage",
+    "Professional development budget",
+    "Performance bonuses",
+    "Flexible working hours",
+    "Parental leave"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@webhelpmorocco.ma"
+}

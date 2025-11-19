@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0022-2025",
+  "title": "Penetration Tester",
+  "domain": "SECURITY",
+  "company": {
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-10-21",
+  "description": "We need a Penetration Tester to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "responsibilities": [
+    "Stay updated on latest security threats and trends",
+    "Review code and architecture for security issues",
+    "Conduct security awareness training",
+    "Develop security policies and procedures",
+    "Respond to security incidents and threats",
+    "Perform vulnerability scanning and remediation",
+    "Conduct security assessments and penetration testing"
+  ],
+  "required_skills": [
+    "Kali Linux",
+    "Network Security",
+    "Penetration Testing",
+    "OWASP",
+    "Firewall",
+    "jQuery",
+    "React"
+  ],
+  "preferred_skills": [
+    "SIEM",
+    "Security Auditing"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Professional development budget",
+    "Annual training allowance",
+    "Health insurance coverage",
+    "Latest technology equipment",
+    "Stock options",
+    "Paid vacation and holidays",
+    "Gym membership",
+    "Modern office environment",
+    "Career advancement opportunities"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@orangedigitalcenter.ma"
+}

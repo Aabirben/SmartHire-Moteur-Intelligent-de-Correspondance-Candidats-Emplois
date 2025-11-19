@@ -1,0 +1,56 @@
+{
+  "job_id": "JOB-0033-2025",
+  "title": "iOS Developer",
+  "domain": "MOBILE",
+  "company": {
+    "name": "Webhelp Morocco",
+    "city": "Casablanca",
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-02",
+  "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "responsibilities": [
+    "Integrate with backend APIs and third-party services",
+    "Implement mobile UI/UX following platform guidelines",
+    "Optimize app performance and battery usage",
+    "Debug and resolve mobile-specific issues",
+    "Develop native or cross-platform mobile applications"
+  ],
+  "required_skills": [
+    "Android",
+    "iOS",
+    "Swift",
+    "GCP"
+  ],
+  "preferred_skills": [
+    "React Native",
+    "Flutter"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Performance bonuses",
+    "Gym membership",
+    "Remote work options",
+    "Professional development budget",
+    "Team building activities",
+    "Flexible working hours",
+    "Competitive salary package"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@webhelpmorocco.ma"
+}

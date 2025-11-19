@@ -1,0 +1,58 @@
+{
+  "job_id": "JOB-0021-2025",
+  "title": "Azure Cloud Engineer",
+  "domain": "CLOUD",
+  "company": {
+    "name": "BMCE Bank Tech Hub",
+    "city": "Casablanca",
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-01",
+  "description": "Join us as a Azure Cloud Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Automate cloud infrastructure management",
+    "Monitor and troubleshoot cloud services",
+    "Ensure security and compliance in cloud environments",
+    "Migrate on-premise applications to cloud",
+    "Implement high availability and disaster recovery",
+    "Optimize cloud costs and resource utilization"
+  ],
+  "required_skills": [
+    "EC2",
+    "Kubernetes",
+    "CloudFormation"
+  ],
+  "preferred_skills": [
+    "Lambda",
+    "GCP",
+    "Azure",
+    "AWS"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Gym membership",
+    "Professional development budget",
+    "Competitive salary package",
+    "Team building activities",
+    "Health insurance coverage",
+    "Annual training allowance",
+    "Paid vacation and holidays",
+    "Flexible working hours"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@bmcebanktechhub.ma"
+}

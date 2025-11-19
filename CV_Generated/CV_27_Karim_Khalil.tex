@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Karim Khalil}} & Email : \href{mailto:karim.khalil@gmail.com}{karim.khalil@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/karimkhalil}} & Mobile : +212 06 75 88 26 27 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Mohammed V}{Rabat}
+      {Master in Software Engineering;  CGPA: 8.04}{July. 2016 -- May. 2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sqli}{Casablanca}
+      {Mobile Developer}{Nov 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Implemented offline-first architecture with local database and sync mechanisms}
+        \resumeItem{Task 2}
+          {Built cross-platform mobile apps using React Native for iOS and Android}
+        \resumeItem{Task 3}
+          {Developed native Android applications using Kotlin and Jetpack Compose}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Orange Digital Center}{Casablanca}
+      {Machine Learning Engineer}{Nov 2020 - Sep 2021}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Developed ML models for prediction and classification achieving 90\%+ accuracy}
+        \resumeItem{Task 2}
+          {Implemented NLP solutions for text analysis and sentiment detection}
+        \resumeItem{Task 3}
+          {Deployed ML models to production using Flask and Docker containers}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Webhelp}{Casablanca}
+      {Frontend Developer}{Jan 2018 - Oct 2019}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Optimized application performance achieving 95+ Lighthouse scores}
+        \resumeItem{Task 2}
+          {Integrated third-party APIs and services for enhanced functionality}
+        \resumeItem{Task 3}
+          {Developed modern UI components using React with TypeScript and Material-UI}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Banking Mobile App}
+      {Created a secure mobile banking application with biometric authentication, transaction history, and fund transfer capabilities for iOS and Android.}
+    \resumeSubItem{Task Management Platform}
+      {Created a collaborative task management tool with kanban boards, time tracking, team collaboration features, and productivity analytics.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: PyTorch, Python, Swift, Tailwind, Vue.js }
+    }
+    \item{
+     \textbf{Comfortable}{: jQuery, Microservices, Git, GraphQL, JIRA}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

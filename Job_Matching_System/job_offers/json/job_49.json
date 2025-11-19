@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0049-2025",
+  "title": "Cloud Infrastructure Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Accenture Morocco",
+    "city": "Casablanca",
+    "sector": "Consulting & Technology",
+    "size": "5,000+ employees",
+    "description": "Management consulting and information technology services company"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-02",
+  "description": "As a Cloud Infrastructure Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Manage cloud infrastructure and resources",
+    "Build and maintain CI/CD pipelines",
+    "Troubleshoot production issues and incidents",
+    "Implement security best practices and compliance",
+    "Automate infrastructure provisioning using IaC tools",
+    "Optimize deployment processes and reduce downtime",
+    "Document infrastructure and processes",
+    "Monitor system performance and implement alerting"
+  ],
+  "required_skills": [
+    "Terraform",
+    "GitLab CI",
+    "CI/CD",
+    "Ansible",
+    "S3",
+    "Azure"
+  ],
+  "preferred_skills": [
+    "GCP",
+    "Kubernetes",
+    "AWS"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Flexible working hours",
+    "Stock options",
+    "Latest technology equipment",
+    "Remote work options",
+    "Gym membership",
+    "Health insurance coverage"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@accenturemorocco.ma"
+}

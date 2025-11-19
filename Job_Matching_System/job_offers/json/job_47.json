@@ -1,0 +1,56 @@
+{
+  "job_id": "JOB-0047-2025",
+  "title": "AI Research Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-10-25",
+  "description": "As a AI Research Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams",
+    "Develop and train machine learning models",
+    "Optimize model performance and accuracy",
+    "Deploy models to production environments",
+    "Research and implement state-of-the-art algorithms"
+  ],
+  "required_skills": [
+    "TensorFlow",
+    "Computer Vision",
+    "BERT",
+    "NLP",
+    "TypeScript"
+  ],
+  "preferred_skills": [
+    "Scikit-learn",
+    "PyTorch",
+    "Machine Learning"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Remote work options",
+    "Modern office environment",
+    "Performance bonuses",
+    "Paid vacation and holidays",
+    "Latest technology equipment",
+    "Professional development budget"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@orangedigitalcenter.ma"
+}

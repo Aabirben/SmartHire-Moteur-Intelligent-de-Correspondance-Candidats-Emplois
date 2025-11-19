@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Meriem Ziani}} & Email : \href{mailto:meriem.ziani@gmail.com}{meriem.ziani@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/meriemziani}} & Mobile : +212 06 40 86 10 17 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Hassan II}{Casablanca}
+      {Master in Software Engineering;  CGPA: 7.51}{July. 2016 -- May. 2021}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CGI Maroc}{Rabat}
+      {Cloud Engineer}{Jul 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Designed highly available and fault-tolerant cloud architectures}
+        \resumeItem{Task 2}
+          {Managed cloud security including IAM, VPC, and encryption configurations}
+        \resumeItem{Task 3}
+          {Migrated on-premise infrastructure to AWS cloud reducing costs by 30\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {BMCE Bank}{Casablanca}
+      {Backend Developer}{May 2021 - Sep 2022}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Implemented caching strategies with Redis reducing database load by 60\%}
+        \resumeItem{Task 2}
+          {Developed message queue system using RabbitMQ for asynchronous task processing}
+        \resumeItem{Task 3}
+          {Built RESTful APIs following best practices with proper error handling and validation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Majorel}{Rabat}
+      {Backend Developer}{Apr 2019 - Nov 2021}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Architected and developed backend services using Python Django and PostgreSQL}
+        \resumeItem{Task 2}
+          {Built RESTful APIs following best practices with proper error handling and validation}
+        \resumeItem{Task 3}
+          {Implemented caching strategies with Redis reducing database load by 60\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{E-commerce Platform}
+      {Developed a full-stack e-commerce platform with payment integration, product management, and order tracking using React and Node.js with PostgreSQL database.}
+    \resumeSubItem{Hotel Booking System}
+      {Developed an online hotel reservation system with search filters, availability calendar, payment processing, and booking management.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: FastAPI, Spring Boot, PHP, Express.js, Django }
+    }
+    \item{
+     \textbf{Comfortable}{: Redis, PostgreSQL, SQL Server, Scrum, MySQL}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

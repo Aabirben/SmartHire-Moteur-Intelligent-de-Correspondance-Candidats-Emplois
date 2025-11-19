@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0009-2025",
+  "title": "Cloud Infrastructure Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-10-29",
+  "description": "As a Cloud Infrastructure Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Troubleshoot production issues and incidents",
+    "Manage cloud infrastructure and resources",
+    "Automate infrastructure provisioning using IaC tools",
+    "Document infrastructure and processes",
+    "Build and maintain CI/CD pipelines",
+    "Monitor system performance and implement alerting",
+    "Optimize deployment processes and reduce downtime"
+  ],
+  "required_skills": [
+    "AWS",
+    "Prometheus",
+    "GCP",
+    "Kubernetes",
+    "GitLab CI"
+  ],
+  "preferred_skills": [
+    "Grafana",
+    "Jenkins"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Performance bonuses",
+    "Stock options",
+    "Gym membership",
+    "Parental leave",
+    "Latest technology equipment",
+    "Professional development budget",
+    "Health insurance coverage",
+    "Competitive salary package"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

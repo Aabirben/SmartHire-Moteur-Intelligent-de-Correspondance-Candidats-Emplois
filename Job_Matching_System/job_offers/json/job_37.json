@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0037-2025",
+  "title": "Infrastructure Automation Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-10-31",
+  "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Troubleshoot production issues and incidents",
+    "Build and maintain CI/CD pipelines",
+    "Implement security best practices and compliance",
+    "Automate infrastructure provisioning using IaC tools",
+    "Document infrastructure and processes"
+  ],
+  "required_skills": [
+    "Grafana",
+    "Docker",
+    "Azure",
+    "Microservices",
+    "FastAPI"
+  ],
+  "preferred_skills": [
+    "Ansible",
+    "GCP",
+    "Kubernetes",
+    "Prometheus"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Stock options",
+    "Modern office environment",
+    "Professional development budget",
+    "Competitive salary package",
+    "Performance bonuses",
+    "Career advancement opportunities",
+    "Flexible working hours",
+    "Team building activities",
+    "Remote work options"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@maroctelecomit.ma"
+}

@@ -1,0 +1,64 @@
+{
+  "job_id": "JOB-0038-2025",
+  "title": "AWS Solutions Architect",
+  "domain": "CLOUD",
+  "company": {
+    "name": "CGI Morocco",
+    "city": "Rabat",
+    "sector": "IT Services",
+    "size": "3,000+ employees",
+    "description": "Canadian IT consulting and systems integration company"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-10-21",
+  "description": "Join us as a AWS Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Ensure security and compliance in cloud environments",
+    "Optimize cloud costs and resource utilization",
+    "Design cloud-native architectures",
+    "Provide technical guidance on cloud best practices",
+    "Monitor and troubleshoot cloud services"
+  ],
+  "required_skills": [
+    "Lambda",
+    "Docker",
+    "GCP",
+    "Kubernetes",
+    "Terraform",
+    "AWS",
+    "Swift"
+  ],
+  "preferred_skills": [
+    "S3",
+    "Azure",
+    "EC2",
+    "CloudFormation"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Career advancement opportunities",
+    "Annual training allowance",
+    "Stock options",
+    "Gym membership",
+    "Latest technology equipment",
+    "Parental leave",
+    "Professional development budget",
+    "Flexible working hours",
+    "Team building activities",
+    "Performance bonuses"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@cgimorocco.ma"
+}

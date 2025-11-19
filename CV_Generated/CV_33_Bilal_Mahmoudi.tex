@@ -1,0 +1,138 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Bilal Mahmoudi}} & Email : \href{mailto:bilal.mahmoudi@gmail.com}{bilal.mahmoudi@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/bilalmahmoudi}} & Mobile : +212 07 46 59 58 76 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Cadi Ayyad}{Marrakech}
+      {B.Tech in Computer Science;  CGPA: 8.32}{July. 2017 -- May. 2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Orange Digital Center}{Casablanca}
+      {Data Engineer}{Jun 2022 - Jan 2023}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Designed and implemented data warehouses using PostgreSQL and Redshift}
+        \resumeItem{Task 2}
+          {Created data visualization dashboards for business intelligence using Power BI}
+        \resumeItem{Task 3}
+          {Built ETL pipelines processing millions of records daily using Apache Spark}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Maroc Telecom}{Rabat}
+      {Full Stack Developer}{Dec 2021 - Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Implemented real-time features using WebSocket for live notifications and updates}
+        \resumeItem{Task 2}
+          {Developed user authentication system with JWT and OAuth2 integration}
+        \resumeItem{Task 3}
+          {Created admin dashboard with analytics, reporting, and data visualization capabilities}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Banking Mobile App}
+      {Created a secure mobile banking application with biometric authentication, transaction history, and fund transfer capabilities for iOS and Android.}
+    \resumeSubItem{Real-time Chat Application}
+      {Built a scalable real-time messaging application supporting group chats, file sharing, and video calls using WebSocket and Redis for message queuing.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: NumPy, Spark, Express.js, Go, TensorFlow }
+    }
+    \item{
+     \textbf{Comfortable}{: Scrum, MongoDB, JIRA, Oracle}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

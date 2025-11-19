@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0039-2025",
+  "title": "Cybersecurity Analyst",
+  "domain": "SECURITY",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-12",
+  "description": "We need a Cybersecurity Analyst to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "responsibilities": [
+    "Respond to security incidents and threats",
+    "Conduct security assessments and penetration testing",
+    "Perform vulnerability scanning and remediation",
+    "Conduct security awareness training",
+    "Stay updated on latest security threats and trends",
+    "Review code and architecture for security issues"
+  ],
+  "required_skills": [
+    "Penetration Testing",
+    "SIEM",
+    "Firewall",
+    "NLP"
+  ],
+  "preferred_skills": [
+    "Kali Linux",
+    "Network Security",
+    "Security Auditing"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Professional development budget",
+    "Team building activities",
+    "Latest technology equipment",
+    "Remote work options",
+    "Flexible working hours",
+    "Health insurance coverage",
+    "Annual training allowance",
+    "Career advancement opportunities",
+    "Gym membership",
+    "Paid vacation and holidays"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

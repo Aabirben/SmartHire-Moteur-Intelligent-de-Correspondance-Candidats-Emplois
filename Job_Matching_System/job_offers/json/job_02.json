@@ -1,0 +1,65 @@
+{
+  "job_id": "JOB-0002-2025",
+  "title": "Data Engineer",
+  "domain": "DATA",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-10-31",
+  "description": "We are hiring a Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "responsibilities": [
+    "Develop machine learning models and algorithms",
+    "Process and analyze large datasets",
+    "Design and build scalable data pipelines",
+    "Implement data quality checks and monitoring",
+    "Optimize data processing and storage",
+    "Document data workflows and models",
+    "Collaborate with data scientists and analysts"
+  ],
+  "required_skills": [
+    "PyTorch",
+    "TensorFlow",
+    "Python",
+    "Hadoop",
+    "Pandas",
+    "SQL"
+  ],
+  "preferred_skills": [
+    "Spark",
+    "Airflow",
+    "Scikit-learn",
+    "NumPy"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Annual training allowance",
+    "Paid vacation and holidays",
+    "Parental leave",
+    "Health insurance coverage",
+    "Professional development budget",
+    "Performance bonuses",
+    "Team building activities",
+    "Remote work options",
+    "Gym membership",
+    "Competitive salary package"
+  ],
+  "application_deadline": "2025-12-19",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}
