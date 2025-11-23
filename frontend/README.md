@@ -1,19 +1,50 @@
-Markdown# SmartHire – Interface complète (branche ui)
- **l’interface complète et fonctionnelle** du projet SmartHire (version 2025) avec toute la transparence algorithmique demandée.
+🚀 SmartHire – Interface Complète (Branche ui)
 
-### Ce que vous avez déjà dans cette branche
-- Authentification (candidat / recruteur) avec validation stricte  
-- Dashboard candidat : upload CV (PDF uniquement), matching automatique, radar chart, score explicable, skill gaps  
-- Dashboard recruteur : création d’offres, vue des candidats postulants avec heatmap, niveau auto-détecté, messagerie  
-- Messagerie temps réel (mockée mais 100 % fonctionnelle)  
-- Recherche avancée avec filtres booléens (AND / OR / NOT)
-  
-- Tout est 100 % mocké → fonctionne sans backend réel
+l’interface complète et fonctionnelle de SmartHire .
 
-### Comment lancer l’interface (5 minutes max)
+✨ Fonctionnalités incluses
+🔐 Authentification
 
-```bash
-# 1. Cloner et aller sur la branche ui
+Connexion / inscription (candidat & recruteur)
+
+Validation stricte et sécurisée
+
+🧑‍💼 Dashboard Candidat
+
+Upload de CV (PDF uniquement)
+
+Matching automatique avec explication
+
+Radar Chart des compétences
+
+Score explicable (transparence algorithmique)
+
+Analyse de skill gaps + recommandations
+
+🧑‍💻 Dashboard Recruteur
+
+Création d'offres
+
+Liste des candidats postulants
+
+Heatmap explicative du matching
+
+Détection automatique du niveau (Junior / Mid / Senior)
+
+Messagerie intégrée
+
+💬 Messagerie
+
+Interface temps réel (mockée mais entièrement fonctionnelle)
+
+🔍 Recherche avancée
+
+Filtres booléens : AND / OR / NOT
+
+⚠️ Toute l’interface est 100 % mockée → fonctionne SANS backend réel.
+
+⚡ Démarrer l’interface (≤ 5 minutes)
+# 1. Cloner le projet et aller sur la branche ui
 git clone https://github.com/Aabirben/SmartHire-Moteur-Intelligent-de-Correspondance-Candidats-Emplois.git
 cd SmartHire-Moteur-Intelligent-de-Correspondance-Candidats-Emplois
 git checkout ui
@@ -27,25 +58,57 @@ npm install
 
 # 4. Lancer le projet
 npm run dev
-→ Ouvre http://localhost:5173 → tout fonctionne immédiatement !
-Comment connecter VOTRE backend plus tard (quand vous serez prêtes)
-Le frontend est déjà prêt à parler à un vrai backend FastAPI/Flask.
-Endpoints attendus (utilisés dans src/utils/mockData.ts et les composants) :
 
-POST /api/auth/login et /api/auth/signup
-POST /api/cv/upload → renvoie compétences extraites + jobs recommandés
-GET/POST /api/jobs → liste et création d’offres
-GET /api/jobs/{id}/applicants
-GET /api/search/jobs et /api/search/candidates
-GET/POST /api/messages
 
-Étapes pour passer du mock au vrai backend :
+➡️ Ouvre http://localhost:5173
+ → le site fonctionne immédiatement !
 
-Supprimer ou commenter les données mock dans src/utils/mockData.ts
-Créer un fichier src/lib/api.ts avec axios/fetch pointant vers votre backend (http://localhost:8000 ou autre)
-Remplacer les appels mock par les vrais appels API
+🔌 Connecter votre backend (FastAPI / Flask) plus tard
 
-→ Le code est déjà très bien structuré, ça prendra 10 minutes max.
-Les composants clés que vous allez adorer
+Le frontend est déjà prêt pour un backend réel.
+Voici les endpoints attendus :
 
-ComposantEmplacementRôleSkillRadarChart.tsxsrc/components/charts/Comparaison visuelle compétences candidat ↔ jobExplainableScoreBreakdown.tsxsrc/components/charts/Score total + contribution détaillée de chaque critèreSkillGapList.tsxsrc/components/matching/Compétences manquantes + suggestions de formationAdvancedSearchFilters.tsxsrc/components/search/Recherche booléenne avancée (AND / OR / NOT)           LavalLevelDetectionCard.tsxsrc/components/matching/Niveau (Junior / Mid / Senior) détecté automatiquementChatInterface.tsxsrc/components/messaging/Messagerie complète candidat ↔ recruteur
+🔑 Auth
+POST /api/auth/login
+POST /api/auth/signup
+
+📄 CV & Matching
+POST /api/cv/upload
+→ retourne : compétences extraites + recommandations de jobs
+
+💼 Offres d’emploi
+GET  /api/jobs
+POST /api/jobs
+GET  /api/jobs/{id}/applicants
+
+🔍 Recherche
+GET /api/search/jobs
+GET /api/search/candidates
+
+💬 Messagerie
+GET /api/messages
+POST /api/messages
+
+🔄 Passer du mock au backend réel
+
+Supprimer ou commenter les données mock dans
+src/utils/mockData.ts
+
+Créer src/lib/api.ts avec axios / fetch :
+
+const api = axios.create({
+  baseURL: "http://localhost:8000"
+});
+
+
+Remplacer les appels mock par les appels API réels
+(déjà centralisés → 10 minutes de travail maximum)
+
+🧩 Composants clés du projet
+Composant	Chemin	Rôle
+SkillRadarChart.tsx	src/components/charts/	Comparaison visuelle : compétences candidat ↔ job
+ExplainableScoreBreakdown.tsx	src/components/charts/	Score global + poids de chaque critère
+SkillGapList.tsx	src/components/matching/	Compétences manquantes + suggestions
+AdvancedSearchFilters.tsx	src/components/search/	Recherche booléenne (AND / OR / NOT)
+LevelDetectionCard.tsx	src/components/matching/	Détection du niveau (Junior / Mid / Senior)
+ChatInterface.tsx	src/components/messaging/	Messagerie temps réel mockée
