@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+Markdown# SmartHire – Interface complète (branche ui)
+ **l’interface complète et fonctionnelle** du projet SmartHire (version 2025) avec toute la transparence algorithmique demandée.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Ce que vous avez déjà dans cette branche
+- Authentification (candidat / recruteur) avec validation stricte  
+- Dashboard candidat : upload CV (PDF uniquement), matching automatique, radar chart, score explicable, skill gaps  
+- Dashboard recruteur : création d’offres, vue des candidats postulants avec heatmap, niveau auto-détecté, messagerie  
+- Messagerie temps réel (mockée mais 100 % fonctionnelle)  
+- Recherche avancée avec filtres booléens (AND / OR / NOT)
+  
+- Tout est 100 % mocké → fonctionne sans backend réel
 
-Currently, two official plugins are available:
+### Comment lancer l’interface (5 minutes max)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+# 1. Cloner et aller sur la branche ui
+git clone https://github.com/Aabirben/SmartHire-Moteur-Intelligent-de-Correspondance-Candidats-Emplois.git
+cd SmartHire-Moteur-Intelligent-de-Correspondance-Candidats-Emplois
+git checkout ui
 
-## React Compiler
+# 2. Aller dans le frontend
+cd frontend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 3. Installer les dépendances
+npm install
+# ou : yarn install / pnpm install
 
-## Expanding the ESLint configuration
+# 4. Lancer le projet
+npm run dev
+→ Ouvre http://localhost:5173 → tout fonctionne immédiatement !
+Comment connecter VOTRE backend plus tard (quand vous serez prêtes)
+Le frontend est déjà prêt à parler à un vrai backend FastAPI/Flask.
+Endpoints attendus (utilisés dans src/utils/mockData.ts et les composants) :
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+POST /api/auth/login et /api/auth/signup
+POST /api/cv/upload → renvoie compétences extraites + jobs recommandés
+GET/POST /api/jobs → liste et création d’offres
+GET /api/jobs/{id}/applicants
+GET /api/search/jobs et /api/search/candidates
+GET/POST /api/messages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Étapes pour passer du mock au vrai backend :
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Supprimer ou commenter les données mock dans src/utils/mockData.ts
+Créer un fichier src/lib/api.ts avec axios/fetch pointant vers votre backend (http://localhost:8000 ou autre)
+Remplacer les appels mock par les vrais appels API
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+→ Le code est déjà très bien structuré, ça prendra 10 minutes max.
+Les composants clés que vous allez adorer
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ComposantEmplacementRôleSkillRadarChart.tsxsrc/components/charts/Comparaison visuelle compétences candidat ↔ jobExplainableScoreBreakdown.tsxsrc/components/charts/Score total + contribution détaillée de chaque critèreSkillGapList.tsxsrc/components/matching/Compétences manquantes + suggestions de formationAdvancedSearchFilters.tsxsrc/components/search/Recherche booléenne avancée (AND / OR / NOT)           LavalLevelDetectionCard.tsxsrc/components/matching/Niveau (Junior / Mid / Senior) détecté automatiquementChatInterface.tsxsrc/components/messaging/Messagerie complète candidat ↔ recruteur
