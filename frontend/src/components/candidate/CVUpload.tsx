@@ -3,17 +3,16 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Upload, FileText, Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import { setCVUploaded } from "@/utils/mockData";
-
+ 
 interface CVUploadProps {
   onUploadSuccess: (skills: string[]) => void;
 }
-
+ 
 export function CVUpload({ onUploadSuccess }: CVUploadProps) {
   const [file, setFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-
+ 
   const validateFile = (file: File): boolean => {
     if (file.type !== "application/pdf") {
       toast.error("Please upload a PDF file only");
@@ -25,48 +24,47 @@ export function CVUpload({ onUploadSuccess }: CVUploadProps) {
     }
     return true;
   };
-
+ 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
-    
+   
     const droppedFile = e.dataTransfer.files[0];
     if (droppedFile && validateFile(droppedFile)) {
       setFile(droppedFile);
     }
   }, []);
-
+ 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile && validateFile(selectedFile)) {
       setFile(selectedFile);
     }
   };
-
+ 
   const handleUpload = async () => {
     if (!file) {
       toast.error("Please select a PDF file");
       return;
     }
-
+ 
     setIsProcessing(true);
-    
+   
     // Simulate processing
     await new Promise(resolve => setTimeout(resolve, 2500));
-    
+   
     // Mock extracted skills
     const extractedSkills = ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"];
-    
-    setCVUploaded(true);
+   
     setIsProcessing(false);
     toast.success("CV uploaded and processed successfully!");
     onUploadSuccess(extractedSkills);
   };
-
+ 
   return (
     <Card className="glass-strong p-8">
       <h2 className="text-2xl font-bold mb-6 text-gradient">Upload Your CV</h2>
-      
+     
       <div
         onDrop={handleDrop}
         onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
@@ -84,8 +82,8 @@ export function CVUpload({ onUploadSuccess }: CVUploadProps) {
                 {(file.size / 1024 / 1024).toFixed(2)} MB
               </p>
             </div>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               onClick={() => setFile(null)}
               size="sm"
             >
@@ -114,11 +112,11 @@ export function CVUpload({ onUploadSuccess }: CVUploadProps) {
           </div>
         )}
       </div>
-
+ 
       <Button
         onClick={handleUpload}
         disabled={!file || isProcessing}
-        className="w-full mt-6 bg-gradient-to-r from-primary to-accent hover:scale-[1.02] transition-all"
+        className="w-full mt-6 bg-gradient-to-r from-primary to-accent hover:scale-[1.02] transition-all glow-primary"
       >
         {isProcessing ? (
           <>
