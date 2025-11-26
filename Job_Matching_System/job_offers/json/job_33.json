@@ -1,37 +1,40 @@
 {
   "job_id": "JOB-0033-2025",
-  "title": "iOS Developer",
-  "domain": "MOBILE",
+  "title": "CI/CD Engineer",
+  "domain": "DEVOPS",
   "company": {
-    "name": "Webhelp Morocco",
+    "name": "Accenture Morocco",
     "city": "Casablanca",
-    "sector": "BPO & Technology",
-    "size": "15,000+ employees",
-    "description": "Global leader in customer experience and digital services"
+    "sector": "Consulting & Technology",
+    "size": "5,000+ employees",
+    "description": "Management consulting and information technology services company"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
+  "work_mode": "Hybrid",
   "contract_type": "CDI (Permanent)",
   "experience_level": "Senior",
   "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-11-02",
-  "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "posted_date": "2025-11-15",
+  "description": "As a CI/CD Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
   "responsibilities": [
-    "Integrate with backend APIs and third-party services",
-    "Implement mobile UI/UX following platform guidelines",
-    "Optimize app performance and battery usage",
-    "Debug and resolve mobile-specific issues",
-    "Develop native or cross-platform mobile applications"
+    "Document infrastructure and processes",
+    "Automate infrastructure provisioning using IaC tools",
+    "Build and maintain CI/CD pipelines",
+    "Optimize deployment processes and reduce downtime",
+    "Implement security best practices and compliance",
+    "Manage cloud infrastructure and resources"
   ],
   "required_skills": [
-    "Android",
-    "iOS",
-    "Swift",
-    "GCP"
+    "AWS",
+    "Ansible",
+    "Kubernetes",
+    "Jenkins",
+    "Azure"
   ],
   "preferred_skills": [
-    "React Native",
-    "Flutter"
+    "GCP",
+    "Grafana",
+    "GitLab CI"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -43,14 +46,16 @@
     "Strong leadership and architectural skills"
   ],
   "benefits": [
-    "Performance bonuses",
-    "Gym membership",
+    "Latest technology equipment",
     "Remote work options",
     "Professional development budget",
+    "Career advancement opportunities",
+    "Annual training allowance",
+    "Health insurance coverage",
+    "Paid vacation and holidays",
     "Team building activities",
-    "Flexible working hours",
-    "Competitive salary package"
+    "Modern office environment"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@webhelpmorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@accenturemorocco.ma"
 }

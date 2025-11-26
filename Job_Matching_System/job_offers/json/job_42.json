@@ -1,7 +1,7 @@
 {
   "job_id": "JOB-0042-2025",
-  "title": "MLOps Engineer",
-  "domain": "DATA",
+  "title": "DevOps Engineer",
+  "domain": "DEVOPS",
   "company": {
     "name": "Sqli Morocco",
     "city": "Casablanca",
@@ -10,54 +10,52 @@
     "description": "Digital transformation and e-commerce specialist"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
+  "work_mode": "Hybrid",
   "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Senior",
-  "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-11-18",
-  "description": "We are hiring a MLOps Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-12",
+  "description": "As a DevOps Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
   "responsibilities": [
-    "Deploy ML models to production",
-    "Optimize data processing and storage",
-    "Process and analyze large datasets",
-    "Design and build scalable data pipelines",
-    "Implement data quality checks and monitoring"
+    "Troubleshoot production issues and incidents",
+    "Implement security best practices and compliance",
+    "Optimize deployment processes and reduce downtime",
+    "Automate infrastructure provisioning using IaC tools",
+    "Monitor system performance and implement alerting"
   ],
   "required_skills": [
-    "Scikit-learn",
-    "Python",
-    "Spark",
-    "NumPy",
-    "TensorFlow",
-    "PostgreSQL",
-    "RabbitMQ"
+    "GCP",
+    "Terraform",
+    "Prometheus",
+    "Grafana",
+    "Ansible",
+    "Azure",
+    "Docker",
+    "AWS"
   ],
   "preferred_skills": [
-    "Hadoop",
-    "Pandas",
-    "Kafka",
-    "PyTorch"
+    "Docker",
+    "GitLab CI",
+    "CI/CD"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "5+ years of professional experience",
-    "Experience mentoring junior developers",
-    "Strong leadership and architectural skills"
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
   ],
   "benefits": [
-    "Health insurance coverage",
-    "Remote work options",
     "Latest technology equipment",
-    "Modern office environment",
-    "Annual training allowance",
-    "Gym membership",
-    "Paid vacation and holidays",
+    "Remote work options",
+    "Health insurance coverage",
+    "Stock options",
+    "Competitive salary package",
     "Performance bonuses",
-    "Parental leave"
+    "Professional development budget"
   ],
-  "application_deadline": "2025-12-19",
+  "application_deadline": "2025-12-26",
   "contact_email": "careers@sqlimorocco.ma"
 }

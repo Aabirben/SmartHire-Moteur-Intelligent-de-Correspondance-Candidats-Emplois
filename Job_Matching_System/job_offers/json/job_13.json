@@ -1,44 +1,42 @@
 {
   "job_id": "JOB-0013-2025",
-  "title": "Big Data Engineer",
-  "domain": "DATA",
+  "title": "Software Development Engineer",
+  "domain": "BACKEND",
   "company": {
-    "name": "Maroc Telecom IT",
+    "name": "CGI Morocco",
     "city": "Rabat",
-    "sector": "Telecommunications",
-    "size": "11,000+ employees",
-    "description": "Leading telecom operator in Morocco and Africa"
+    "sector": "IT Services",
+    "size": "3,000+ employees",
+    "description": "Canadian IT consulting and systems integration company"
   },
   "location": "Rabat, Morocco",
   "work_mode": "On-site",
-  "contract_type": "CDD (Fixed-term)",
+  "contract_type": "CDI (Permanent)",
   "experience_level": "Senior",
   "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-10-26",
-  "description": "We are hiring a Big Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "posted_date": "2025-11-01",
+  "description": "We are seeking a talented Software Development Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
   "responsibilities": [
-    "Implement data quality checks and monitoring",
-    "Document data workflows and models",
-    "Optimize data processing and storage",
-    "Design and build scalable data pipelines",
-    "Deploy ML models to production",
-    "Develop machine learning models and algorithms",
-    "Collaborate with data scientists and analysts",
-    "Process and analyze large datasets"
+    "Implement authentication and authorization mechanisms",
+    "Collaborate with frontend developers to integrate APIs",
+    "Design and implement scalable backend services and RESTful APIs",
+    "Optimize database queries and ensure data integrity",
+    "Develop microservices architecture using modern frameworks",
+    "Write clean, maintainable, and well-documented code",
+    "Participate in code reviews and technical discussions",
+    "Monitor application performance and troubleshoot issues"
   ],
   "required_skills": [
-    "Hadoop",
-    "Airflow",
-    "SQL",
-    "Spark",
-    "Python",
-    "PyTorch",
-    "Java",
-    "Flutter"
+    "RabbitMQ",
+    "Django",
+    "REST API",
+    "Python"
   ],
   "preferred_skills": [
-    "TensorFlow",
-    "NumPy"
+    "Node.js",
+    "Microservices",
+    "Spring Boot",
+    "Go"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -50,13 +48,13 @@
     "Strong leadership and architectural skills"
   ],
   "benefits": [
-    "Health insurance coverage",
-    "Career advancement opportunities",
-    "Annual training allowance",
-    "Modern office environment",
+    "Flexible working hours",
+    "Competitive salary package",
+    "Performance bonuses",
+    "Team building activities",
     "Gym membership",
-    "Professional development budget"
+    "Latest technology equipment"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@maroctelecomit.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@cgimorocco.ma"
 }

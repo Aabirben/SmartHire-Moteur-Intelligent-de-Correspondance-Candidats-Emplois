@@ -1,61 +1,61 @@
 {
   "job_id": "JOB-0015-2025",
-  "title": "MLOps Engineer",
+  "title": "Data Engineer",
   "domain": "DATA",
   "company": {
-    "name": "Attijariwafa Bank Digital",
+    "name": "Webhelp Morocco",
     "city": "Casablanca",
-    "sector": "Banking & Finance",
-    "size": "10,000+ employees",
-    "description": "Leading Maghreb bank with strong digital transformation"
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
   },
   "location": "Casablanca, Morocco",
   "work_mode": "On-site",
-  "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Expert",
-  "salary": "40,000 - 60,000 MAD/month",
-  "posted_date": "2025-11-13",
-  "description": "We are hiring a MLOps Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-10-29",
+  "description": "We are hiring a Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
   "responsibilities": [
-    "Deploy ML models to production",
-    "Process and analyze large datasets",
+    "Optimize data processing and storage",
+    "Implement data quality checks and monitoring",
+    "Develop machine learning models and algorithms",
+    "Collaborate with data scientists and analysts",
     "Design and build scalable data pipelines",
-    "Document data workflows and models",
-    "Develop machine learning models and algorithms"
+    "Process and analyze large datasets",
+    "Deploy ML models to production",
+    "Document data workflows and models"
   ],
   "required_skills": [
-    "Python",
+    "PyTorch",
     "Airflow",
-    "Spark",
-    "NumPy",
-    "SQL",
-    "Bootstrap",
-    "CSS"
+    "Pandas",
+    "Network Security"
   ],
   "preferred_skills": [
-    "TensorFlow",
-    "PyTorch",
-    "Hadoop"
+    "Spark",
+    "Scikit-learn",
+    "Hadoop",
+    "Python"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "8+ years of professional experience",
-    "Extensive experience leading technical initiatives",
-    "Thought leadership in the field"
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
   ],
   "benefits": [
     "Performance bonuses",
-    "Team building activities",
-    "Gym membership",
-    "Parental leave",
+    "Competitive salary package",
     "Career advancement opportunities",
+    "Gym membership",
+    "Team building activities",
     "Remote work options",
-    "Latest technology equipment",
-    "Health insurance coverage"
+    "Modern office environment",
+    "Paid vacation and holidays"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@attijariwafabankdigital.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@webhelpmorocco.ma"
 }

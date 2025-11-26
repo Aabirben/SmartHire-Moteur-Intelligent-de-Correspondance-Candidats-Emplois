@@ -1,43 +1,41 @@
 {
   "job_id": "JOB-0034-2025",
-  "title": "Data Scientist",
-  "domain": "DATA",
+  "title": "Android Developer",
+  "domain": "MOBILE",
   "company": {
-    "name": "Webhelp Morocco",
+    "name": "Capgemini Morocco",
     "city": "Casablanca",
-    "sector": "BPO & Technology",
-    "size": "15,000+ employees",
-    "description": "Global leader in customer experience and digital services"
+    "sector": "Consulting & Technology",
+    "size": "10,000+ employees",
+    "description": "Global leader in consulting, technology services and digital transformation"
   },
   "location": "Casablanca, Morocco",
   "work_mode": "Remote",
-  "contract_type": "Freelance/Contract",
+  "contract_type": "CDD (Fixed-term)",
   "experience_level": "Mid-Level",
   "salary": "15,000 - 25,000 MAD/month",
-  "posted_date": "2025-10-31",
-  "description": "We are hiring a Data Scientist to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "posted_date": "2025-11-22",
+  "description": "We're looking for an experienced Android Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
   "responsibilities": [
-    "Optimize data processing and storage",
-    "Collaborate with data scientists and analysts",
-    "Document data workflows and models",
-    "Deploy ML models to production",
-    "Implement data quality checks and monitoring",
-    "Develop machine learning models and algorithms",
-    "Design and build scalable data pipelines",
-    "Process and analyze large datasets"
+    "Optimize app performance and battery usage",
+    "Integrate with backend APIs and third-party services",
+    "Implement mobile UI/UX following platform guidelines",
+    "Handle app store submissions and updates",
+    "Debug and resolve mobile-specific issues",
+    "Develop native or cross-platform mobile applications"
   ],
   "required_skills": [
-    "Scikit-learn",
-    "NumPy",
-    "Pandas",
-    "Hadoop",
-    "GCP",
-    "Ansible"
+    "React Native",
+    "Kotlin",
+    "Android",
+    "Swift",
+    "iOS",
+    "BERT",
+    "Deep Learning"
   ],
   "preferred_skills": [
-    "Spark",
-    "PyTorch",
-    "Airflow"
+    "Flutter",
+    "Java"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -48,15 +46,14 @@
     "Proven track record of delivering projects"
   ],
   "benefits": [
-    "Competitive salary package",
-    "Gym membership",
-    "Performance bonuses",
-    "Career advancement opportunities",
-    "Stock options",
+    "Remote work options",
+    "Flexible working hours",
+    "Parental leave",
     "Modern office environment",
-    "Team building activities",
-    "Parental leave"
+    "Paid vacation and holidays",
+    "Professional development budget",
+    "Stock options"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@webhelpmorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@capgeminimorocco.ma"
 }

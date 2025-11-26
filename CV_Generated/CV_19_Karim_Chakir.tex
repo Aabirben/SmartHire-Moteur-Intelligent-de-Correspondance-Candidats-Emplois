@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Karim Chakir}} & Email : \href{mailto:karim.chakir@gmail.com}{karim.chakir@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/karimchakir}} & Mobile : +212 06 18 90 31 20 \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+Results-driven Data skilled in Cassandra, TensorFlow, Agile, PyTorch, passionate about clean code and performance.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Mohammed V}{Rabat}
+      {B.Sc in Information Technology;  CGPA: 9.18}{July. 2017 -- May. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Accenture}{Casablanca}
+      {Data Engineer}{Sep 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Designed and implemented data warehouses using PostgreSQL and Redshift}
+        \resumeItem{Task 2}
+          {Created data visualization dashboards for business intelligence using Power BI}
+        \resumeItem{Task 3}
+          {Developed data quality frameworks ensuring data accuracy and consistency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accenture}{Casablanca}
+      {Full Stack Developer}{Jun 2020 - Oct 2022}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Created admin dashboard with analytics, reporting, and data visualization capabilities}
+        \resumeItem{Task 2}
+          {Implemented real-time features using WebSocket for live notifications and updates}
+        \resumeItem{Task 3}
+          {Developed user authentication system with JWT and OAuth2 integration}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Webhelp}{Casablanca}
+      {Backend Developer}{Sep 2018 - Jul 2020}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Developed message queue system using RabbitMQ for asynchronous task processing}
+        \resumeItem{Task 2}
+          {Built RESTful APIs following best practices with proper error handling and validation}
+        \resumeItem{Task 3}
+          {Implemented caching strategies with Redis reducing database load by 60\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Task Management Platform}
+      {Created a collaborative task management tool with kanban boards, time tracking, team collaboration features, and productivity analytics.}
+    \resumeSubItem{Learning Management System}
+      {Built an online education platform with course management, video streaming, quiz system, and student progress tracking.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: Pandas, Ruby, Node.js, PyTorch, TensorFlow }
+    }
+    \item{
+     \textbf{Comfortable}{: MongoDB, Agile, DynamoDB, Oracle, Cassandra}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

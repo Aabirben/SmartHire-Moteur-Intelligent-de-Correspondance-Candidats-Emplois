@@ -1,58 +1,60 @@
 {
   "job_id": "JOB-0005-2025",
-  "title": "Security Architect",
-  "domain": "SECURITY",
+  "title": "AI Research Engineer",
+  "domain": "ML_AI",
   "company": {
-    "name": "Orange Digital Center",
+    "name": "Sqli Morocco",
     "city": "Casablanca",
-    "sector": "Telecom & Digital",
-    "size": "1,000+ employees",
-    "description": "Orange's digital innovation center for Africa and Middle East"
+    "sector": "Digital Services",
+    "size": "2,000+ employees",
+    "description": "Digital transformation and e-commerce specialist"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
-  "contract_type": "Freelance/Contract",
-  "experience_level": "Mid-Level",
-  "salary": "15,000 - 25,000 MAD/month",
-  "posted_date": "2025-11-12",
-  "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "work_mode": "On-site",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-14",
+  "description": "As a AI Research Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
   "responsibilities": [
-    "Develop security policies and procedures",
-    "Implement security controls and monitoring",
-    "Stay updated on latest security threats and trends",
-    "Conduct security assessments and penetration testing",
-    "Review code and architecture for security issues"
+    "Process and prepare datasets for training",
+    "Collaborate with cross-functional teams",
+    "Implement deep learning architectures",
+    "Deploy models to production environments",
+    "Develop and train machine learning models",
+    "Optimize model performance and accuracy",
+    "Conduct experiments and analyze results",
+    "Research and implement state-of-the-art algorithms"
   ],
   "required_skills": [
-    "SIEM",
-    "Kali Linux",
-    "Firewall",
-    "Go",
-    "Microservices"
+    "Computer Vision",
+    "Scikit-learn",
+    "PyTorch",
+    "Deep Learning",
+    "Machine Learning",
+    "NLP"
   ],
   "preferred_skills": [
-    "OWASP",
-    "Security Auditing",
-    "Network Security"
+    "BERT",
+    "TensorFlow"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "3-5 years of professional experience",
-    "Proven track record of delivering projects"
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
   ],
   "benefits": [
-    "Health insurance coverage",
-    "Competitive salary package",
-    "Performance bonuses",
-    "Career advancement opportunities",
-    "Gym membership",
-    "Paid vacation and holidays",
     "Stock options",
-    "Team building activities"
+    "Team building activities",
+    "Performance bonuses",
+    "Competitive salary package",
+    "Paid vacation and holidays",
+    "Parental leave"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@orangedigitalcenter.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@sqlimorocco.ma"
 }

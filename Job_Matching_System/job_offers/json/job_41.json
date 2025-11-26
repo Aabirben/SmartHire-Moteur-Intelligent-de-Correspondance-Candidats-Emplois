@@ -1,63 +1,62 @@
 {
   "job_id": "JOB-0041-2025",
-  "title": "Site Reliability Engineer",
-  "domain": "DEVOPS",
+  "title": "Cybersecurity Analyst",
+  "domain": "SECURITY",
   "company": {
-    "name": "Orange Digital Center",
+    "name": "Capgemini Morocco",
     "city": "Casablanca",
-    "sector": "Telecom & Digital",
-    "size": "1,000+ employees",
-    "description": "Orange's digital innovation center for Africa and Middle East"
+    "sector": "Consulting & Technology",
+    "size": "10,000+ employees",
+    "description": "Global leader in consulting, technology services and digital transformation"
   },
   "location": "Casablanca, Morocco",
   "work_mode": "Hybrid",
-  "contract_type": "Freelance/Contract",
-  "experience_level": "Mid-Level",
-  "salary": "15,000 - 25,000 MAD/month",
-  "posted_date": "2025-10-27",
-  "description": "As a Site Reliability Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-12",
+  "description": "We need a Cybersecurity Analyst to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
   "responsibilities": [
-    "Monitor system performance and implement alerting",
-    "Implement security best practices and compliance",
-    "Document infrastructure and processes",
-    "Optimize deployment processes and reduce downtime",
-    "Automate infrastructure provisioning using IaC tools",
-    "Build and maintain CI/CD pipelines",
-    "Troubleshoot production issues and incidents"
+    "Respond to security incidents and threats",
+    "Conduct security awareness training",
+    "Develop security policies and procedures",
+    "Review code and architecture for security issues",
+    "Conduct security assessments and penetration testing"
   ],
   "required_skills": [
-    "Terraform",
+    "Firewall",
+    "Security Auditing",
+    "Penetration Testing",
+    "Network Security",
+    "OWASP",
     "Jenkins",
-    "Docker",
-    "Grafana",
-    "Pandas",
-    "SQL"
+    "AWS"
   ],
   "preferred_skills": [
-    "Azure",
-    "CI/CD",
-    "AWS",
-    "GCP"
+    "Kali Linux",
+    "SIEM"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "3-5 years of professional experience",
-    "Proven track record of delivering projects"
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
   ],
   "benefits": [
-    "Health insurance coverage",
-    "Team building activities",
-    "Performance bonuses",
-    "Annual training allowance",
-    "Career advancement opportunities",
-    "Stock options",
-    "Professional development budget",
+    "Paid vacation and holidays",
     "Flexible working hours",
-    "Modern office environment"
+    "Performance bonuses",
+    "Remote work options",
+    "Parental leave",
+    "Professional development budget",
+    "Latest technology equipment",
+    "Annual training allowance",
+    "Gym membership",
+    "Team building activities"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@orangedigitalcenter.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@capgeminimorocco.ma"
 }

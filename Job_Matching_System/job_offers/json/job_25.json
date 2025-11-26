@@ -1,42 +1,39 @@
 {
   "job_id": "JOB-0025-2025",
-  "title": "Microservices Engineer",
-  "domain": "BACKEND",
+  "title": "Security Engineer",
+  "domain": "SECURITY",
   "company": {
-    "name": "OCP Group IT Division",
+    "name": "Sqli Morocco",
     "city": "Casablanca",
-    "sector": "Industry & Technology",
-    "size": "20,000+ employees",
-    "description": "World leader in phosphates with an innovative IT division"
+    "sector": "Digital Services",
+    "size": "2,000+ employees",
+    "description": "Digital transformation and e-commerce specialist"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Hybrid",
+  "work_mode": "Remote",
   "contract_type": "Freelance/Contract",
   "experience_level": "Junior",
   "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-11-12",
-  "description": "We are seeking a talented Microservices Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+  "posted_date": "2025-11-21",
+  "description": "We need a Security Engineer to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
   "responsibilities": [
-    "Write clean, maintainable, and well-documented code",
-    "Monitor application performance and troubleshoot issues",
-    "Develop microservices architecture using modern frameworks",
-    "Collaborate with frontend developers to integrate APIs",
-    "Optimize database queries and ensure data integrity",
-    "Implement authentication and authorization mechanisms",
-    "Participate in code reviews and technical discussions",
-    "Design and implement scalable backend services and RESTful APIs"
+    "Conduct security awareness training",
+    "Perform vulnerability scanning and remediation",
+    "Review code and architecture for security issues",
+    "Implement security controls and monitoring",
+    "Develop security policies and procedures",
+    "Stay updated on latest security threats and trends"
   ],
   "required_skills": [
-    "PostgreSQL",
-    "FastAPI",
-    "Django",
-    "Flutter"
+    "SIEM",
+    "Kali Linux",
+    "OWASP",
+    "Penetration Testing"
   ],
   "preferred_skills": [
-    "RabbitMQ",
-    "MongoDB",
-    "Java",
-    "Redis"
+    "Firewall",
+    "Network Security",
+    "Security Auditing"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -47,14 +44,13 @@
     "Understanding of software development fundamentals"
   ],
   "benefits": [
-    "Career advancement opportunities",
-    "Gym membership",
-    "Performance bonuses",
-    "Stock options",
-    "Team building activities",
     "Flexible working hours",
-    "Competitive salary package"
+    "Health insurance coverage",
+    "Gym membership",
+    "Modern office environment",
+    "Paid vacation and holidays",
+    "Professional development budget"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@ocpgroupitdivision.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@sqlimorocco.ma"
 }

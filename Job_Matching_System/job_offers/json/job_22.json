@@ -1,62 +1,62 @@
 {
   "job_id": "JOB-0022-2025",
-  "title": "Penetration Tester",
-  "domain": "SECURITY",
+  "title": "NLP Engineer",
+  "domain": "ML_AI",
   "company": {
-    "name": "Orange Digital Center",
-    "city": "Casablanca",
-    "sector": "Telecom & Digital",
-    "size": "1,000+ employees",
-    "description": "Orange's digital innovation center for Africa and Middle East"
+    "name": "CGI Morocco",
+    "city": "Rabat",
+    "sector": "IT Services",
+    "size": "3,000+ employees",
+    "description": "Canadian IT consulting and systems integration company"
   },
-  "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
-  "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Junior",
-  "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-10-21",
-  "description": "We need a Penetration Tester to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-19",
+  "description": "As a NLP Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
   "responsibilities": [
-    "Stay updated on latest security threats and trends",
-    "Review code and architecture for security issues",
-    "Conduct security awareness training",
-    "Develop security policies and procedures",
-    "Respond to security incidents and threats",
-    "Perform vulnerability scanning and remediation",
-    "Conduct security assessments and penetration testing"
+    "Collaborate with cross-functional teams",
+    "Process and prepare datasets for training",
+    "Conduct experiments and analyze results",
+    "Implement deep learning architectures",
+    "Research and implement state-of-the-art algorithms",
+    "Optimize model performance and accuracy",
+    "Deploy models to production environments"
   ],
   "required_skills": [
-    "Kali Linux",
-    "Network Security",
-    "Penetration Testing",
+    "Machine Learning",
+    "Computer Vision",
+    "Scikit-learn",
     "OWASP",
-    "Firewall",
-    "jQuery",
-    "React"
+    "Network Security"
   ],
   "preferred_skills": [
-    "SIEM",
-    "Security Auditing"
+    "TensorFlow",
+    "PyTorch"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "0-2 years of professional experience",
-    "Understanding of software development fundamentals"
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
   ],
   "benefits": [
     "Professional development budget",
-    "Annual training allowance",
-    "Health insurance coverage",
-    "Latest technology equipment",
+    "Performance bonuses",
     "Stock options",
+    "Parental leave",
     "Paid vacation and holidays",
-    "Gym membership",
+    "Remote work options",
+    "Health insurance coverage",
+    "Flexible working hours",
     "Modern office environment",
     "Career advancement opportunities"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@orangedigitalcenter.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@cgimorocco.ma"
 }

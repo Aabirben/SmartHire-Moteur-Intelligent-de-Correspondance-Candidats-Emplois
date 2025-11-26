@@ -1,41 +1,36 @@
 {
   "job_id": "JOB-0050-2025",
-  "title": "React Developer",
+  "title": "Vue.js Developer",
   "domain": "FRONTEND",
   "company": {
-    "name": "Webhelp Morocco",
+    "name": "Orange Digital Center",
     "city": "Casablanca",
-    "sector": "BPO & Technology",
-    "size": "15,000+ employees",
-    "description": "Global leader in customer experience and digital services"
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
+  "work_mode": "On-site",
   "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Expert",
-  "salary": "40,000 - 60,000 MAD/month",
-  "posted_date": "2025-11-04",
-  "description": "Join our team as a React Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-13",
+  "description": "Join our team as a Vue.js Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
   "responsibilities": [
-    "Optimize frontend performance and loading times",
-    "Implement state management solutions",
-    "Develop reusable UI components using modern frameworks",
     "Build responsive and intuitive user interfaces",
-    "Collaborate with designers to implement pixel-perfect designs"
+    "Develop reusable UI components using modern frameworks",
+    "Collaborate with designers to implement pixel-perfect designs",
+    "Optimize frontend performance and loading times",
+    "Write unit and integration tests"
   ],
   "required_skills": [
-    "JavaScript",
-    "CSS",
     "TypeScript",
-    "HTML",
     "Vue.js",
-    "Network Security",
-    "Security Auditing"
+    "Bootstrap",
+    "React"
   ],
   "preferred_skills": [
-    "jQuery",
-    "React",
-    "Bootstrap",
+    "CSS",
     "Tailwind"
   ],
   "requirements": [
@@ -43,18 +38,20 @@
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "8+ years of professional experience",
-    "Extensive experience leading technical initiatives",
-    "Thought leadership in the field"
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
   ],
   "benefits": [
-    "Competitive salary package",
-    "Career advancement opportunities",
-    "Modern office environment",
-    "Parental leave",
+    "Flexible working hours",
     "Stock options",
-    "Flexible working hours"
+    "Annual training allowance",
+    "Latest technology equipment",
+    "Performance bonuses",
+    "Competitive salary package",
+    "Health insurance coverage",
+    "Career advancement opportunities",
+    "Professional development budget"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@webhelpmorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
 }

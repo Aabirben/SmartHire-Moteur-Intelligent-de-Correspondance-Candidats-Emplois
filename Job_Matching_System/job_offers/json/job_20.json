@@ -1,42 +1,41 @@
 {
   "job_id": "JOB-0020-2025",
-  "title": "AI Engineer",
-  "domain": "DATA",
+  "title": "Microservices Engineer",
+  "domain": "BACKEND",
   "company": {
-    "name": "BMCE Bank Tech Hub",
+    "name": "Capgemini Morocco",
     "city": "Casablanca",
-    "sector": "Banking & Technology",
-    "size": "8,000+ employees",
-    "description": "Innovative bank with cutting-edge technology hub"
+    "sector": "Consulting & Technology",
+    "size": "10,000+ employees",
+    "description": "Global leader in consulting, technology services and digital transformation"
   },
   "location": "Casablanca, Morocco",
   "work_mode": "Hybrid",
   "contract_type": "CDD (Fixed-term)",
   "experience_level": "Mid-Level",
   "salary": "15,000 - 25,000 MAD/month",
-  "posted_date": "2025-11-15",
-  "description": "We are hiring a AI Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "posted_date": "2025-11-02",
+  "description": "We are seeking a talented Microservices Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
   "responsibilities": [
-    "Process and analyze large datasets",
-    "Implement data quality checks and monitoring",
-    "Develop machine learning models and algorithms",
-    "Design and build scalable data pipelines",
-    "Optimize data processing and storage",
-    "Collaborate with data scientists and analysts",
-    "Deploy ML models to production",
-    "Document data workflows and models"
+    "Optimize database queries and ensure data integrity",
+    "Monitor application performance and troubleshoot issues",
+    "Design and implement scalable backend services and RESTful APIs",
+    "Develop microservices architecture using modern frameworks",
+    "Collaborate with frontend developers to integrate APIs"
   ],
   "required_skills": [
-    "SQL",
-    "TensorFlow",
-    "PyTorch",
-    "Python",
-    "GCP",
-    "Terraform"
+    "REST API",
+    "GraphQL",
+    "Go",
+    "Node.js",
+    "Microservices",
+    "Prometheus"
   ],
   "preferred_skills": [
-    "Pandas",
-    "Hadoop"
+    "Spring Boot",
+    "Redis",
+    "RabbitMQ",
+    "Django"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -47,16 +46,15 @@
     "Proven track record of delivering projects"
   ],
   "benefits": [
-    "Annual training allowance",
-    "Performance bonuses",
-    "Team building activities",
-    "Career advancement opportunities",
-    "Professional development budget",
+    "Paid vacation and holidays",
     "Health insurance coverage",
+    "Career advancement opportunities",
     "Gym membership",
-    "Parental leave",
-    "Flexible working hours"
+    "Modern office environment",
+    "Remote work options",
+    "Competitive salary package",
+    "Annual training allowance"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@bmcebanktechhub.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@capgeminimorocco.ma"
 }

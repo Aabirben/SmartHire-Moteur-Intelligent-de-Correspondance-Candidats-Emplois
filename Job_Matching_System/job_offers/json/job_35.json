@@ -1,41 +1,46 @@
 {
   "job_id": "JOB-0035-2025",
-  "title": "AWS Solutions Architect",
-  "domain": "CLOUD",
+  "title": "Big Data Engineer",
+  "domain": "DATA",
   "company": {
-    "name": "OCP Group IT Division",
-    "city": "Casablanca",
-    "sector": "Industry & Technology",
-    "size": "20,000+ employees",
-    "description": "World leader in phosphates with an innovative IT division"
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
   },
-  "location": "Casablanca, Morocco",
-  "work_mode": "On-site",
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
   "contract_type": "CDI (Permanent)",
   "experience_level": "Junior",
   "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-10-25",
-  "description": "Join us as a AWS Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "posted_date": "2025-11-04",
+  "description": "We are hiring a Big Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
   "responsibilities": [
-    "Optimize cloud costs and resource utilization",
-    "Implement high availability and disaster recovery",
-    "Automate cloud infrastructure management",
-    "Provide technical guidance on cloud best practices",
-    "Monitor and troubleshoot cloud services",
-    "Ensure security and compliance in cloud environments",
-    "Design cloud-native architectures",
-    "Migrate on-premise applications to cloud"
+    "Design and build scalable data pipelines",
+    "Develop machine learning models and algorithms",
+    "Deploy ML models to production",
+    "Process and analyze large datasets",
+    "Collaborate with data scientists and analysts",
+    "Document data workflows and models",
+    "Implement data quality checks and monitoring",
+    "Optimize data processing and storage"
   ],
   "required_skills": [
-    "Terraform",
-    "GCP",
-    "CloudFormation"
+    "TensorFlow",
+    "NumPy",
+    "Spark",
+    "Kafka",
+    "Python",
+    "PyTorch",
+    "Python",
+    "Node.js"
   ],
   "preferred_skills": [
-    "S3",
-    "EC2",
-    "Docker",
-    "Kubernetes"
+    "Airflow",
+    "Hadoop",
+    "Scikit-learn",
+    "SQL"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -46,16 +51,14 @@
     "Understanding of software development fundamentals"
   ],
   "benefits": [
-    "Annual training allowance",
-    "Team building activities",
-    "Stock options",
-    "Competitive salary package",
-    "Latest technology equipment",
-    "Performance bonuses",
     "Career advancement opportunities",
-    "Health insurance coverage",
-    "Remote work options"
+    "Remote work options",
+    "Latest technology equipment",
+    "Team building activities",
+    "Competitive salary package",
+    "Parental leave",
+    "Professional development budget"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@ocpgroupitdivision.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@maroctelecomit.ma"
 }

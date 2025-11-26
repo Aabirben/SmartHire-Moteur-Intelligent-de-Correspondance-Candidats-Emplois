@@ -1,0 +1,143 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Khadija Gharbi}} & Email : \href{mailto:khadija.gharbi@gmail.com}{khadija.gharbi@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/khadijagharbi}} & Mobile : +212 07 15 55 63 64 \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+Full-stack oriented Data with strong expertise in Agile, Express.js, Java, Kafka and modern DevOps practices.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Ibn Tofail}{Kenitra}
+      {Master in Software Engineering;  CGPA: 7.5}{July. 2014 -- May. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OCP Group}{Casablanca}
+      {Data Engineer}{Dec 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Developed data quality frameworks ensuring data accuracy and consistency}
+        \resumeItem{Task 2}
+          {Built ETL pipelines processing millions of records daily using Apache Spark}
+        \resumeItem{Task 3}
+          {Created data visualization dashboards for business intelligence using Power BI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OCP Group}{Casablanca}
+      {Cloud Engineer}{Jun 2020 - May 2021}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Migrated on-premise infrastructure to AWS cloud reducing costs by 30\%}
+        \resumeItem{Task 2}
+          {Managed cloud security including IAM, VPC, and encryption configurations}
+        \resumeItem{Task 3}
+          {Implemented Infrastructure as Code using Terraform for cloud resource management}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Hotel Booking System}
+      {Developed an online hotel reservation system with search filters, availability calendar, payment processing, and booking management.}
+    \resumeSubItem{Learning Management System}
+      {Built an online education platform with course management, video streaming, quiz system, and student progress tracking.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: Pandas, Express.js, Kafka, Hadoop, Java }
+    }
+    \item{
+     \textbf{Comfortable}{: Agile, JIRA, Microservices}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

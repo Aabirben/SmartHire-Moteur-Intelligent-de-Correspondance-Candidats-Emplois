@@ -1,61 +1,59 @@
 {
   "job_id": "JOB-0039-2025",
-  "title": "Cybersecurity Analyst",
-  "domain": "SECURITY",
+  "title": "Angular Developer",
+  "domain": "FRONTEND",
   "company": {
-    "name": "OCP Group IT Division",
-    "city": "Casablanca",
-    "sector": "Industry & Technology",
-    "size": "20,000+ employees",
-    "description": "World leader in phosphates with an innovative IT division"
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
   },
-  "location": "Casablanca, Morocco",
-  "work_mode": "Hybrid",
-  "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Senior",
-  "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-11-12",
-  "description": "We need a Cybersecurity Analyst to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "location": "Rabat, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-13",
+  "description": "Join our team as a Angular Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
   "responsibilities": [
-    "Respond to security incidents and threats",
-    "Conduct security assessments and penetration testing",
-    "Perform vulnerability scanning and remediation",
-    "Conduct security awareness training",
-    "Stay updated on latest security threats and trends",
-    "Review code and architecture for security issues"
+    "Collaborate with designers to implement pixel-perfect designs",
+    "Develop reusable UI components using modern frameworks",
+    "Write unit and integration tests",
+    "Integrate with backend APIs and services",
+    "Ensure cross-browser compatibility and accessibility",
+    "Implement state management solutions"
   ],
   "required_skills": [
-    "Penetration Testing",
-    "SIEM",
-    "Firewall",
-    "NLP"
+    "CSS",
+    "Vue.js",
+    "React",
+    "Angular",
+    "Flutter",
+    "Java"
   ],
   "preferred_skills": [
-    "Kali Linux",
-    "Network Security",
-    "Security Auditing"
+    "TypeScript",
+    "jQuery",
+    "HTML"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "5+ years of professional experience",
-    "Experience mentoring junior developers",
-    "Strong leadership and architectural skills"
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
   ],
   "benefits": [
     "Professional development budget",
-    "Team building activities",
+    "Performance bonuses",
     "Latest technology equipment",
-    "Remote work options",
-    "Flexible working hours",
     "Health insurance coverage",
     "Annual training allowance",
-    "Career advancement opportunities",
-    "Gym membership",
-    "Paid vacation and holidays"
+    "Modern office environment",
+    "Career advancement opportunities"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@ocpgroupitdivision.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@maroctelecomit.ma"
 }

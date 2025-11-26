@@ -1,38 +1,45 @@
 {
   "job_id": "JOB-0045-2025",
-  "title": "Security Architect",
-  "domain": "SECURITY",
+  "title": "Microservices Engineer",
+  "domain": "BACKEND",
   "company": {
-    "name": "Sqli Morocco",
-    "city": "Casablanca",
-    "sector": "Digital Services",
-    "size": "2,000+ employees",
-    "description": "Digital transformation and e-commerce specialist"
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
   },
-  "location": "Casablanca, Morocco",
+  "location": "Rabat, Morocco",
   "work_mode": "Hybrid",
-  "contract_type": "CDI (Permanent)",
+  "contract_type": "CDD (Fixed-term)",
   "experience_level": "Senior",
   "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-10-20",
-  "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "posted_date": "2025-11-21",
+  "description": "We are seeking a talented Microservices Engineer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
   "responsibilities": [
-    "Develop security policies and procedures",
-    "Implement security controls and monitoring",
-    "Review code and architecture for security issues",
-    "Conduct security awareness training",
-    "Perform vulnerability scanning and remediation"
+    "Implement authentication and authorization mechanisms",
+    "Write clean, maintainable, and well-documented code",
+    "Design and implement scalable backend services and RESTful APIs",
+    "Collaborate with frontend developers to integrate APIs",
+    "Participate in code reviews and technical discussions",
+    "Monitor application performance and troubleshoot issues",
+    "Optimize database queries and ensure data integrity"
   ],
   "required_skills": [
-    "OWASP",
-    "Firewall",
-    "Security Auditing",
-    "Lambda",
-    "GCP"
+    "Spring Boot",
+    "Express.js",
+    "Node.js",
+    "Redis",
+    "Microservices",
+    "REST API",
+    "TypeScript",
+    "JavaScript"
   ],
   "preferred_skills": [
-    "Kali Linux",
-    "Penetration Testing"
+    "MongoDB",
+    "GraphQL",
+    "PostgreSQL",
+    "Java"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -45,15 +52,12 @@
   ],
   "benefits": [
     "Latest technology equipment",
-    "Modern office environment",
-    "Paid vacation and holidays",
-    "Team building activities",
-    "Gym membership",
+    "Health insurance coverage",
+    "Career advancement opportunities",
+    "Annual training allowance",
     "Performance bonuses",
-    "Stock options",
-    "Competitive salary package",
-    "Professional development budget"
+    "Competitive salary package"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@sqlimorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@maroctelecomit.ma"
 }

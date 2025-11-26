@@ -1,61 +1,60 @@
 {
   "job_id": "JOB-0007-2025",
-  "title": "Machine Learning Engineer",
-  "domain": "DATA",
+  "title": "Deep Learning Engineer",
+  "domain": "ML_AI",
   "company": {
-    "name": "Orange Digital Center",
+    "name": "BMCE Bank Tech Hub",
     "city": "Casablanca",
-    "sector": "Telecom & Digital",
-    "size": "1,000+ employees",
-    "description": "Orange's digital innovation center for Africa and Middle East"
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
   },
   "location": "Casablanca, Morocco",
   "work_mode": "On-site",
-  "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Mid-Level",
-  "salary": "15,000 - 25,000 MAD/month",
-  "posted_date": "2025-11-05",
-  "description": "We are hiring a Machine Learning Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-23",
+  "description": "As a Deep Learning Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
   "responsibilities": [
-    "Develop machine learning models and algorithms",
-    "Collaborate with data scientists and analysts",
-    "Document data workflows and models",
-    "Design and build scalable data pipelines",
-    "Process and analyze large datasets",
-    "Implement data quality checks and monitoring",
-    "Deploy ML models to production",
-    "Optimize data processing and storage"
+    "Process and prepare datasets for training",
+    "Develop and train machine learning models",
+    "Collaborate with cross-functional teams",
+    "Deploy models to production environments",
+    "Conduct experiments and analyze results"
   ],
   "required_skills": [
+    "Machine Learning",
     "PyTorch",
-    "Spark",
-    "Python",
-    "Hadoop",
-    "Scikit-learn",
-    "SQL"
+    "BERT",
+    "Computer Vision",
+    "Deep Learning",
+    "TensorFlow",
+    "Kotlin",
+    "Swift"
   ],
   "preferred_skills": [
-    "TensorFlow",
-    "Pandas"
+    "NLP",
+    "Scikit-learn"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "3-5 years of professional experience",
-    "Proven track record of delivering projects"
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
   ],
   "benefits": [
-    "Gym membership",
-    "Parental leave",
-    "Competitive salary package",
-    "Performance bonuses",
-    "Team building activities",
-    "Stock options",
+    "Professional development budget",
+    "Health insurance coverage",
     "Latest technology equipment",
-    "Health insurance coverage"
+    "Parental leave",
+    "Career advancement opportunities",
+    "Remote work options",
+    "Performance bonuses"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@orangedigitalcenter.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@bmcebanktechhub.ma"
 }

@@ -1,39 +1,40 @@
 {
   "job_id": "JOB-0047-2025",
-  "title": "AI Research Engineer",
-  "domain": "ML_AI",
+  "title": "Data Scientist",
+  "domain": "DATA",
   "company": {
-    "name": "Orange Digital Center",
+    "name": "Attijariwafa Bank Digital",
     "city": "Casablanca",
-    "sector": "Telecom & Digital",
-    "size": "1,000+ employees",
-    "description": "Orange's digital innovation center for Africa and Middle East"
+    "sector": "Banking & Finance",
+    "size": "10,000+ employees",
+    "description": "Leading Maghreb bank with strong digital transformation"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "On-site",
+  "work_mode": "Hybrid",
   "contract_type": "Freelance/Contract",
   "experience_level": "Junior",
   "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-10-25",
-  "description": "As a AI Research Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "posted_date": "2025-11-25",
+  "description": "We are hiring a Data Scientist to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
   "responsibilities": [
-    "Collaborate with cross-functional teams",
-    "Develop and train machine learning models",
-    "Optimize model performance and accuracy",
-    "Deploy models to production environments",
-    "Research and implement state-of-the-art algorithms"
+    "Develop machine learning models and algorithms",
+    "Collaborate with data scientists and analysts",
+    "Process and analyze large datasets",
+    "Optimize data processing and storage",
+    "Deploy ML models to production",
+    "Implement data quality checks and monitoring"
   ],
   "required_skills": [
-    "TensorFlow",
-    "Computer Vision",
-    "BERT",
-    "NLP",
-    "TypeScript"
+    "Airflow",
+    "Python",
+    "Pandas",
+    "Hadoop",
+    "Spark",
+    "Kafka"
   ],
   "preferred_skills": [
-    "Scikit-learn",
-    "PyTorch",
-    "Machine Learning"
+    "TensorFlow",
+    "SQL"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -44,13 +45,13 @@
     "Understanding of software development fundamentals"
   ],
   "benefits": [
+    "Team building activities",
     "Remote work options",
-    "Modern office environment",
     "Performance bonuses",
-    "Paid vacation and holidays",
-    "Latest technology equipment",
-    "Professional development budget"
+    "Parental leave",
+    "Flexible working hours",
+    "Health insurance coverage"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@orangedigitalcenter.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@attijariwafabankdigital.ma"
 }

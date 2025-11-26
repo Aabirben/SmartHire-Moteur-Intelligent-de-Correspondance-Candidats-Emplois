@@ -1,60 +1,59 @@
 {
   "job_id": "JOB-0032-2025",
-  "title": "Infrastructure Automation Engineer",
-  "domain": "DEVOPS",
+  "title": "Android Developer",
+  "domain": "MOBILE",
   "company": {
-    "name": "Accenture Morocco",
+    "name": "BMCE Bank Tech Hub",
     "city": "Casablanca",
-    "sector": "Consulting & Technology",
-    "size": "5,000+ employees",
-    "description": "Management consulting and information technology services company"
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Hybrid",
+  "work_mode": "On-site",
   "contract_type": "Freelance/Contract",
-  "experience_level": "Expert",
-  "salary": "40,000 - 60,000 MAD/month",
-  "posted_date": "2025-11-13",
-  "description": "As a Infrastructure Automation Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-17",
+  "description": "We're looking for an experienced Android Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
   "responsibilities": [
-    "Automate infrastructure provisioning using IaC tools",
-    "Document infrastructure and processes",
-    "Monitor system performance and implement alerting",
-    "Manage cloud infrastructure and resources",
-    "Troubleshoot production issues and incidents",
-    "Build and maintain CI/CD pipelines",
-    "Implement security best practices and compliance",
-    "Optimize deployment processes and reduce downtime"
+    "Implement offline-first architecture",
+    "Develop native or cross-platform mobile applications",
+    "Optimize app performance and battery usage",
+    "Implement push notifications and analytics",
+    "Integrate with backend APIs and third-party services",
+    "Debug and resolve mobile-specific issues",
+    "Implement mobile UI/UX following platform guidelines",
+    "Handle app store submissions and updates"
   ],
   "required_skills": [
-    "Terraform",
-    "CI/CD",
-    "Azure",
+    "Android",
+    "Kotlin",
+    "iOS",
     "Swift",
-    "Java"
+    "Flutter",
+    "React Native",
+    "Pandas"
   ],
   "preferred_skills": [
-    "AWS",
-    "Prometheus"
+    "Java"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "8+ years of professional experience",
-    "Extensive experience leading technical initiatives",
-    "Thought leadership in the field"
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
   ],
   "benefits": [
-    "Remote work options",
-    "Stock options",
-    "Performance bonuses",
-    "Professional development budget",
     "Annual training allowance",
     "Flexible working hours",
-    "Team building activities"
+    "Paid vacation and holidays",
+    "Parental leave",
+    "Stock options",
+    "Professional development budget"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@accenturemorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@bmcebanktechhub.ma"
 }

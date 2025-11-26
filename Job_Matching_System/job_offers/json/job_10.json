@@ -1,38 +1,43 @@
 {
   "job_id": "JOB-0010-2025",
-  "title": "Flutter Developer",
-  "domain": "MOBILE",
+  "title": "Backend Developer",
+  "domain": "BACKEND",
   "company": {
-    "name": "BMCE Bank Tech Hub",
+    "name": "Orange Digital Center",
     "city": "Casablanca",
-    "sector": "Banking & Technology",
-    "size": "8,000+ employees",
-    "description": "Innovative bank with cutting-edge technology hub"
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "On-site",
+  "work_mode": "Hybrid",
   "contract_type": "CDI (Permanent)",
   "experience_level": "Junior",
   "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-10-31",
-  "description": "We're looking for an experienced Flutter Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "posted_date": "2025-11-06",
+  "description": "We are seeking a talented Backend Developer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
   "responsibilities": [
-    "Develop native or cross-platform mobile applications",
-    "Implement push notifications and analytics",
-    "Implement offline-first architecture",
-    "Integrate with backend APIs and third-party services",
-    "Implement mobile UI/UX following platform guidelines"
+    "Implement authentication and authorization mechanisms",
+    "Design and implement scalable backend services and RESTful APIs",
+    "Monitor application performance and troubleshoot issues",
+    "Participate in code reviews and technical discussions",
+    "Optimize database queries and ensure data integrity",
+    "Write clean, maintainable, and well-documented code"
   ],
   "required_skills": [
-    "Swift",
-    "React Native",
-    "Android",
-    "Java",
-    "Flutter"
+    "REST API",
+    "Redis",
+    "GraphQL",
+    "Django",
+    "RabbitMQ",
+    "Machine Learning",
+    "NLP"
   ],
   "preferred_skills": [
-    "Kotlin",
-    "iOS"
+    "PostgreSQL",
+    "Express.js",
+    "Go",
+    "Python"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -43,15 +48,17 @@
     "Understanding of software development fundamentals"
   ],
   "benefits": [
-    "Flexible working hours",
-    "Parental leave",
-    "Paid vacation and holidays",
-    "Remote work options",
+    "Performance bonuses",
     "Annual training allowance",
+    "Parental leave",
+    "Stock options",
+    "Paid vacation and holidays",
+    "Modern office environment",
     "Team building activities",
-    "Gym membership",
-    "Health insurance coverage"
+    "Remote work options",
+    "Career advancement opportunities",
+    "Gym membership"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@bmcebanktechhub.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
 }

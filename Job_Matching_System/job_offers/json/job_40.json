@@ -1,41 +1,44 @@
 {
   "job_id": "JOB-0040-2025",
-  "title": "Security Architect",
-  "domain": "SECURITY",
+  "title": "Cloud Solutions Architect",
+  "domain": "CLOUD",
   "company": {
-    "name": "Capgemini Morocco",
-    "city": "Casablanca",
-    "sector": "Consulting & Technology",
-    "size": "10,000+ employees",
-    "description": "Global leader in consulting, technology services and digital transformation"
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
   },
-  "location": "Casablanca, Morocco",
-  "work_mode": "Hybrid",
-  "contract_type": "CDI (Permanent)",
+  "location": "Rabat, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "Freelance/Contract",
   "experience_level": "Senior",
   "salary": "25,000 - 40,000 MAD/month",
-  "posted_date": "2025-11-01",
-  "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "posted_date": "2025-11-19",
+  "description": "Join us as a Cloud Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
   "responsibilities": [
-    "Conduct security awareness training",
-    "Stay updated on latest security threats and trends",
-    "Conduct security assessments and penetration testing",
-    "Implement security controls and monitoring",
-    "Perform vulnerability scanning and remediation",
-    "Develop security policies and procedures",
-    "Respond to security incidents and threats",
-    "Review code and architecture for security issues"
+    "Optimize cloud costs and resource utilization",
+    "Automate cloud infrastructure management",
+    "Provide technical guidance on cloud best practices",
+    "Ensure security and compliance in cloud environments",
+    "Implement high availability and disaster recovery",
+    "Design cloud-native architectures",
+    "Migrate on-premise applications to cloud"
   ],
   "required_skills": [
-    "Penetration Testing",
-    "Kali Linux",
-    "Security Auditing"
+    "S3",
+    "CloudFormation",
+    "Kubernetes",
+    "Lambda",
+    "Terraform",
+    "Microservices",
+    "Go"
   ],
   "preferred_skills": [
-    "OWASP",
-    "Network Security",
-    "Firewall",
-    "SIEM"
+    "GCP",
+    "EC2",
+    "Docker",
+    "Azure"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -48,15 +51,14 @@
   ],
   "benefits": [
     "Performance bonuses",
-    "Team building activities",
-    "Competitive salary package",
-    "Latest technology equipment",
-    "Parental leave",
     "Flexible working hours",
-    "Remote work options",
-    "Career advancement opportunities",
-    "Annual training allowance"
+    "Health insurance coverage",
+    "Gym membership",
+    "Competitive salary package",
+    "Team building activities",
+    "Annual training allowance",
+    "Latest technology equipment"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@capgeminimorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@maroctelecomit.ma"
 }

@@ -1,60 +1,57 @@
 {
   "job_id": "JOB-0026-2025",
-  "title": "Cloud Solutions Architect",
-  "domain": "CLOUD",
+  "title": "Penetration Tester",
+  "domain": "SECURITY",
   "company": {
-    "name": "BMCE Bank Tech Hub",
+    "name": "Sqli Morocco",
     "city": "Casablanca",
-    "sector": "Banking & Technology",
-    "size": "8,000+ employees",
-    "description": "Innovative bank with cutting-edge technology hub"
+    "sector": "Digital Services",
+    "size": "2,000+ employees",
+    "description": "Digital transformation and e-commerce specialist"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "Remote",
-  "contract_type": "CDI (Permanent)",
-  "experience_level": "Expert",
-  "salary": "40,000 - 60,000 MAD/month",
-  "posted_date": "2025-11-15",
-  "description": "Join us as a Cloud Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-01",
+  "description": "We need a Penetration Tester to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
   "responsibilities": [
-    "Migrate on-premise applications to cloud",
-    "Monitor and troubleshoot cloud services",
-    "Design cloud-native architectures",
-    "Automate cloud infrastructure management",
-    "Provide technical guidance on cloud best practices",
-    "Implement high availability and disaster recovery",
-    "Optimize cloud costs and resource utilization"
+    "Conduct security awareness training",
+    "Conduct security assessments and penetration testing",
+    "Review code and architecture for security issues",
+    "Stay updated on latest security threats and trends",
+    "Respond to security incidents and threats"
   ],
   "required_skills": [
-    "AWS",
-    "S3",
-    "Kubernetes",
-    "Terraform",
-    "CloudFormation",
-    "Azure"
+    "OWASP",
+    "Security Auditing",
+    "Firewall",
+    "SIEM",
+    "Penetration Testing",
+    "Network Security"
   ],
   "preferred_skills": [
-    "Lambda",
-    "GCP"
+    "Kali Linux"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "8+ years of professional experience",
-    "Extensive experience leading technical initiatives",
-    "Thought leadership in the field"
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
   ],
   "benefits": [
-    "Stock options",
     "Gym membership",
-    "Team building activities",
-    "Flexible working hours",
     "Parental leave",
     "Annual training allowance",
-    "Competitive salary package"
+    "Modern office environment",
+    "Professional development budget",
+    "Remote work options",
+    "Health insurance coverage"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@bmcebanktechhub.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@sqlimorocco.ma"
 }

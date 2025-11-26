@@ -1,0 +1,143 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Karim Idrissi}} & Email : \href{mailto:karim.idrissi@gmail.com}{karim.idrissi@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/karimidrissi}} & Mobile : +212 06 80 70 93 53 \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+Results-driven Cloud skilled in FastAPI, Microservices, Python, Scikit-learn, passionate about clean code and performance.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Hassan II}{Casablanca}
+      {B.Tech in Computer Science;  CGPA: 8.35}{July. 2016 -- May. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Webhelp}{Casablanca}
+      {Cloud Engineer}{Dec 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Designed highly available and fault-tolerant cloud architectures}
+        \resumeItem{Task 2}
+          {Implemented Infrastructure as Code using Terraform for cloud resource management}
+        \resumeItem{Task 3}
+          {Migrated on-premise infrastructure to AWS cloud reducing costs by 30\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OCP Group}{Casablanca}
+      {Machine Learning Engineer}{Jun 2020 - Nov 2022}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Built recommendation systems using collaborative filtering and deep learning}
+        \resumeItem{Task 2}
+          {Developed ML models for prediction and classification achieving 90\%+ accuracy}
+        \resumeItem{Task 3}
+          {Deployed ML models to production using Flask and Docker containers}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Task Management Platform}
+      {Created a collaborative task management tool with kanban boards, time tracking, team collaboration features, and productivity analytics.}
+    \resumeSubItem{Data Analytics Dashboard}
+      {Implemented an interactive dashboard for business intelligence with real-time data visualization, reporting features, and predictive analytics.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: Python, NumPy, FastAPI, Scikit-learn }
+    }
+    \item{
+     \textbf{Comfortable}{: Agile, JIRA, Microservices, Git}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

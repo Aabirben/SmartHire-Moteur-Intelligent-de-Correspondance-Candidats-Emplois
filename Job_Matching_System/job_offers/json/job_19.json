@@ -1,59 +1,60 @@
 {
   "job_id": "JOB-0019-2025",
-  "title": "AI Engineer",
-  "domain": "DATA",
+  "title": "NLP Engineer",
+  "domain": "ML_AI",
   "company": {
-    "name": "CGI Morocco",
-    "city": "Rabat",
-    "sector": "IT Services",
-    "size": "3,000+ employees",
-    "description": "Canadian IT consulting and systems integration company"
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
   },
-  "location": "Rabat, Morocco",
+  "location": "Casablanca, Morocco",
   "work_mode": "Hybrid",
-  "contract_type": "CDD (Fixed-term)",
-  "experience_level": "Expert",
-  "salary": "40,000 - 60,000 MAD/month",
-  "posted_date": "2025-11-10",
-  "description": "We are hiring a AI Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-04",
+  "description": "As a NLP Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
   "responsibilities": [
-    "Optimize data processing and storage",
-    "Collaborate with data scientists and analysts",
-    "Process and analyze large datasets",
-    "Document data workflows and models",
-    "Design and build scalable data pipelines",
-    "Implement data quality checks and monitoring",
-    "Deploy ML models to production"
+    "Conduct experiments and analyze results",
+    "Optimize model performance and accuracy",
+    "Collaborate with cross-functional teams",
+    "Develop and train machine learning models",
+    "Deploy models to production environments"
   ],
   "required_skills": [
     "PyTorch",
-    "Python",
-    "Pandas",
-    "Azure",
-    "AWS"
+    "BERT",
+    "Scikit-learn",
+    "Machine Learning"
   ],
   "preferred_skills": [
+    "Deep Learning",
     "TensorFlow",
-    "Kafka",
-    "Scikit-learn"
+    "NLP",
+    "Computer Vision"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
     "Strong problem-solving and analytical skills",
     "Excellent communication and teamwork abilities",
     "Passion for technology and continuous learning",
-    "8+ years of professional experience",
-    "Extensive experience leading technical initiatives",
-    "Thought leadership in the field"
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
   ],
   "benefits": [
+    "Career advancement opportunities",
+    "Team building activities",
     "Paid vacation and holidays",
-    "Professional development budget",
-    "Stock options",
+    "Remote work options",
+    "Annual training allowance",
+    "Modern office environment",
     "Performance bonuses",
-    "Latest technology equipment",
-    "Modern office environment"
+    "Gym membership",
+    "Professional development budget",
+    "Parental leave"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@cgimorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
 }

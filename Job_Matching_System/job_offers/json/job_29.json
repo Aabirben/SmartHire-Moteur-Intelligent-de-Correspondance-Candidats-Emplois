@@ -1,41 +1,40 @@
 {
   "job_id": "JOB-0029-2025",
-  "title": "Platform Engineer",
-  "domain": "DEVOPS",
+  "title": "Security Architect",
+  "domain": "SECURITY",
   "company": {
-    "name": "Sqli Morocco",
+    "name": "OCP Group IT Division",
     "city": "Casablanca",
-    "sector": "Digital Services",
-    "size": "2,000+ employees",
-    "description": "Digital transformation and e-commerce specialist"
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
   },
   "location": "Casablanca, Morocco",
-  "work_mode": "On-site",
-  "contract_type": "CDI (Permanent)",
+  "work_mode": "Hybrid",
+  "contract_type": "Freelance/Contract",
   "experience_level": "Junior",
   "salary": "8,000 - 15,000 MAD/month",
-  "posted_date": "2025-10-26",
-  "description": "As a Platform Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "posted_date": "2025-11-04",
+  "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
   "responsibilities": [
-    "Troubleshoot production issues and incidents",
-    "Build and maintain CI/CD pipelines",
-    "Monitor system performance and implement alerting",
-    "Optimize deployment processes and reduce downtime",
-    "Document infrastructure and processes"
+    "Implement security controls and monitoring",
+    "Review code and architecture for security issues",
+    "Respond to security incidents and threats",
+    "Conduct security awareness training",
+    "Perform vulnerability scanning and remediation",
+    "Stay updated on latest security threats and trends"
   ],
   "required_skills": [
-    "Ansible",
-    "Azure",
-    "CI/CD",
-    "Jenkins",
-    "Kubernetes",
-    "REST API"
+    "Penetration Testing",
+    "OWASP",
+    "Firewall",
+    "Kali Linux",
+    "Swift"
   ],
   "preferred_skills": [
-    "Docker",
-    "GCP",
-    "Terraform",
-    "GitLab CI"
+    "Network Security",
+    "Security Auditing",
+    "SIEM"
   ],
   "requirements": [
     "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
@@ -46,17 +45,17 @@
     "Understanding of software development fundamentals"
   ],
   "benefits": [
-    "Modern office environment",
-    "Remote work options",
     "Parental leave",
-    "Annual training allowance",
     "Professional development budget",
-    "Stock options",
-    "Paid vacation and holidays",
-    "Team building activities",
+    "Annual training allowance",
+    "Performance bonuses",
+    "Career advancement opportunities",
+    "Competitive salary package",
     "Latest technology equipment",
-    "Flexible working hours"
+    "Flexible working hours",
+    "Team building activities",
+    "Remote work options"
   ],
-  "application_deadline": "2025-12-19",
-  "contact_email": "careers@sqlimorocco.ma"
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
 }

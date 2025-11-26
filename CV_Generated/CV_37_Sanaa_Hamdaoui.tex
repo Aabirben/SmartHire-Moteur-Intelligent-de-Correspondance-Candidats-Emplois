@@ -1,0 +1,143 @@
+%-------------------------
+% Resume in Latex
+% Author : CV Generator
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/}{\Large Sanaa Hamdaoui}} & Email : \href{mailto:sanaa.hamdaoui@gmail.com}{sanaa.hamdaoui@gmail.com}\\
+  \href{https://www.linkedin.com/}{{linkedin.com/in/sanaahamdaoui}} & Mobile : +212 07 60 74 88 51 \\
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+Results-driven Mobile skilled in Flutter, React, JIRA, Scrum, passionate about clean code and performance.
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Ibn Tofail}{Kenitra}
+      {Master in Data Science;  CGPA: 8.2}{July. 2016 -- May. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Orange Digital Center}{Casablanca}
+      {Mobile Developer}{Dec 2023 - Mar 2025}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Implemented offline-first architecture with local database and sync mechanisms}
+        \resumeItem{Task 2}
+          {Integrated push notifications, analytics, and crash reporting services}
+        \resumeItem{Task 3}
+          {Built cross-platform mobile apps using React Native for iOS and Android}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Webhelp}{Casablanca}
+      {Cloud Engineer}{Jul 2022 - Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Task 1}
+          {Managed cloud security including IAM, VPC, and encryption configurations}
+        \resumeItem{Task 2}
+          {Implemented Infrastructure as Code using Terraform for cloud resource management}
+        \resumeItem{Task 3}
+          {Designed highly available and fault-tolerant cloud architectures}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Healthcare Portal}
+      {Developed a patient management system with appointment scheduling, medical records, prescription management, and telemedicine features.}
+    \resumeSubItem{Inventory Management System}
+      {Built a comprehensive inventory tracking system with barcode scanning, stock alerts, supplier management, and automated reporting.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Proficient}{: Express.js, Flutter, Python, Swift }
+    }
+    \item{
+     \textbf{Comfortable}{: Vue.js, JIRA, Scrum, React}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
