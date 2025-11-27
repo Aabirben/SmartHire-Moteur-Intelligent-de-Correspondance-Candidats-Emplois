@@ -1,29 +1,25 @@
 {
-    "//": "========================================================",
-    "_comment": "TAXONOMIE SMART-HIRE - DICTIONNAIRE OFFICIEL DES TAGS",
-    "_description": "Ce fichier définit le vocabulaire standardisé pour l'indexation manuelle des CVs et offres d'emploi.",
-    "_utilisation": [
+  "//": "========================================================",
+  "_comment": "TAXONOMIE SMART-HIRE - DICTIONNAIRE OFFICIEL DES TAGS",
+  "_description": "Ce fichier définit le vocabulaire standardisé pour l'indexation manuelle des CVs et offres d'emploi.",
+  "_utilisation": [
     "→ Garantit la cohérence des tags across tous les documents",
-    "→ Permet la recherche booléenne fiable et précise", 
+    "→ Permet la recherche booléenne fiable et précise",
     "→ Facilite le matching automatique CV ↔ Offres",
     "→ Évite les doublons et variations d'orthographe",
     "→ Standardise les termes techniques et métiers"
-    ],
-    "_regles": [
+  ],
+  "_regles": [
     "⚠️ TOUS les tags manuels DOIVENT venir de cette taxonomie",
     "⚠️ Ne jamais inventer de nouveaux tags en dehors de cette liste",
     "⚠️ Utiliser les formes exactes (minuscules, underscores)",
     "⚠️ Ajouter de nouveaux termes UNIQUEMENT si absents et nécessaires"
-    ],
-    "_exemples": [
+  ],
+  "_exemples": [
     "CV 'Développeur Python Django' → ['backend_developer', 'python', 'django']",
     "Offre 'Data Scientist Senior' → ['data_scientist', 'senior']",
     "Recherche 'devops AWS Casablanca' → tags: ['devops_engineer', 'aws', 'casablanca']"
-   ],
-   "//": "========================================================",
-
-   
-
+  ],
   "metiers": [
     "data_scientist",
     "data_analyst",
@@ -56,6 +52,12 @@
     "cto",
     "it_consultant"
   ],
+  "securite": [
+    "jwt",
+    "oauth2",
+    "authentication",
+    "authorization"
+  ],
   "technologies": {
     "langages": [
       "python",
@@ -80,6 +82,16 @@
       "bash",
       "powershell"
     ],
+    "testing": [
+      "junit",
+      "selenium",
+      "cypress",
+      "postman",
+      "jest",
+      "pytest",
+      "testng",
+      "mockito"
+    ],
     "frameworks_frontend": [
       "react",
       "angular",
@@ -90,7 +102,8 @@
       "jquery",
       "bootstrap",
       "tailwind",
-      "material_ui"
+      "material_ui",
+      "redux"
     ],
     "frameworks_backend": [
       "django",
@@ -104,7 +117,11 @@
       "symfony",
       "ruby_on_rails",
       "aspnet",
-      "nodejs"
+      "nodejs",
+      "websocket",
+      "graphql",
+      "microservices",
+      "rest_api"
     ],
     "bases_donnees": [
       "mysql",
@@ -131,7 +148,46 @@
       "prometheus",
       "grafana",
       "nginx",
-      "apache"
+      "apache",
+      "devops",
+      "pandas",
+      "hadoop",
+      "android",
+      "spark",
+      "ios",
+      "css",
+      "jquery",
+      "cloud",
+      "numpy",
+      "oracle",
+      "tensorflow",
+      "kotlin",
+      "kafka",
+      "dynamodb",
+      "swift",
+      "html",
+      "flutter",
+      "pytorch",
+      "go",
+      "selenium",
+      "cypress",
+      "postman",
+      "ci_cd",
+      "git",
+      "rest_api",
+      "gitlab_ci",
+      "junit",
+      "websocket",
+      "redux",
+      "graphql",
+      "ai",
+      "etl",
+      "redshift",
+      "microservices",
+      "agile",
+      "scrum",
+      "kanban",
+      "nlp"
     ],
     "cloud": [
       "aws",
@@ -149,7 +205,9 @@
       "android",
       "ios",
       "xamarin",
-      "ionic"
+      "ionic",
+      "jetpack_compose",
+      "xamarin"
     ],
     "data_science": [
       "pandas",
@@ -165,7 +223,24 @@
       "spark",
       "kafka",
       "tableau",
-      "power_bi"
+      "power_bi",
+      "ai",
+      "machine_learning",
+      "power_bi",
+      "etl",
+      "apache_spark",
+      "redshift",
+      "nlp",
+      "sentiment_analysis",
+      "collaborative_filtering",
+      "deep_learning"
+    ],
+    "methodologies": [
+      "agile",
+      "scrum",
+      "kanban",
+      "devops",
+      "ci_cd"
     ]
   },
   "niveaux": [

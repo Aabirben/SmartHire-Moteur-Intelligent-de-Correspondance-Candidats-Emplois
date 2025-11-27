@@ -148,3 +148,123 @@ def get_stats_offres():
             MODE() WITHIN GROUP (ORDER BY niveau_souhaite) as niveau_commun
         FROM offres
     """
+
+# ==================== REQUÊTES AUTHENTIFICATION ====================
+
+def create_user():
+    """
+    Crée un nouvel utilisateur
+    """
+    return """
+        INSERT INTO users (email, password_hash, user_type, nom, prenom, entreprise, telephone)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        RETURNING id
+    """
+
+def get_user_by_email():
+    """
+    Récupère un utilisateur par email
+    """
+    return """
+        SELECT id, email, password_hash, user_type, nom, prenom, entreprise, est_actif
+        FROM users 
+        WHERE email = %s
+    """
+
+def update_last_login():
+    """
+    Met à jour la dernière connexion
+    """
+    return """
+        UPDATE users 
+        SET derniere_connexion = NOW() 
+        WHERE id = %s
+    """
+
+# ==================== REQUÊTES SPÉCIFIQUES SYSTÈME ====================
+
+def get_system_cvs():
+    """
+    Récupère les CVs du système (indexation manuelle)
+    """
+    return """
+        SELECT id, nom, email, competences, niveau_estime, localisation, 
+               tags_manuels, texte_complet
+        FROM cvs 
+        WHERE source_systeme = TRUE AND est_public = TRUE
+    """
+
+def get_system_offres():
+    """
+    Récupère les offres du système (indexation manuelle)
+    """
+    return """
+        SELECT id, titre, entreprise, competences_requises, localisation,
+               niveau_souhaite, tags_manuels, texte_complet
+        FROM offres 
+        WHERE source_systeme = TRUE AND est_active = TRUE
+    """
+
+def insert_system_cv():
+    """
+    Insère un CV du système (sans user_id)
+    """
+    return """
+        INSERT INTO cvs (
+            nom, email, competences, niveau_estime, localisation,
+            type_contrat, diplome, annees_experience, tags_manuels,
+            chemin_pdf, texte_complet, source_systeme, est_public
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, TRUE, TRUE)
+        RETURNING id
+    """
+
+def insert_system_offre():
+    """
+    Insère une offre du système (sans user_id)
+    """
+    return """
+        INSERT INTO offres (
+            titre, entreprise, competences_requises, description,
+            localisation, niveau_souhaite, type_contrat, diplome_requis,
+            experience_min, tags_manuels, texte_complet, source_systeme, 
+            est_active, date_expiration
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, TRUE, TRUE, NOW() + INTERVAL '90 days')
+        RETURNING id
+    """
+
+# ==================== REQUÊTES CANDIDATURES ====================
+
+def create_candidature():
+    """
+    Crée une nouvelle candidature
+    """
+    return """
+        INSERT INTO candidatures (user_id, offre_id, cv_id, message)
+        VALUES (%s, %s, %s, %s)
+        RETURNING id
+    """
+
+def get_candidatures_by_user():
+    """
+    Récupère les candidatures d'un utilisateur
+    """
+    return """
+        SELECT c.*, o.titre, o.entreprise, o.localisation
+        FROM candidatures c
+        JOIN offres o ON c.offre_id = o.id
+        WHERE c.user_id = %s
+        ORDER BY c.date_candidature DESC
+    """
+
+def get_candidatures_for_offre():
+    """
+    Récupère les candidatures pour une offre (recruteur)
+    """
+    return """
+        SELECT c.*, u.nom, u.prenom, u.email, cv.competences, cv.niveau_estime
+        FROM candidatures c
+        JOIN users u ON c.user_id = u.id
+        JOIN cvs cv ON c.cv_id = cv.id
+        WHERE c.offre_id = %s
+        ORDER BY c.date_candidature DESC
+    """

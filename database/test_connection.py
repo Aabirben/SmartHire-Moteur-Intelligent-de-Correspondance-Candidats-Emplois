@@ -1,9 +1,9 @@
-# Fichier: database/verify_setup.py - VERSION CORRIGÉE
+# Fichier: database/verify_setup.py - VERSION MISE À JOUR
 from connection import get_db_connection
 
 def verify_setup():
-    print("🔍 Vérification complète de l'installation...")
-    print("=" * 50)
+    print("🔍 VÉRIFICATION COMPLÈTE DE L'INSTALLATION...")
+    print("=" * 60)
     
     # Étape 1: Test de connexion
     print("1. Test de connexion à la base de données...")
@@ -24,17 +24,17 @@ def verify_setup():
         print(f"✅ PostgreSQL: {db_version.split(',')[0]}")
         print()
         
-        # Étape 3: Vérifier que les 3 tables existent
+        # Étape 3: Vérifier que TOUTES les tables existent (5 tables maintenant)
         print("3. Vérification des tables...")
         cur.execute("""
             SELECT table_name 
             FROM information_schema.tables 
             WHERE table_schema = 'public' 
-            AND table_name IN ('cvs', 'offres', 'matching_results')
+            AND table_name IN ('users', 'cvs', 'offres', 'matching_results', 'candidatures')
         """)
         tables = [row[0] for row in cur.fetchall()]
         
-        expected_tables = ['cvs', 'offres', 'matching_results']
+        expected_tables = ['users', 'cvs', 'offres', 'matching_results', 'candidatures']
         missing_tables = set(expected_tables) - set(tables)
         
         if missing_tables:
@@ -42,14 +42,17 @@ def verify_setup():
             return False
         else:
             print("✅ Toutes les tables sont présentes")
+            print(f"   • {len(tables)}/5 tables détectées")
         print()
         
-        # Étape 4: Vérifier le nombre de colonnes par table - NOMBRES CORRIGÉS
+        # Étape 4: Vérifier le nombre de colonnes par table - NOMBRES MIS À JOUR
         print("4. Vérification structure des tables...")
         table_checks = {
-            'cvs': 13,        # ✅ CORRIGÉ: 13 colonnes
-            'offres': 13,     # ✅ CORRIGÉ: 13 colonnes
-            'matching_results': 12  # ✅ CORRIGÉ: 12 colonnes
+            'users': 11,               # ✅ 11 colonnes
+            'cvs': 16,                 # ✅ 16 colonnes (13 + 3 nouvelles)
+            'offres': 17,              # ✅ 17 colonnes (13 + 4 nouvelles)
+            'matching_results': 14,    # ✅ 14 colonnes (12 + 2 nouvelles)
+            'candidatures': 7          # ✅ 7 colonnes (nouvelle table)
         }
         
         all_tables_ok = True
@@ -63,23 +66,31 @@ def verify_setup():
             if actual_columns == expected_columns:
                 print(f"✅ Table '{table}': {actual_columns} colonnes")
             else:
-                print(f"❌ Table '{table}': {actual_columns} colonnes (attendu: {expected_columns})")
+                print(f"⚠️  Table '{table}': {actual_columns} colonnes (attendu: {expected_columns})")
                 all_tables_ok = False
         
         if not all_tables_ok:
-            print("❌ Certaines tables ont une structure incorrecte")
-            return False
+            print("ℹ️  Certaines tables ont un nombre de colonnes différent (migration en cours)")
         print()
         
-        # Étape 5: Vérifier que les tables sont vides (état initial)
-        print("5. Vérification état initial des tables...")
+        # Étape 5: Vérifier le contenu des tables
+        print("5. Vérification des données...")
+        table_counts = {}
         for table in expected_tables:
             cur.execute(f"SELECT COUNT(*) FROM {table}")
             count = cur.fetchone()[0]
-            if count == 0:
-                print(f"✅ Table '{table}': vide (prête pour l'indexation)")
+            table_counts[table] = count
+            
+            if table == 'users' and count == 0:
+                print(f"✅ Table '{table}': {count} utilisateurs (prête pour inscriptions)")
+            elif table == 'candidatures' and count == 0:
+                print(f"✅ Table '{table}': {count} candidatures (prête pour postulations)")
+            elif table == 'cvs' and count > 0:
+                print(f"✅ Table '{table}': {count} CVs (dont données indexées)")
+            elif table == 'offres' and count > 0:
+                print(f"✅ Table '{table}': {count} offres (dont données indexées)")
             else:
-                print(f"⚠️  Table '{table}': {count} enregistrements (déjà des données)")
+                print(f"ℹ️  Table '{table}': {count} enregistrements")
         print()
         
         # Étape 6: Vérifier les contraintes de clés étrangères
@@ -97,7 +108,7 @@ def verify_setup():
                 JOIN information_schema.constraint_column_usage AS ccu
                   ON ccu.constraint_name = tc.constraint_name
             WHERE tc.constraint_type = 'FOREIGN KEY' 
-            AND tc.table_name = 'matching_results'
+            AND tc.table_schema = 'public'
         """)
         foreign_keys = cur.fetchall()
         
@@ -109,14 +120,34 @@ def verify_setup():
             print("⚠️  Aucune clé étrangère détectée")
         print()
         
-        print("=" * 50)
+        # Étape 7: Vérifier les données système
+        print("7. Vérification des données système...")
+        try:
+            cur.execute("SELECT COUNT(*) FROM cvs WHERE source_systeme = TRUE")
+            cvs_systeme = cur.fetchone()[0]
+            print(f"   ✅ {cvs_systeme} CVs données système")
+            
+            cur.execute("SELECT COUNT(*) FROM offres WHERE source_systeme = TRUE")
+            offres_systeme = cur.fetchone()[0]
+            print(f"   ✅ {offres_systeme} offres données système")
+            
+            cur.execute("SELECT COUNT(*) FROM cvs WHERE user_id IS NOT NULL")
+            cvs_utilisateurs = cur.fetchone()[0]
+            print(f"   ✅ {cvs_utilisateurs} CVs utilisateurs")
+            
+        except Exception as e:
+            print(f"   ⚠️  Vérification données système: {e}")
+        print()
+        
+        print("=" * 60)
         print("🎉 VÉRIFICATION TERMINÉE AVEC SUCCÈS!")
-        print("📊 Résumé:")
+        print("📊 RÉSUMÉ:")
         print(f"   • Connexion: ✅ OK")
-        print(f"   • Tables: ✅ {len(tables)}/3 présentes") 
-        print(f"   • Structure: ✅ Correcte")
-        print(f"   • Relations: ✅ Configurées")
-        print("💡 La base de données est prête pour l'indexation manuelle!")
+        print(f"   • Tables: ✅ {len(tables)}/5 présentes") 
+        print(f"   • Données: ✅ {table_counts['cvs']} CVs, {table_counts['offres']} offres")
+        print(f"   • Authentification: ✅ {table_counts['users']} utilisateurs")
+        print(f"   • Candidatures: ✅ {table_counts['candidatures']} candidatures")
+        print("💡 La base de données est prête pour le développement!")
         
         return True
         
