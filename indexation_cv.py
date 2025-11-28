@@ -6,7 +6,7 @@ import shutil
 import json
 import string
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID, KEYWORD, NUMERIC
@@ -29,8 +29,11 @@ logger = logging.getLogger(__name__)
 # Téléchargements NLTK
 try:
     nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)  # ✅ Ajout de punkt_tab
     nltk.download('stopwords', quiet=True)
     nltk.download('wordnet', quiet=True)
+    nltk.download('omw-1.4', quiet=True)
+    nltk.download('averaged_perceptron_tagger', quiet=True)  # Pour POS tagging
     logger.info("✅ NLTK data téléchargées avec succès")
 except Exception as e:
     logger.error(f"❌ Erreur téléchargement NLTK: {e}")
@@ -49,6 +52,13 @@ os.makedirs(INDEX_DIR, exist_ok=True)
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 
+# Ajout de stopwords personnalisés pour les CV
+custom_stopwords = {
+    'cv', 'resume', 'curriculum', 'vitae', 'email', 'phone', 
+    'mobile', 'address', 'page', 'http', 'https', 'www'
+}
+stop_words.update(custom_stopwords)
+
 # ========================================================
 # SCHÉMA D'INDEXATION ENRICHI
 # ========================================================
@@ -61,40 +71,95 @@ schema = Schema(
     description_experience=TEXT(stored=True),
     competences=KEYWORD(commas=True, lowercase=True, stored=True),
     projets=TEXT(stored=True),
-    resume_complet=TEXT(stored=True)
+    resume_complet=TEXT(stored=True),
+    # Nouveau champ pour le texte prétraité
+    texte_pretraite=TEXT(stored=True)
 )
 
 # ========================================================
-# LISTE DES COMPÉTENCES
+# CHARGEMENT DES COMPÉTENCES DEPUIS JSON
 # ========================================================
-SKILLS = [
-    "python", "java", "kotlin", "javascript", "react", "react native", 
-    "node.js", "express", "flutter", "android", "ios", "go", "spring", 
-    "django", "flask", "sql", "postgresql", "mongodb", "docker", 
-    "kubernetes", "terraform", "aws", "gcp", "azure", "jenkins", 
-    "git", "gitlab", "github", "microservices", "graphql", "rabbitmq", 
-    "redis", "websocket", "ml", "ai", "nlp", "tensorflow", "pytorch", 
-    "scikit-learn", "pandas", "power bi", "tableau", "c++", "c#", 
-    "php", "ruby", "scala", "rust", "typescript", "vue", "angular", 
-    "svelte", "fastapi", "nextjs", "tailwind", "bootstrap", "jest",
-    "pytest", "selenium", "unity", "unreal", "figma", "sketch"
-]
 
-# Map des alias pour meilleure détection
-SKILL_ALIASES = {
-    "python": ["python", "py"],
-    "javascript": ["javascript", "js"],
-    "react": ["react", "reactjs", "react.js"],
-    "node.js": ["node.js", "node", "nodejs"],
-    "typescript": ["typescript", "ts"],
-    "ml": ["machine learning", "ml"],
-    "ai": ["artificial intelligence", "ai"],
-    "nlp": ["nlp", "natural language processing"],
-    "power bi": ["power bi", "powerbi"],
-    "c++": ["c++", "cpp"],
-    "c#": ["c#", "csharp"],
-    "react native": ["react native", "react-native", "reactnative"],
-}
+SKILLS_JSON_PATH = "/content/drive/MyDrive/skills_json_file.json"
+
+def load_skills_from_json(json_path: str = SKILLS_JSON_PATH) -> Tuple[List[str], Dict[str, List[str]]]:
+    """
+    Charge les compétences depuis un fichier JSON
+    
+    Args:
+        json_path: Chemin vers le fichier JSON
+        
+    Returns:
+        Tuple (liste_skills, dictionnaire_aliases)
+    """
+    try:
+        if not os.path.exists(json_path):
+            logger.error(f"❌ FICHIER INTROUVABLE: {json_path}")
+            logger.error(f"📋 INSTRUCTIONS:")
+            logger.error(f"   1. Téléchargez le fichier skills_database.json")
+            logger.error(f"   2. Uploadez-le dans votre Google Drive: /MyDrive/")
+            logger.error(f"   3. Relancez le script")
+            logger.warning(f"⚠️ Utilisation de la liste minimale par défaut...")
+            return _get_default_skills()
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Aplatir toutes les catégories en une seule liste
+        all_skills = []
+        for category, skills in data.items():
+            if category != "aliases" and isinstance(skills, list):
+                all_skills.extend(skills)
+        
+        # Récupérer les aliases
+        aliases = data.get("aliases", {})
+        
+        logger.info(f"✅ {len(all_skills)} compétences chargées depuis {json_path}")
+        logger.info(f"✅ {len(aliases)} aliases chargés")
+        
+        return all_skills, aliases
+            
+    except json.JSONDecodeError as e:
+        logger.error(f"❌ Erreur format JSON invalide: {e}")
+        logger.warning(f"⚠️ Vérifiez la syntaxe du fichier JSON")
+        return _get_default_skills()
+    except Exception as e:
+        logger.error(f"❌ Erreur chargement JSON: {e}")
+        return _get_default_skills()
+
+
+def _get_default_skills() -> Tuple[List[str], Dict[str, List[str]]]:
+    """Liste de compétences minimale par défaut en cas d'erreur"""
+    default_skills = [
+        "python", "java", "javascript", "typescript", "react", "angular", "vue",
+        "node.js", "django", "flask", "spring", "laravel", "docker", "kubernetes",
+        "aws", "azure", "gcp", "postgresql", "mongodb", "redis", "git", "jenkins",
+        "tensorflow", "pytorch", "pandas", "numpy", "scikit-learn"
+    ]
+    
+    default_aliases = {
+        "javascript": ["javascript", "js"],
+        "typescript": ["typescript", "ts"],
+        "node.js": ["node.js", "node", "nodejs"],
+        "kubernetes": ["kubernetes", "k8s"],
+        "postgresql": ["postgresql", "postgres"],
+        "mongodb": ["mongodb", "mongo"]
+    }
+    
+    logger.info(f"📋 Utilisation de {len(default_skills)} compétences par défaut")
+    return default_skills, default_aliases
+
+
+# Chargement des compétences au démarrage
+logger.info("="*80)
+logger.info("🔄 CHARGEMENT DE LA BASE DE COMPÉTENCES")
+logger.info("="*80)
+
+SKILLS, SKILL_ALIASES = load_skills_from_json()
+
+logger.info(f"📊 Total compétences disponibles: {len(SKILLS)}")
+logger.info(f"📊 Total aliases: {len(SKILL_ALIASES)}")
+logger.info("="*80)
 
 # Villes marocaines étendues
 MOROCCAN_CITIES = {
@@ -121,6 +186,127 @@ MOROCCAN_CITIES = {
     "beni mellal": "Beni Mellal",
     "nador": "Nador",
 }
+
+# ========================================================
+# PRÉTRAITEMENT NLP COMPLET
+# ========================================================
+
+def pretraiter_texte(texte: str, preserve_skills: bool = True) -> Tuple[str, List[str]]:
+    """
+    Prétraite le texte avec le pipeline NLP complet
+    
+    Étapes:
+    1. Extraction du texte (déjà fait par lire_pdf_propre)
+    2. Passage en minuscules
+    3. Suppression de la ponctuation
+    4. Tokenisation
+    5. Suppression des stopwords
+    6. Lemmatisation
+    
+    Args:
+        texte: Texte brut à prétraiter
+        preserve_skills: Si True, conserve les compétences techniques intactes
+        
+    Returns:
+        Tuple (texte_pretraité, tokens_prétraités)
+    """
+    if not texte:
+        return "", []
+    
+    # Protection des compétences techniques (optionnel)
+    protected_terms = {}
+    if preserve_skills:
+        for skill in SKILLS:
+            # Remplacer temporairement les compétences par des placeholders
+            placeholder = f"__SKILL_{skill.replace(' ', '_').replace('.', '_').upper()}__"
+            pattern = r'\b' + re.escape(skill) + r'\b'
+            texte = re.sub(pattern, placeholder, texte, flags=re.IGNORECASE)
+            protected_terms[placeholder] = skill
+    
+    # ÉTAPE 1: Nettoyage préliminaire
+    texte = re.sub(r'\\[a-zA-Z]+\{.*?\}', ' ', texte)  # Commandes LaTeX
+    texte = re.sub(r'\d{4}-\d{4}', ' ', texte)  # Dates
+    texte = re.sub(r'[^\w\s\-]', ' ', texte)  # Caractères spéciaux
+    
+    # ÉTAPE 2: Passage en minuscules
+    texte_lower = texte.lower()
+    
+    # ÉTAPE 3: Suppression de la ponctuation (déjà fait partiellement ci-dessus)
+    # On garde les tirets pour les mots composés
+    translator = str.maketrans('', '', string.punctuation.replace('-', ''))
+    texte_sans_ponctuation = texte_lower.translate(translator)
+    
+    # ÉTAPE 4: Tokenisation
+    try:
+        tokens = word_tokenize(texte_sans_ponctuation)
+    except LookupError:
+        # Fallback: téléchargement et retry
+        logger.warning("Téléchargement punkt_tab en cours...")
+        try:
+            nltk.download('punkt_tab', quiet=False)
+            tokens = word_tokenize(texte_sans_ponctuation)
+        except:
+            logger.warning("Erreur tokenisation: utilisation du split simple.")
+            tokens = texte_sans_ponctuation.split()
+    except Exception as e:
+        logger.warning(f"Erreur tokenisation: {e}. Utilisation du split simple.")
+        tokens = texte_sans_ponctuation.split()
+    
+    # ÉTAPE 5: Suppression des stopwords et tokens courts
+    tokens_filtres = [
+        token for token in tokens 
+        if token not in stop_words 
+        and len(token) > 2  # Mots de plus de 2 caractères
+        and not token.isdigit()  # Pas de nombres purs
+    ]
+    
+    # ÉTAPE 6: Lemmatisation
+    tokens_lemmatises = []
+    for token in tokens_filtres:
+        try:
+            lemme = lemmatizer.lemmatize(token, pos='v')  # Verbes
+            lemme = lemmatizer.lemmatize(lemme, pos='n')  # Noms
+            tokens_lemmatises.append(lemme)
+        except Exception as e:
+            tokens_lemmatises.append(token)
+    
+    # Restauration des compétences protégées
+    tokens_finaux = []
+    for token in tokens_lemmatises:
+        if token in protected_terms:
+            tokens_finaux.append(protected_terms[token])
+        else:
+            tokens_finaux.append(token)
+    
+    texte_pretraite = " ".join(tokens_finaux)
+    
+    return texte_pretraite, tokens_finaux
+
+
+def pretraiter_competences(competences_list: List[str]) -> str:
+    """
+    Prétraite les compétences sans lemmatisation (pour préserver les noms techniques)
+    
+    Args:
+        competences_list: Liste de compétences
+        
+    Returns:
+        Chaîne de compétences normalisées
+    """
+    competences_normalisees = []
+    
+    for skill in competences_list:
+        # Normalisation simple: minuscules et trim
+        skill_norm = skill.lower().strip()
+        
+        # Suppression des caractères spéciaux sauf . et -
+        skill_norm = re.sub(r'[^\w\s\.\-]', '', skill_norm)
+        
+        if skill_norm and len(skill_norm) > 1:
+            competences_normalisees.append(skill_norm)
+    
+    return ",".join(competences_normalisees)
+
 
 # ========================================================
 # FONCTIONS D'EXTRACTION DE TEXTE
@@ -162,6 +348,7 @@ def lire_pdf_propre(path: str) -> str:
         logger.error(f"Erreur lecture PDF {path}: {e}")
         return ""
 
+
 # ========================================================
 # FONCTIONS D'EXTRACTION D'INFORMATIONS
 # ========================================================
@@ -196,13 +383,6 @@ def get_nom(text: str) -> str:
         if 2 <= len(words) <= 3:
             return nom
     
-    # 4️⃣ Cherche après "CV" ou "Curriculum"
-    match = re.search(r"(?:CV|Curriculum\s+Vitae)\s*[:\-]?\s*(.*?)\n", text, re.I)
-    if match:
-        candidates = match.group(1).split()
-        if len(candidates) >= 2 and candidates[0][0].isupper():
-            return " ".join(candidates[:2])
-    
     return "Candidat"
 
 
@@ -235,16 +415,6 @@ def get_titre_profil(text: str) -> str:
         if any(kw in title.lower() for kw in job_keywords):
             return title
     
-    # 3️⃣ Dans la section Experience
-    match = re.search(r"(?:Experience|Expérience)\s*[:\-]?\s*(.*?)(?:\n|$)", text, re.IGNORECASE)
-    if match:
-        block = match.group(1)
-        job_match = re.search(r"([A-Z][a-zA-Z\s\-/+\.]{5,80}?)\s*(?:\||,|\n)", block)
-        if job_match:
-            title = job_match.group(1).strip()
-            if any(kw in title.lower() for kw in job_keywords):
-                return title
-    
     return "Professional"
 
 
@@ -262,7 +432,7 @@ def get_annees(text: str) -> int:
     match = re.search(r"(\d+)\+?\s*(?:years?|ans|year|an)\s+(?:of\s+)?(?:experience|expérience)", text, re.I)
     if match:
         years = int(match.group(1))
-        return min(years, 50)  # Cap à 50 ans
+        return min(years, 50)
     
     # 2️⃣ Calcul depuis les dates
     total = 0
@@ -275,7 +445,6 @@ def get_annees(text: str) -> int:
         try:
             y1 = int(re.search(r"\d{4}", start).group())
             
-            # Validation de l'année de début
             if y1 < 1970 or y1 > 2025:
                 continue
             
@@ -291,7 +460,6 @@ def get_annees(text: str) -> int:
         except:
             continue
     
-    # Validation finale
     if total > 50:
         total = 50
     
@@ -323,17 +491,14 @@ def get_competences(text: str) -> List[str]:
     found = set()
     found_in_skills_section = set()
     
-    # Recherche des compétences
     for skill in SKILLS:
         pattern = r'\b' + re.escape(skill) + r'\b'
         
-        # Recherche dans tout le CV
         if re.search(pattern, lower):
             found.add(skill)
             if re.search(pattern, skills_section_lower):
                 found_in_skills_section.add(skill)
         else:
-            # Recherche des alias
             for alias in SKILL_ALIASES.get(skill, []):
                 alias_pattern = r'\b' + re.escape(alias) + r'\b'
                 if re.search(alias_pattern, lower):
@@ -342,7 +507,6 @@ def get_competences(text: str) -> List[str]:
                         found_in_skills_section.add(skill)
                     break
     
-    # Tri: compétences de la section Skills en premier
     result = list(found_in_skills_section) + list(found - found_in_skills_section)
     return result
 
@@ -429,10 +593,10 @@ def get_projets(text: str) -> str:
 # ========================================================
 
 def indexer_cvs():
-    """Fonction principale d'indexation des CV"""
+    """Fonction principale d'indexation des CV avec prétraitement NLP"""
     
     logger.info("="*120)
-    logger.info("DÉBUT DE L'INDEXATION DES CV")
+    logger.info("DÉBUT DE L'INDEXATION DES CV AVEC PRÉTRAITEMENT NLP")
     logger.info("="*120)
     
     # Suppression de l'ancien index
@@ -464,25 +628,29 @@ def indexer_cvs():
         filepath = os.path.join(CV_FOLDER, filename)
         
         try:
-            # Extraction du texte
-            texte = lire_pdf_propre(filepath)
+            # Extraction du texte brut
+            texte_brut = lire_pdf_propre(filepath)
             
-            if not texte:
+            if not texte_brut:
                 logger.warning(f"{i:02d}/{total_cvs} → ⚠️ CV vide: {filename}")
                 error_count += 1
                 continue
             
-            # Extraction des informations
-            nom = get_nom(texte)
-            titre_profil = get_titre_profil(texte)
-            annees = get_annees(texte)
-            competences = get_competences(texte)
-            projets = get_projets(texte)
-            loc = get_localisation(texte)
-            description_exp = get_description_experience(texte)
-            resume = get_resume_complet(texte)
+            # ✅ PRÉTRAITEMENT NLP COMPLET
+            texte_pretraite, tokens = pretraiter_texte(texte_brut, preserve_skills=True)
             
-            # Indexation
+            # Extraction des informations (sur texte brut pour meilleure précision)
+            nom = get_nom(texte_brut)
+            titre_profil = get_titre_profil(texte_brut)
+            annees = get_annees(texte_brut)
+            competences = get_competences(texte_brut)
+            competences_pretraitees = pretraiter_competences(competences)
+            projets = get_projets(texte_brut)
+            loc = get_localisation(texte_brut)
+            description_exp = get_description_experience(texte_brut)
+            resume = get_resume_complet(texte_brut)
+            
+            # Indexation avec texte prétraité
             writer.add_document(
                 doc_id=filename,
                 nom=nom,
@@ -490,15 +658,17 @@ def indexer_cvs():
                 localisation=loc,
                 annees=annees,
                 description_experience=description_exp,
-                competences=",".join(competences),
+                competences=competences_pretraitees,
                 projets=projets,
-                resume_complet=resume
+                resume_complet=resume,
+                texte_pretraite=texte_pretraite  # ✅ Nouveau champ
             )
             
             # Affichage
             skills_list = ", ".join(competences[:5]) + ("..." if len(competences) > 5 else "")
             projets_count = len([p for p in projets.split("|") if p.strip()])
-            resume_preview = (resume[:50] + "...") if len(resume) > 50 else resume
+            tokens_count = len(tokens)
+            tokens_preview = " ".join(tokens[:10]) + ("..." if len(tokens) > 10 else "")
             
             print(f"\n{i:02d}/{total_cvs} {'='*100}")
             print(f"  👤 NOM:              {nom}")
@@ -507,7 +677,8 @@ def indexer_cvs():
             print(f"  📅 EXPÉRIENCE:       {annees} ans")
             print(f"  🛠️  COMPÉTENCES:      {len(competences)} skills → {skills_list}")
             print(f"  📌 PROJETS:          {projets_count} projets")
-            print(f"  📝 RÉSUMÉ:           {resume_preview}")
+            print(f"  🔤 TOKENS NLP:       {tokens_count} tokens")
+            print(f"  📝 PREVIEW TOKENS:   {tokens_preview}")
             
             success_count += 1
             
@@ -527,6 +698,12 @@ def indexer_cvs():
         logger.info(f"   • CV en erreur: {error_count}")
         logger.info(f"   • Total traité: {total_cvs}")
         logger.info(f"\n📁 Index sauvegardé: {CV_INDEX}")
+        logger.info(f"\n🔍 Prétraitement NLP appliqué:")
+        logger.info(f"   ✓ Minuscules")
+        logger.info(f"   ✓ Suppression ponctuation")
+        logger.info(f"   ✓ Tokenisation")
+        logger.info(f"   ✓ Suppression stopwords")
+        logger.info(f"   ✓ Lemmatisation")
     except Exception as e:
         logger.error(f"❌ Erreur lors du commit: {e}")
 
