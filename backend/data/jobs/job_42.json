@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0042-2025",
+  "title": "DevOps Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Sqli Morocco",
+    "city": "Casablanca",
+    "sector": "Digital Services",
+    "size": "2,000+ employees",
+    "description": "Digital transformation and e-commerce specialist"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-12",
+  "description": "As a DevOps Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Troubleshoot production issues and incidents",
+    "Implement security best practices and compliance",
+    "Optimize deployment processes and reduce downtime",
+    "Automate infrastructure provisioning using IaC tools",
+    "Monitor system performance and implement alerting"
+  ],
+  "required_skills": [
+    "GCP",
+    "Terraform",
+    "Prometheus",
+    "Grafana",
+    "Ansible",
+    "Azure",
+    "Docker",
+    "AWS"
+  ],
+  "preferred_skills": [
+    "Docker",
+    "GitLab CI",
+    "CI/CD"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Latest technology equipment",
+    "Remote work options",
+    "Health insurance coverage",
+    "Stock options",
+    "Competitive salary package",
+    "Performance bonuses",
+    "Professional development budget"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@sqlimorocco.ma"
+}

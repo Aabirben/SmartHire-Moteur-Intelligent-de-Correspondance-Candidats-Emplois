@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0019-2025",
+  "title": "NLP Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-04",
+  "description": "As a NLP Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Conduct experiments and analyze results",
+    "Optimize model performance and accuracy",
+    "Collaborate with cross-functional teams",
+    "Develop and train machine learning models",
+    "Deploy models to production environments"
+  ],
+  "required_skills": [
+    "PyTorch",
+    "BERT",
+    "Scikit-learn",
+    "Machine Learning"
+  ],
+  "preferred_skills": [
+    "Deep Learning",
+    "TensorFlow",
+    "NLP",
+    "Computer Vision"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Career advancement opportunities",
+    "Team building activities",
+    "Paid vacation and holidays",
+    "Remote work options",
+    "Annual training allowance",
+    "Modern office environment",
+    "Performance bonuses",
+    "Gym membership",
+    "Professional development budget",
+    "Parental leave"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
+}

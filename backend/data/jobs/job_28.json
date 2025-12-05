@@ -1,0 +1,59 @@
+{
+  "job_id": "JOB-0028-2025",
+  "title": "Vue.js Developer",
+  "domain": "FRONTEND",
+  "company": {
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-04",
+  "description": "Join our team as a Vue.js Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
+  "responsibilities": [
+    "Integrate with backend APIs and services",
+    "Optimize frontend performance and loading times",
+    "Develop reusable UI components using modern frameworks",
+    "Ensure cross-browser compatibility and accessibility",
+    "Implement state management solutions"
+  ],
+  "required_skills": [
+    "Bootstrap",
+    "React",
+    "TypeScript",
+    "NLP"
+  ],
+  "preferred_skills": [
+    "Angular",
+    "jQuery"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Flexible working hours",
+    "Paid vacation and holidays",
+    "Competitive salary package",
+    "Gym membership",
+    "Health insurance coverage",
+    "Remote work options",
+    "Parental leave",
+    "Career advancement opportunities",
+    "Team building activities",
+    "Latest technology equipment"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
+}

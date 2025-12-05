@@ -1,0 +1,64 @@
+{
+  "job_id": "JOB-0009-2025",
+  "title": "Cloud Solutions Architect",
+  "domain": "CLOUD",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-10",
+  "description": "Join us as a Cloud Solutions Architect to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Provide technical guidance on cloud best practices",
+    "Implement high availability and disaster recovery",
+    "Automate cloud infrastructure management",
+    "Migrate on-premise applications to cloud",
+    "Ensure security and compliance in cloud environments",
+    "Design cloud-native architectures",
+    "Monitor and troubleshoot cloud services"
+  ],
+  "required_skills": [
+    "EC2",
+    "Docker",
+    "Terraform",
+    "Kubernetes",
+    "TensorFlow",
+    "Deep Learning"
+  ],
+  "preferred_skills": [
+    "CloudFormation",
+    "GCP",
+    "AWS",
+    "S3"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Performance bonuses",
+    "Team building activities",
+    "Stock options",
+    "Annual training allowance",
+    "Competitive salary package",
+    "Parental leave",
+    "Latest technology equipment",
+    "Professional development budget",
+    "Health insurance coverage"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

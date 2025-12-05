@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0022-2025",
+  "title": "NLP Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "CGI Morocco",
+    "city": "Rabat",
+    "sector": "IT Services",
+    "size": "3,000+ employees",
+    "description": "Canadian IT consulting and systems integration company"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-19",
+  "description": "As a NLP Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams",
+    "Process and prepare datasets for training",
+    "Conduct experiments and analyze results",
+    "Implement deep learning architectures",
+    "Research and implement state-of-the-art algorithms",
+    "Optimize model performance and accuracy",
+    "Deploy models to production environments"
+  ],
+  "required_skills": [
+    "Machine Learning",
+    "Computer Vision",
+    "Scikit-learn",
+    "OWASP",
+    "Network Security"
+  ],
+  "preferred_skills": [
+    "TensorFlow",
+    "PyTorch"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Professional development budget",
+    "Performance bonuses",
+    "Stock options",
+    "Parental leave",
+    "Paid vacation and holidays",
+    "Remote work options",
+    "Health insurance coverage",
+    "Flexible working hours",
+    "Modern office environment",
+    "Career advancement opportunities"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@cgimorocco.ma"
+}

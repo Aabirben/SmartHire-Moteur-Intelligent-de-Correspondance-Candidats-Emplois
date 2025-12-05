@@ -1,0 +1,62 @@
+{
+  "job_id": "JOB-0041-2025",
+  "title": "Cybersecurity Analyst",
+  "domain": "SECURITY",
+  "company": {
+    "name": "Capgemini Morocco",
+    "city": "Casablanca",
+    "sector": "Consulting & Technology",
+    "size": "10,000+ employees",
+    "description": "Global leader in consulting, technology services and digital transformation"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Expert",
+  "salary": "40,000 - 60,000 MAD/month",
+  "posted_date": "2025-11-12",
+  "description": "We need a Cybersecurity Analyst to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "responsibilities": [
+    "Respond to security incidents and threats",
+    "Conduct security awareness training",
+    "Develop security policies and procedures",
+    "Review code and architecture for security issues",
+    "Conduct security assessments and penetration testing"
+  ],
+  "required_skills": [
+    "Firewall",
+    "Security Auditing",
+    "Penetration Testing",
+    "Network Security",
+    "OWASP",
+    "Jenkins",
+    "AWS"
+  ],
+  "preferred_skills": [
+    "Kali Linux",
+    "SIEM"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "8+ years of professional experience",
+    "Extensive experience leading technical initiatives",
+    "Thought leadership in the field"
+  ],
+  "benefits": [
+    "Paid vacation and holidays",
+    "Flexible working hours",
+    "Performance bonuses",
+    "Remote work options",
+    "Parental leave",
+    "Professional development budget",
+    "Latest technology equipment",
+    "Annual training allowance",
+    "Gym membership",
+    "Team building activities"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@capgeminimorocco.ma"
+}

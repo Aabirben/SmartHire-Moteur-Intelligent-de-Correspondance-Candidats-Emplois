@@ -1,0 +1,57 @@
+{
+  "job_id": "JOB-0050-2025",
+  "title": "Vue.js Developer",
+  "domain": "FRONTEND",
+  "company": {
+    "name": "Orange Digital Center",
+    "city": "Casablanca",
+    "sector": "Telecom & Digital",
+    "size": "1,000+ employees",
+    "description": "Orange's digital innovation center for Africa and Middle East"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-13",
+  "description": "Join our team as a Vue.js Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
+  "responsibilities": [
+    "Build responsive and intuitive user interfaces",
+    "Develop reusable UI components using modern frameworks",
+    "Collaborate with designers to implement pixel-perfect designs",
+    "Optimize frontend performance and loading times",
+    "Write unit and integration tests"
+  ],
+  "required_skills": [
+    "TypeScript",
+    "Vue.js",
+    "Bootstrap",
+    "React"
+  ],
+  "preferred_skills": [
+    "CSS",
+    "Tailwind"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Flexible working hours",
+    "Stock options",
+    "Annual training allowance",
+    "Latest technology equipment",
+    "Performance bonuses",
+    "Competitive salary package",
+    "Health insurance coverage",
+    "Career advancement opportunities",
+    "Professional development budget"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@orangedigitalcenter.ma"
+}

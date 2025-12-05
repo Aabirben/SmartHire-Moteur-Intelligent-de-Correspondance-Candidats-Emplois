@@ -1,0 +1,59 @@
+{
+  "job_id": "JOB-0037-2025",
+  "title": "React Native Developer",
+  "domain": "MOBILE",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-16",
+  "description": "We're looking for an experienced React Native Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "responsibilities": [
+    "Implement mobile UI/UX following platform guidelines",
+    "Integrate with backend APIs and third-party services",
+    "Handle app store submissions and updates",
+    "Implement push notifications and analytics",
+    "Implement offline-first architecture",
+    "Debug and resolve mobile-specific issues",
+    "Optimize app performance and battery usage",
+    "Develop native or cross-platform mobile applications"
+  ],
+  "required_skills": [
+    "Java",
+    "Swift",
+    "Flutter",
+    "Kotlin",
+    "Jenkins"
+  ],
+  "preferred_skills": [
+    "React Native",
+    "iOS"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Latest technology equipment",
+    "Team building activities",
+    "Paid vacation and holidays",
+    "Remote work options",
+    "Annual training allowance",
+    "Gym membership",
+    "Flexible working hours"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

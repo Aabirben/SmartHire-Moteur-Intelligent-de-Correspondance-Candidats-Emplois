@@ -1,0 +1,58 @@
+{
+  "job_id": "JOB-0012-2025",
+  "title": "Machine Learning Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "CGI Morocco",
+    "city": "Rabat",
+    "sector": "IT Services",
+    "size": "3,000+ employees",
+    "description": "Canadian IT consulting and systems integration company"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-06",
+  "description": "As a Machine Learning Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Collaborate with cross-functional teams",
+    "Optimize model performance and accuracy",
+    "Process and prepare datasets for training",
+    "Implement deep learning architectures",
+    "Develop and train machine learning models"
+  ],
+  "required_skills": [
+    "Machine Learning",
+    "NLP",
+    "TensorFlow",
+    "Spark",
+    "TensorFlow"
+  ],
+  "preferred_skills": [
+    "Computer Vision",
+    "PyTorch",
+    "BERT",
+    "Scikit-learn"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Team building activities",
+    "Modern office environment",
+    "Career advancement opportunities",
+    "Flexible working hours",
+    "Latest technology equipment",
+    "Remote work options",
+    "Annual training allowance"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@cgimorocco.ma"
+}

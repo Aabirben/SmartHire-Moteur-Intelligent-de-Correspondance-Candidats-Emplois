@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0043-2025",
+  "title": "Platform Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Maroc Telecom IT",
+    "city": "Rabat",
+    "sector": "Telecommunications",
+    "size": "11,000+ employees",
+    "description": "Leading telecom operator in Morocco and Africa"
+  },
+  "location": "Rabat, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-10-29",
+  "description": "As a Platform Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Monitor system performance and implement alerting",
+    "Automate infrastructure provisioning using IaC tools",
+    "Implement security best practices and compliance",
+    "Troubleshoot production issues and incidents",
+    "Build and maintain CI/CD pipelines"
+  ],
+  "required_skills": [
+    "Azure",
+    "CI/CD",
+    "Ansible",
+    "Prometheus",
+    "Docker",
+    "Kubernetes",
+    "TensorFlow",
+    "NLP"
+  ],
+  "preferred_skills": [
+    "Jenkins",
+    "AWS"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Parental leave",
+    "Gym membership",
+    "Annual training allowance",
+    "Career advancement opportunities",
+    "Competitive salary package",
+    "Latest technology equipment",
+    "Paid vacation and holidays",
+    "Flexible working hours"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@maroctelecomit.ma"
+}
