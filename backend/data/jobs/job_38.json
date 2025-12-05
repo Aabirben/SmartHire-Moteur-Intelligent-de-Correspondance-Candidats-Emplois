@@ -1,0 +1,64 @@
+{
+  "job_id": "JOB-0038-2025",
+  "title": "Data Engineer",
+  "domain": "DATA",
+  "company": {
+    "name": "Sqli Morocco",
+    "city": "Casablanca",
+    "sector": "Digital Services",
+    "size": "2,000+ employees",
+    "description": "Digital transformation and e-commerce specialist"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-17",
+  "description": "We are hiring a Data Engineer to help us unlock insights from our data. You will design and build data pipelines, develop ML models, and work with large-scale datasets to solve complex business problems.",
+  "responsibilities": [
+    "Deploy ML models to production",
+    "Document data workflows and models",
+    "Collaborate with data scientists and analysts",
+    "Optimize data processing and storage",
+    "Design and build scalable data pipelines",
+    "Process and analyze large datasets"
+  ],
+  "required_skills": [
+    "Airflow",
+    "Scikit-learn",
+    "Pandas",
+    "Hadoop",
+    "Kafka",
+    "Spark",
+    "Security Auditing",
+    "OWASP"
+  ],
+  "preferred_skills": [
+    "NumPy",
+    "TensorFlow",
+    "PyTorch"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Paid vacation and holidays",
+    "Gym membership",
+    "Remote work options",
+    "Career advancement opportunities",
+    "Team building activities",
+    "Parental leave",
+    "Annual training allowance",
+    "Stock options",
+    "Professional development budget",
+    "Modern office environment"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@sqlimorocco.ma"
+}

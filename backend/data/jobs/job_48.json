@@ -1,0 +1,57 @@
+{
+  "job_id": "JOB-0048-2025",
+  "title": "Security Engineer",
+  "domain": "SECURITY",
+  "company": {
+    "name": "BMCE Bank Tech Hub",
+    "city": "Casablanca",
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-08",
+  "description": "We need a Security Engineer to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "responsibilities": [
+    "Respond to security incidents and threats",
+    "Review code and architecture for security issues",
+    "Develop security policies and procedures",
+    "Implement security controls and monitoring",
+    "Stay updated on latest security threats and trends"
+  ],
+  "required_skills": [
+    "OWASP",
+    "Kali Linux",
+    "SIEM",
+    "Kotlin"
+  ],
+  "preferred_skills": [
+    "Firewall",
+    "Security Auditing",
+    "Network Security"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Performance bonuses",
+    "Remote work options",
+    "Annual training allowance",
+    "Competitive salary package",
+    "Professional development budget",
+    "Paid vacation and holidays",
+    "Stock options"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@bmcebanktechhub.ma"
+}

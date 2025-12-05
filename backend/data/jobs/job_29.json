@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0029-2025",
+  "title": "Security Architect",
+  "domain": "SECURITY",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-04",
+  "description": "We need a Security Architect to protect our systems and data. You will be responsible for security assessments, incident response, and implementing security best practices across our infrastructure.",
+  "responsibilities": [
+    "Implement security controls and monitoring",
+    "Review code and architecture for security issues",
+    "Respond to security incidents and threats",
+    "Conduct security awareness training",
+    "Perform vulnerability scanning and remediation",
+    "Stay updated on latest security threats and trends"
+  ],
+  "required_skills": [
+    "Penetration Testing",
+    "OWASP",
+    "Firewall",
+    "Kali Linux",
+    "Swift"
+  ],
+  "preferred_skills": [
+    "Network Security",
+    "Security Auditing",
+    "SIEM"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Parental leave",
+    "Professional development budget",
+    "Annual training allowance",
+    "Performance bonuses",
+    "Career advancement opportunities",
+    "Competitive salary package",
+    "Latest technology equipment",
+    "Flexible working hours",
+    "Team building activities",
+    "Remote work options"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

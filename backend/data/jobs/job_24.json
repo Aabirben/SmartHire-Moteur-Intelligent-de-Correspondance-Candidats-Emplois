@@ -1,0 +1,64 @@
+{
+  "job_id": "JOB-0024-2025",
+  "title": "Vue.js Developer",
+  "domain": "FRONTEND",
+  "company": {
+    "name": "Webhelp Morocco",
+    "city": "Casablanca",
+    "sector": "BPO & Technology",
+    "size": "15,000+ employees",
+    "description": "Global leader in customer experience and digital services"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-19",
+  "description": "Join our team as a Vue.js Developer to create exceptional user experiences. You will work closely with designers and backend engineers to build responsive, performant web applications using the latest frontend technologies.",
+  "responsibilities": [
+    "Develop reusable UI components using modern frameworks",
+    "Optimize frontend performance and loading times",
+    "Ensure cross-browser compatibility and accessibility",
+    "Integrate with backend APIs and services",
+    "Build responsive and intuitive user interfaces",
+    "Write unit and integration tests",
+    "Implement state management solutions"
+  ],
+  "required_skills": [
+    "Angular",
+    "Tailwind",
+    "JavaScript",
+    "Webpack",
+    "React",
+    "GCP"
+  ],
+  "preferred_skills": [
+    "Bootstrap",
+    "Vue.js",
+    "HTML",
+    "jQuery"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Stock options",
+    "Flexible working hours",
+    "Professional development budget",
+    "Team building activities",
+    "Modern office environment",
+    "Career advancement opportunities",
+    "Paid vacation and holidays",
+    "Parental leave",
+    "Remote work options",
+    "Health insurance coverage"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@webhelpmorocco.ma"
+}

@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0030-2025",
+  "title": "Senior Node.js Developer",
+  "domain": "BACKEND",
+  "company": {
+    "name": "BMCE Bank Tech Hub",
+    "city": "Casablanca",
+    "sector": "Banking & Technology",
+    "size": "8,000+ employees",
+    "description": "Innovative bank with cutting-edge technology hub"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-10-27",
+  "description": "We are seeking a talented Senior Node.js Developer to join our engineering team. You will be responsible for building and maintaining scalable backend services that power our applications. This role requires strong problem-solving skills and experience with modern backend technologies.",
+  "responsibilities": [
+    "Design and implement scalable backend services and RESTful APIs",
+    "Implement authentication and authorization mechanisms",
+    "Write clean, maintainable, and well-documented code",
+    "Optimize database queries and ensure data integrity",
+    "Monitor application performance and troubleshoot issues",
+    "Participate in code reviews and technical discussions"
+  ],
+  "required_skills": [
+    "GraphQL",
+    "Spring Boot",
+    "MongoDB",
+    "Django",
+    "Grafana"
+  ],
+  "preferred_skills": [
+    "Node.js",
+    "Express.js"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Stock options",
+    "Parental leave",
+    "Health insurance coverage",
+    "Gym membership",
+    "Team building activities",
+    "Remote work options",
+    "Professional development budget",
+    "Paid vacation and holidays",
+    "Competitive salary package",
+    "Annual training allowance"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@bmcebanktechhub.ma"
+}

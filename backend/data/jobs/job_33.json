@@ -1,0 +1,61 @@
+{
+  "job_id": "JOB-0033-2025",
+  "title": "CI/CD Engineer",
+  "domain": "DEVOPS",
+  "company": {
+    "name": "Accenture Morocco",
+    "city": "Casablanca",
+    "sector": "Consulting & Technology",
+    "size": "5,000+ employees",
+    "description": "Management consulting and information technology services company"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Hybrid",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-15",
+  "description": "As a CI/CD Engineer, you will be instrumental in automating our infrastructure and improving our deployment processes. We need someone who can build reliable CI/CD pipelines and ensure our systems are scalable and secure.",
+  "responsibilities": [
+    "Document infrastructure and processes",
+    "Automate infrastructure provisioning using IaC tools",
+    "Build and maintain CI/CD pipelines",
+    "Optimize deployment processes and reduce downtime",
+    "Implement security best practices and compliance",
+    "Manage cloud infrastructure and resources"
+  ],
+  "required_skills": [
+    "AWS",
+    "Ansible",
+    "Kubernetes",
+    "Jenkins",
+    "Azure"
+  ],
+  "preferred_skills": [
+    "GCP",
+    "Grafana",
+    "GitLab CI"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Latest technology equipment",
+    "Remote work options",
+    "Professional development budget",
+    "Career advancement opportunities",
+    "Annual training allowance",
+    "Health insurance coverage",
+    "Paid vacation and holidays",
+    "Team building activities",
+    "Modern office environment"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@accenturemorocco.ma"
+}

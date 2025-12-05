@@ -1,0 +1,58 @@
+{
+  "job_id": "JOB-0018-2025",
+  "title": "Deep Learning Engineer",
+  "domain": "ML_AI",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "CDD (Fixed-term)",
+  "experience_level": "Junior",
+  "salary": "8,000 - 15,000 MAD/month",
+  "posted_date": "2025-11-09",
+  "description": "As a Deep Learning Engineer, you will work on cutting-edge AI projects. You will develop and deploy machine learning models that drive our AI-powered products and services.",
+  "responsibilities": [
+    "Implement deep learning architectures",
+    "Conduct experiments and analyze results",
+    "Process and prepare datasets for training",
+    "Optimize model performance and accuracy",
+    "Develop and train machine learning models",
+    "Collaborate with cross-functional teams"
+  ],
+  "required_skills": [
+    "Machine Learning",
+    "BERT",
+    "Computer Vision",
+    "Jenkins",
+    "Azure"
+  ],
+  "preferred_skills": [
+    "PyTorch",
+    "Deep Learning",
+    "NLP",
+    "TensorFlow"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "0-2 years of professional experience",
+    "Understanding of software development fundamentals"
+  ],
+  "benefits": [
+    "Modern office environment",
+    "Parental leave",
+    "Remote work options",
+    "Career advancement opportunities",
+    "Annual training allowance",
+    "Latest technology equipment"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

@@ -1,0 +1,60 @@
+{
+  "job_id": "JOB-0014-2025",
+  "title": "Cloud Infrastructure Engineer",
+  "domain": "CLOUD",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "Remote",
+  "contract_type": "Freelance/Contract",
+  "experience_level": "Mid-Level",
+  "salary": "15,000 - 25,000 MAD/month",
+  "posted_date": "2025-11-15",
+  "description": "Join us as a Cloud Infrastructure Engineer to architect and implement cloud solutions. You will design scalable, secure, and cost-effective cloud infrastructure using industry best practices.",
+  "responsibilities": [
+    "Migrate on-premise applications to cloud",
+    "Implement high availability and disaster recovery",
+    "Design cloud-native architectures",
+    "Automate cloud infrastructure management",
+    "Monitor and troubleshoot cloud services",
+    "Provide technical guidance on cloud best practices",
+    "Optimize cloud costs and resource utilization"
+  ],
+  "required_skills": [
+    "S3",
+    "Kubernetes",
+    "Azure",
+    "Docker",
+    "GCP"
+  ],
+  "preferred_skills": [
+    "CloudFormation",
+    "Lambda",
+    "EC2",
+    "AWS"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "3-5 years of professional experience",
+    "Proven track record of delivering projects"
+  ],
+  "benefits": [
+    "Annual training allowance",
+    "Team building activities",
+    "Remote work options",
+    "Parental leave",
+    "Career advancement opportunities",
+    "Stock options",
+    "Latest technology equipment"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}

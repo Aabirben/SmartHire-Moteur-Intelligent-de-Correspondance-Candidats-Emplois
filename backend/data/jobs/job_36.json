@@ -1,0 +1,57 @@
+{
+  "job_id": "JOB-0036-2025",
+  "title": "iOS Developer",
+  "domain": "MOBILE",
+  "company": {
+    "name": "OCP Group IT Division",
+    "city": "Casablanca",
+    "sector": "Industry & Technology",
+    "size": "20,000+ employees",
+    "description": "World leader in phosphates with an innovative IT division"
+  },
+  "location": "Casablanca, Morocco",
+  "work_mode": "On-site",
+  "contract_type": "CDI (Permanent)",
+  "experience_level": "Senior",
+  "salary": "25,000 - 40,000 MAD/month",
+  "posted_date": "2025-11-23",
+  "description": "We're looking for an experienced iOS Developer to develop high-quality mobile applications. You will be responsible for the entire mobile app lifecycle, from concept to deployment and maintenance.",
+  "responsibilities": [
+    "Develop native or cross-platform mobile applications",
+    "Implement offline-first architecture",
+    "Implement push notifications and analytics",
+    "Integrate with backend APIs and third-party services",
+    "Debug and resolve mobile-specific issues"
+  ],
+  "required_skills": [
+    "Android",
+    "iOS",
+    "React Native",
+    "Java",
+    "Flutter",
+    "Kotlin",
+    "Docker"
+  ],
+  "preferred_skills": [
+    "Swift"
+  ],
+  "requirements": [
+    "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+    "Strong problem-solving and analytical skills",
+    "Excellent communication and teamwork abilities",
+    "Passion for technology and continuous learning",
+    "5+ years of professional experience",
+    "Experience mentoring junior developers",
+    "Strong leadership and architectural skills"
+  ],
+  "benefits": [
+    "Competitive salary package",
+    "Health insurance coverage",
+    "Modern office environment",
+    "Parental leave",
+    "Gym membership",
+    "Stock options"
+  ],
+  "application_deadline": "2025-12-26",
+  "contact_email": "careers@ocpgroupitdivision.ma"
+}
