@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --surface: 220 27% 8%;
+   
+    --card: 220 27% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 27% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 271 81% 56%;
+    --primary-foreground: 210 40% 98%;
+    --primary-light: 271 81% 66%;
+    --primary-glow: 271 91% 65%;
+   
+    --accent: 188 94% 43%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --accent-glow: 188 100% 50%;
+
+    --secondary: 220 27% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 27% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 27% 15%;
+    --input: 220 27% 12%;
+    --ring: 271 81% 56%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 27% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 271 81% 56%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 27% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 27% 15%;
+    --sidebar-ring: 271 81% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    @apply bg-primary/30;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 40px hsl(var(--accent-glow) / 0.4);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(135deg, hsl(271 81% 56%), hsl(271 91% 65%)) border-box;
+    border: 2px solid transparent;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    }
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(271 81% 56%), hsl(271 91% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .mesh-gradient {
+    background: 
+      radial-gradient(at 0% 0%, hsl(271 81% 56% / 0.3) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsl(188 94% 43% / 0.3) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsl(271 81% 56% / 0.3) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsl(188 94% 43% / 0.3) 0px, transparent 50%);
+  }
+}
