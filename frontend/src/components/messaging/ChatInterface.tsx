@@ -5,65 +5,81 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Send, CheckCheck } from "lucide-react";
 import { Message } from "@/types";
-import { mockMessages } from "@/utils/mockData";
+import { messagingApi } from "@/utils/api";
+import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
 
 interface ChatInterfaceProps {
   conversationId: string;
-  currentUserId: string;
 }
 
-export function ChatInterface({ conversationId, currentUserId }: ChatInterfaceProps) {
+export function ChatInterface({ conversationId }: ChatInterfaceProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [newMessage, setNewMessage] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const { user } = useAuth();
 
   useEffect(() => {
-    setMessages(mockMessages[conversationId] || []);
+    if (conversationId) {
+      loadMessages(parseInt(conversationId));
+    }
   }, [conversationId]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSend = () => {
-    if (!newMessage.trim()) {
+  const loadMessages = async (otherUserId: number) => {
+    try {
+      const data = await messagingApi.getMessages(otherUserId);
+      const transformedMessages = data.map((msg: any) => ({
+        id: msg.id.toString(),
+        senderId: msg.sender_id.toString(),
+        senderName: msg.sender_name,
+        content: msg.content,
+        timestamp: new Date(msg.timestamp),
+        read: msg.read
+      }));
+      setMessages(transformedMessages);
+    } catch (error) {
+      toast.error("Failed to load messages");
+    }
+  };
+
+  const handleSend = async () => {
+    if (!newMessage.trim() || !conversationId) {
       toast.error("Please enter a message");
       return;
     }
 
-    const message: Message = {
-      id: `msg-${Date.now()}`,
-      senderId: currentUserId,
-      senderName: "You",
-      content: newMessage,
-      timestamp: new Date(),
-      read: false
-    };
+    try {
+      const response = await messagingApi.sendMessage(
+        parseInt(conversationId),
+        newMessage
+      );
 
-    setMessages([...messages, message]);
-    setNewMessage("");
-    toast.success("Message sent!");
-
-    // Simulate response after 2s
-    setTimeout(() => {
-      const response: Message = {
-        id: `msg-${Date.now()}`,
-        senderId: "other-user",
-        senderName: "Recruiter",
-        content: "Thank you for your message. I'll get back to you soon!",
-        timestamp: new Date(),
+      const newMsg: Message = {
+        id: response.id.toString(),
+        senderId: user?.id.toString() || '',
+        senderName: `${user?.prenom} ${user?.nom}`,
+        content: newMessage,
+        timestamp: new Date(response.timestamp),
         read: false
       };
-      setMessages(prev => [...prev, response]);
-    }, 2000);
+
+      setMessages([...messages, newMsg]);
+      setNewMessage("");
+      toast.success("Message sent!");
+    } catch (error) {
+      toast.error("Failed to send message");
+    }
   };
 
   return (
     <div className="flex flex-col h-[600px]">
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.map((message) => {
-          const isOwn = message.senderId === currentUserId;
+          const isOwn = message.senderId === user?.id.toString();
           return (
             <div key={message.id} className={`flex gap-3 ${isOwn ? 'flex-row-reverse' : ''}`}>
               <Avatar className="h-10 w-10 flex-shrink-0">
