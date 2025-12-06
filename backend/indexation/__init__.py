@@ -1,6 +1,6 @@
 """
 ============================================================================
-SMARTHIRE - Indexation Package
+SMARTHIRE - Indexation Package (CORRIGÉ)
 Module d'indexation automatique avec preprocessing NLP pour CV, offres et requêtes
 ============================================================================
 """
@@ -29,19 +29,16 @@ from .job_indexer import (
     job_schema
 )
 
+# ✅ CORRECTION: Importer la classe au lieu des fonctions inexistantes
 from .query_indexer import (
-    get_query_schema,
-    init_query_index,
-    pretraiter_requete_avec_bool,
-    pretraiter_requete_simple,
-    detect_search_mode,
-    indexer_requete,
-    rechercher_historique,
-    statistiques_filtres,
-    tendances_recherches,
-    filtres_combines_populaires,
-    statistiques_globales,
-    nettoyer_requetes_anciennes
+    QueryIndexSchema,      # ✅ Classe qui existe
+    QueryIndexManager,     # ✅ Classe qui existe
+    QueryValidator,        # ✅ Classe qui existe
+    QueryCorrector,        # ✅ Classe qui existe
+    QueryProcessor as QueryIndexProcessor,  # ✅ Renommé pour éviter conflit
+    QueryIndexer,          # ✅ Classe principale
+    indexer_requete,       # ✅ Fonction qui existe
+    prepare_query_for_search,  # ✅ Fonction qui existe
 )
 
 __all__ = [
@@ -66,19 +63,15 @@ __all__ = [
     'indexer_offres_automatique',
     'job_schema',
     
-    # Query Indexer
-    'get_query_schema',
-    'init_query_index',
-    'pretraiter_requete_avec_bool',
-    'pretraiter_requete_simple',
-    'detect_search_mode',
+    # Query Indexer (CORRIGÉ)
+    'QueryIndexSchema',
+    'QueryIndexManager',
+    'QueryValidator',
+    'QueryCorrector',
+    'QueryIndexProcessor',
+    'QueryIndexer',
     'indexer_requete',
-    'rechercher_historique',
-    'statistiques_filtres',
-    'tendances_recherches',
-    'filtres_combines_populaires',
-    'statistiques_globales',
-    'nettoyer_requetes_anciennes'
+    'prepare_query_for_search',
 ]
 
 __version__ = '1.0.0'
