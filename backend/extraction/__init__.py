@@ -1,9 +1,8 @@
-# ============================================================================
-# backend/extraction/__init__.py
-# ============================================================================
 """
-Extraction Package
-Modules pour extraire les données des CV et offres
+============================================================================
+SMARTHIRE - Extraction Package
+Modules pour extraire les données des CV et offres d'emploi
+============================================================================
 """
 
 from .pdf_reader import (
@@ -21,7 +20,8 @@ from .skills_extractor import (
     extraire_competences_avec_stats,
     categoriser_competences,
     valider_competence,
-    normaliser_competence
+    normaliser_competence,
+    comparer_competences
 )
 
 from .info_extractor import (
@@ -51,6 +51,7 @@ __all__ = [
     'categoriser_competences',
     'valider_competence',
     'normaliser_competence',
+    'comparer_competences',
     
     # Info Extractor
     'extraire_nom',
@@ -62,3 +63,6 @@ __all__ = [
     'extraire_projets',
     'extraire_toutes_infos'
 ]
+
+__version__ = '1.0.0'
+__author__ = 'SmartHire Team'

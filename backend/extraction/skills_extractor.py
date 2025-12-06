@@ -1,7 +1,7 @@
 """
 ============================================================================
-SMARTHIRE - Skills Extractor Module
-Extraction intelligente des compétences techniques depuis les CV et offres
+SMARTHIRE - Skills Extractor Module (PRODUCTION HARDENED)
+Extraction robuste des compétences - Gère tous les cas limites
 ============================================================================
 """
 
@@ -9,7 +9,7 @@ import re
 import json
 import logging
 from pathlib import Path
-from typing import List, Dict, Set, Tuple
+from typing import List, Dict, Set, Tuple, Optional
 
 from backend.config.settings import SKILLS_FILE
 
@@ -68,19 +68,30 @@ class SkillsDatabase:
     def _load_default_skills(self):
         """Charge une liste minimale par défaut"""
         default_skills = [
-            "python", "java", "javascript", "typescript", "react", "angular", "vue",
-            "node.js", "django", "flask", "spring", "laravel", "docker", "kubernetes",
-            "aws", "azure", "gcp", "postgresql", "mongodb", "redis", "git", "jenkins",
-            "tensorflow", "pytorch", "pandas", "numpy", "scikit-learn"
+            "Python", "Java", "JavaScript", "TypeScript", "C++", "C#", "Go", "Rust", "PHP", "Ruby",
+            "React", "Angular", "Vue.js", "Svelte", "jQuery",
+            "Node.js", "Django", "Flask", "FastAPI", "Spring", "Spring Boot", "Laravel", "Express",
+            ".NET", "ASP.NET",
+            "Docker", "Kubernetes", "Jenkins", "GitLab CI", "GitHub Actions", "CircleCI",
+            "AWS", "Azure", "GCP", "Terraform", "Ansible",
+            "PostgreSQL", "MySQL", "MongoDB", "Redis", "Cassandra", "Oracle", "SQL Server",
+            "Git", "SVN", "Mercurial",
+            "TensorFlow", "PyTorch", "scikit-learn", "Keras", "Pandas", "NumPy",
+            "REST API", "GraphQL", "gRPC", "WebSockets",
+            "Agile", "Scrum", "Kanban", "DevOps", "CI/CD", "Microservices", "Machine Learning",
+            "Data Science", "Big Data", "Cloud Computing"
         ]
         
         default_aliases = {
-            "javascript": ["javascript", "js"],
-            "typescript": ["typescript", "ts"],
-            "node.js": ["node.js", "node", "nodejs"],
-            "kubernetes": ["kubernetes", "k8s"],
-            "postgresql": ["postgresql", "postgres"],
-            "mongodb": ["mongodb", "mongo"]
+            "JavaScript": ["JavaScript", "JS", "javascript"],
+            "TypeScript": ["TypeScript", "TS", "typescript"],
+            "Node.js": ["Node.js", "Node", "NodeJS", "nodejs"],
+            "Kubernetes": ["Kubernetes", "k8s", "K8s"],
+
+            "PostgreSQL": ["PostgreSQL", "Postgres", "postgres"],
+            "MongoDB": ["MongoDB", "Mongo", "mongo"],
+            "Machine Learning": ["Machine Learning", "ML", "ml"],
+            "Artificial Intelligence": ["Artificial Intelligence", "AI", "ai"]
         }
         
         self.skills = default_skills
@@ -96,7 +107,7 @@ class SkillsDatabase:
         return self.skills
     
     def get_skills_set(self) -> Set[str]:
-        """Retourne un set de toutes les compétences (pour préservation)"""
+        """Retourne un set de toutes les compétences"""
         return set(self.skills)
 
 
@@ -112,11 +123,42 @@ def get_skills_database() -> SkillsDatabase:
 
 
 # ========================================================
+# PRÉTRAITEMENT DU TEXTE
+# ========================================================
+def pretraiter_texte(texte: str) -> str:
+    """
+    Nettoie et normalise le texte pour l'extraction
+    
+    Args:
+        texte: Texte brut
+        
+    Returns:
+        Texte nettoyé
+    """
+    if not texte:
+        return ""
+    
+    # Remplace les tabulations par des espaces
+    texte = texte.replace('\t', ' ')
+    
+    # Normalise les retours à la ligne
+    texte = re.sub(r'\r\n', '\n', texte)
+    
+    # Supprime les espaces multiples (mais préserve les retours à la ligne)
+    texte = re.sub(r' +', ' ', texte)
+    
+    # Supprime les retours à la ligne multiples
+    texte = re.sub(r'\n{3,}', '\n\n', texte)
+    
+    return texte.strip()
+
+
+# ========================================================
 # EXTRACTION DE COMPÉTENCES
 # ========================================================
 def extraire_competences(texte: str, priorite_section_skills: bool = True) -> List[str]:
     """
-    Extrait les compétences techniques d'un texte
+    Extrait les compétences techniques d'un texte de manière robuste
     
     Args:
         texte: Texte à analyser
@@ -125,6 +167,12 @@ def extraire_competences(texte: str, priorite_section_skills: bool = True) -> Li
     Returns:
         Liste ordonnée de compétences trouvées
     """
+    if not texte or not isinstance(texte, str):
+        return []
+    
+    # Prétraitement
+    texte = pretraiter_texte(texte)
+    
     if not texte:
         return []
     
@@ -139,31 +187,40 @@ def extraire_competences(texte: str, priorite_section_skills: bool = True) -> Li
     skills_section_lower = ""
     
     if priorite_section_skills:
-        match = re.search(
-            r"(?:skills|compétences|technical\s+skills|expertise)\s*[:\-]?\s*(.*?)(?:Projects|Education|Experience|Languages|Certifications|$)",
-            texte,
-            re.DOTALL | re.IGNORECASE
-        )
-        if match:
-            skills_section = match.group(1)
-            skills_section_lower = skills_section.lower()
+        # Patterns multiples pour détecter la section Skills
+        patterns = [
+            r"\b(?:SKILLS?|COMPÉTENCES?|TECHNICAL\s+SKILLS?|EXPERTISE|TECHNOLOGIES)\b\s*[:\-]?\s*\n(.*?)(?:\n\s*\b(?:PROJECTS?|EDUCATION|EXPERIENCE|EXPÉRIENCE|LANGUAGES?|CERTIFICATIONS?|FORMATION|ACHIEVEMENTS?|RÉALISATIONS?)\b|$)",
+            r"\b(?:SKILLS?|COMPÉTENCES?)\b\s*[:\-]?\s*\n(.*?)(?:\n\s*[A-Z]{2,}|$)",
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, texte, re.DOTALL | re.IGNORECASE | re.MULTILINE)
+            if match:
+                skills_section = match.group(1)
+                skills_section_lower = skills_section.lower()
+                break
     
     # Recherche des compétences
     found = set()
     found_in_skills_section = set()
     
     for skill in skills_list:
-        # Pattern avec word boundaries
-        pattern = r'\b' + re.escape(skill.lower()) + r'\b'
+        skill_lower = skill.lower()
         
-        # Recherche dans le texte complet
-        if re.search(pattern, lower_text):
-            found.add(skill)
+        # Pattern avec word boundaries pour éviter les faux positifs
+        # Gère aussi les cas avec points (Node.js, Vue.js, etc.)
+        pattern = r'\b' + re.escape(skill_lower) + r'\b'
+        
+        try:
+            # Recherche dans le texte complet
+            if re.search(pattern, lower_text):
+                found.add(skill)
+                
+                # Recherche dans la section Skills
+                if skills_section_lower and re.search(pattern, skills_section_lower):
+                    found_in_skills_section.add(skill)
+                continue
             
-            # Recherche dans la section Skills
-            if skills_section_lower and re.search(pattern, skills_section_lower):
-                found_in_skills_section.add(skill)
-        else:
             # Recherche via aliases
             for alias in aliases.get(skill, []):
                 alias_pattern = r'\b' + re.escape(alias.lower()) + r'\b'
@@ -172,11 +229,34 @@ def extraire_competences(texte: str, priorite_section_skills: bool = True) -> Li
                     if skills_section_lower and re.search(alias_pattern, skills_section_lower):
                         found_in_skills_section.add(skill)
                     break
+                    
+        except re.error as e:
+            logger.warning(f"⚠️ Erreur regex pour '{skill}': {e}")
+            continue
     
-    # Retourner: skills de la section d'abord, puis les autres
-    result = list(found_in_skills_section) + list(found - found_in_skills_section)
+    # Retourner: skills de la section d'abord, puis les autres (ordre préservé)
+    if priorite_section_skills and found_in_skills_section:
+        try:
+            # Préserver l'ordre d'apparition dans le texte
+            result = sorted(list(found_in_skills_section), 
+                           key=lambda s: lower_text.find(s.lower()) if s.lower() in lower_text else 999999)
+            
+            other_skills = sorted(list(found - found_in_skills_section),
+                                 key=lambda s: lower_text.find(s.lower()) if s.lower() in lower_text else 999999)
+            
+            result.extend(other_skills)
+            return result
+        except Exception as e:
+            logger.warning(f"⚠️ Erreur tri: {e}")
+            return list(found)
     
-    return result
+    # Si pas de section Skills, retourner par ordre d'apparition
+    try:
+        return sorted(list(found), 
+                     key=lambda s: lower_text.find(s.lower()) if s.lower() in lower_text else 999999)
+    except Exception as e:
+        logger.warning(f"⚠️ Erreur tri final: {e}")
+        return list(found)
 
 
 def extraire_competences_avec_stats(texte: str) -> Dict:
@@ -186,13 +266,22 @@ def extraire_competences_avec_stats(texte: str) -> Dict:
     Returns:
         Dictionnaire avec compétences et statistiques
     """
+    if not texte or not isinstance(texte, str):
+        return {
+            'competences': [],
+            'nb_competences': 0,
+            'has_skills_section': False,
+            'preview': ''
+        }
+    
     competences = extraire_competences(texte, priorite_section_skills=True)
     
-    # Détecte si une section Skills existe
+    # Détecte si une section Skills existe (pattern robuste)
+    # Utilise un contexte plus strict pour éviter les faux positifs
     has_skills_section = bool(re.search(
-        r"(?:skills|compétences|technical\s+skills)\s*[:\-]",
+        r"(?:^|\n)\s*(?:SKILLS?|COMPÉTENCES?|TECHNICAL\s+SKILLS?|EXPERTISE|TECHNOLOGIES)\s*[:\-]?",
         texte,
-        re.IGNORECASE
+        re.IGNORECASE | re.MULTILINE
     ))
     
     return {
@@ -210,6 +299,9 @@ def categoriser_competences(competences: List[str]) -> Dict[str, List[str]]:
     Returns:
         Dictionnaire {categorie: [competences]}
     """
+    if not competences:
+        return {}
+    
     db = get_skills_database()
     
     # Charger les catégories depuis le JSON
@@ -235,58 +327,105 @@ def categoriser_competences(competences: List[str]) -> Dict[str, List[str]]:
 # VALIDATION DE COMPÉTENCES
 # ========================================================
 def valider_competence(skill: str) -> bool:
-    """Vérifie si une compétence existe dans la base"""
+    """
+    Vérifie si une compétence existe dans la base
+    
+    Args:
+        skill: Nom de la compétence
+        
+    Returns:
+        True si valide
+    """
+    if not skill or not isinstance(skill, str):
+        return False
+    
     db = get_skills_database()
-    return skill.lower() in db.skills_lower_map
+    
+    # Vérifie en lowercase
+    skill_lower = skill.lower().strip()
+    
+    if skill_lower in db.skills_lower_map:
+        return True
+    
+    # Vérifie dans les aliases
+    for main_skill, alias_list in db.aliases.items():
+        if skill_lower in [a.lower() for a in alias_list]:
+            return True
+    
+    return False
+
+
 
 
 def normaliser_competence(skill: str) -> str:
-    """Normalise une compétence (casse correcte)"""
-    db = get_skills_database()
-    return db.skills_lower_map.get(skill.lower(), skill)
-
-
-if __name__ == "__main__":
-    # Test du module
-    texte_test = """
-    SKILLS
-    Programming Languages: Python, Java, JavaScript, TypeScript
-    Web Frameworks: React, Angular, Django, Flask, Spring Boot
-    Databases: PostgreSQL, MongoDB, Redis
-    DevOps: Docker, Kubernetes, AWS, Jenkins
-    Machine Learning: TensorFlow, PyTorch, scikit-learn
-    
-    EXPERIENCE
-    Developed microservices using Node.js and Express
-    Implemented CI/CD pipelines with GitLab CI
     """
+    Normalise une compétence (casse correcte)
+    Convertit les aliases vers le nom principal
     
-    print("="*80)
-    print("TEST DU MODULE SKILLS EXTRACTOR")
-    print("="*80)
+    Args:
+        skill: Nom de la compétence (peut être un alias comme 'k8s')
+        
+    Returns:
+        Nom normalisé (ex: 'k8s' → 'Kubernetes')
+    """
+    if not skill or not isinstance(skill, str):
+        return skill
     
-    # Extraction simple
-    print("\n1️⃣ EXTRACTION SIMPLE:")
-    competences = extraire_competences(texte_test)
-    print(f"   Trouvé: {len(competences)} compétences")
-    print(f"   Liste: {', '.join(competences[:10])}")
+    db = get_skills_database()
+    skill_lower = skill.lower().strip()
     
-    # Extraction avec stats
-    print("\n2️⃣ EXTRACTION AVEC STATISTIQUES:")
-    stats = extraire_competences_avec_stats(texte_test)
-    print(f"   Nombre: {stats['nb_competences']}")
-    print(f"   Section Skills détectée: {stats['has_skills_section']}")
-    print(f"   Preview: {stats['preview']}")
+    # 1️⃣ Recherche directe dans le mapping principal
+    if skill_lower in db.skills_lower_map:
+        return db.skills_lower_map[skill_lower]
     
-    # Catégorisation
-    print("\n3️⃣ CATÉGORISATION:")
-    categories = categoriser_competences(competences)
-    for cat, skills in categories.items():
-        print(f"   {cat}: {len(skills)} skills")
+    # 2️⃣ Recherche dans les aliases
+    for main_skill, alias_list in db.aliases.items():
+        for alias in alias_list:
+            if skill_lower == alias.lower():
+                # Retourner le nom correctement formaté
+                main_skill_lower = main_skill.lower()
+                if main_skill_lower in db.skills_lower_map:
+                    return db.skills_lower_map[main_skill_lower]
+                return main_skill
     
-    # Validation
-    print("\n4️⃣ VALIDATION:")
-    test_skills = ["python", "react", "fakeSkill123"]
-    for skill in test_skills:
-        valid = valider_competence(skill)
-        print(f"   {skill}: {'✅ Valide' if valid else '❌ Invalide'}")
+    # 3️⃣ Pas trouvé, retourner tel quel
+    return skill
+
+
+# ========================================================
+# FONCTIONS D'ANALYSE AVANCÉES
+# ========================================================
+def comparer_competences(skills_cv: List[str], skills_offre: List[str]) -> Dict:
+    """
+    Compare les compétences d'un CV avec celles d'une offre
+    
+    Args:
+        skills_cv: Compétences du CV
+        skills_offre: Compétences de l'offre
+        
+    Returns:
+        Dictionnaire avec match, manquantes, extras
+    """
+    if not skills_cv:
+        skills_cv = []
+    if not skills_offre:
+        skills_offre = []
+    
+    set_cv = set(s.lower().strip() for s in skills_cv if s)
+    set_offre = set(s.lower().strip() for s in skills_offre if s)
+    
+    match = set_cv & set_offre
+    manquantes = set_offre - set_cv
+    extras = set_cv - set_offre
+    
+    taux_match = (len(match) / len(set_offre) * 100) if set_offre else 0
+    
+    return {
+        'match': sorted(list(match)),
+        'nb_match': len(match),
+        'manquantes': sorted(list(manquantes)),
+        'nb_manquantes': len(manquantes),
+        'extras': sorted(list(extras)),
+        'nb_extras': len(extras),
+        'taux_match': round(taux_match, 2)
+    }

@@ -1,6 +1,6 @@
 """
 ============================================================================
-SMARTHIRE - Info Extractor Module
+SMARTHIRE - Info Extractor Module (FIXED)
 Extraction d'informations structurées depuis les CV
 ============================================================================
 """
@@ -37,23 +37,29 @@ def extraire_nom(texte: str) -> str:
         if 2 <= len(words) <= 4:
             return nom
     
-    # 2️⃣ Cherche au début du document (premières lignes)
-    debut = texte[:200]
-    match = re.search(r"^([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})", debut)
-    if match:
-        nom = match.group(1).strip()
-        # Exclusion de mots-clés courants
-        excluded_words = ["summary", "objective", "professional", "experience",
-                         "skills", "education", "profile"]
-        if nom.lower() not in excluded_words:
-            return nom
+    # 2️⃣ Cherche au tout début du document (première ligne non vide)
+    lines = texte.strip().split('\n')
+    for line in lines[:5]:  # Check first 5 lines
+        line = line.strip()
+        if not line:
+            continue
+        
+        # Pattern pour nom complet (2-4 mots capitalisés)
+        match = re.match(r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})$', line)
+        if match:
+            nom = match.group(1).strip()
+            # Exclusion de mots-clés courants
+            excluded_words = ["summary", "objective", "professional", "experience",
+                            "skills", "education", "profile", "curriculum", "vitae"]
+            if nom.lower() not in excluded_words and len(nom) > 5:
+                return nom
     
-    # 3️⃣ Cherche avant "Experience"
-    match = re.search(r"((?:[A-Z][a-z]+\s+)+)(?:Experience|EXPERIENCE|Expérience)", texte)
+    # 3️⃣ Cherche avant le titre professionnel (pattern plus flexible)
+    match = re.search(r'^([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*\n\s*[A-Z]', texte, re.MULTILINE)
     if match:
         nom = match.group(1).strip()
         words = nom.split()
-        if 2 <= len(words) <= 3:
+        if 2 <= len(words) <= 4:
             return nom
     
     return "Candidat"
@@ -79,30 +85,35 @@ def extraire_titre_profil(texte: str) -> str:
         "developer", "engineer", "manager", "analyst", "architect",
         "specialist", "lead", "senior", "junior", "designer",
         "officer", "consultant", "administrator", "director",
-        "développeur", "ingénieur", "chef", "responsable"
+        "développeur", "ingénieur", "chef", "responsable", "scientist",
+        "technician", "coordinator", "supervisor", "programmer"
     ]
     
-    # 1️⃣ Après le nom (ligne suivante)
-    match = re.search(
-        r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s*\n\s*([A-Z][a-zA-Z\s\-/+\.]{5,80}?)(?:\n|$)",
-        texte,
-        re.MULTILINE
-    )
+    lines = texte.strip().split('\n')
+    
+    # 1️⃣ Cherche dans les 10 premières lignes
+    for i, line in enumerate(lines[:10]):
+        line = line.strip()
+        if not line or len(line) < 5:
+            continue
+        
+        # Check si la ligne contient un mot-clé de job
+        if any(kw in line.lower() for kw in job_keywords):
+            # Nettoie la ligne des caractères spéciaux au début/fin
+            title = re.sub(r'^[\W_]+|[\W_]+$', '', line)
+            if 5 < len(title) < 100:
+                return title
+    
+    # 2️⃣ Pattern "Titre | Location" ou "Titre - Location"
+    match = re.search(r'^([A-Z][a-zA-Z\s\-/+\.]{5,80}?)\s*[\|\-]\s*[A-Z]', texte, re.MULTILINE)
     if match:
         title = match.group(1).strip()
         if any(kw in title.lower() for kw in job_keywords):
             return title
     
-    # 2️⃣ Pattern "Titre | Location"
-    match = re.search(r"^([A-Z][a-zA-Z\s\-/+\.]{5,80}?)\s*\|\s*(?:\d+|[A-Z])", texte, re.MULTILINE)
-    if match:
-        title = match.group(1).strip()
-        if any(kw in title.lower() for kw in job_keywords):
-            return title
-    
-    # 3️⃣ Cherche les titres courants
+    # 3️⃣ Cherche les titres courants avec patterns spécifiques
     match = re.search(
-        r"(?:^|\n)([A-Z][a-zA-Z\s]+(?:Developer|Engineer|Manager|Analyst|Designer|Consultant))",
+        r"(?:^|\n)([A-Z][a-zA-Z\s]+(?:Developer|Engineer|Manager|Analyst|Designer|Consultant|Architect|Specialist|Lead))",
         texte,
         re.MULTILINE
     )
@@ -218,23 +229,24 @@ def extraire_resume(texte: str, max_length: int = 500) -> str:
     if not texte:
         return ""
     
-    # Recherche de la section Summary/Objective
-    match = re.search(
-        r"(?:Summary|Objective|Professional\s+Summary|Résumé|Professionnel|Profile)\s*[:\-]?\s*(.*?)(?:Experience|Skills|Education|Expérience|Compétences|$)",
-        texte,
-        re.IGNORECASE | re.DOTALL
-    )
+    # Recherche de la section Summary/Objective avec variations
+    patterns = [
+        r"(?:PROFESSIONAL\s+SUMMARY|Summary|Objective|Professional\s+Summary|Résumé|Professionnel|Profile)\s*[:\-]?\s*\n\s*(.*?)(?:\n\s*\n|\n\s*[A-Z]{3,})",
+        r"(?:PROFESSIONAL\s+SUMMARY|Summary|Objective)\s*[:\-]?\s*(.*?)(?:EXPERIENCE|SKILLS|EDUCATION)",
+    ]
     
-    if match:
-        resume = match.group(1).strip()
-        # Nettoyage des espaces multiples
-        resume = re.sub(r'\s+', ' ', resume)
-        # Limitation de la longueur
-        resume = resume[:max_length]
-        
-        # Validation: au moins 20 caractères
-        if len(resume) > 20:
-            return resume
+    for pattern in patterns:
+        match = re.search(pattern, texte, re.IGNORECASE | re.DOTALL)
+        if match:
+            resume = match.group(1).strip()
+            # Nettoyage des espaces multiples et retours à la ligne
+            resume = re.sub(r'\s+', ' ', resume)
+            # Limitation de la longueur
+            resume = resume[:max_length]
+            
+            # Validation: au moins 20 caractères
+            if len(resume) > 20:
+                return resume
     
     return ""
 
@@ -256,17 +268,18 @@ def extraire_description_experience(texte: str, max_length: int = 1000) -> str:
     if not texte:
         return ""
     
-    # Recherche de la section Experience
+    # Recherche de la section Experience (avec \n pour capturer après le titre)
     match = re.search(
-        r"(?:Experience|Expérience|Professional\s+Experience)\s*[:\-]?\s*(.*?)(?:Skills|Education|Projects|Certifications|Compétences|Formation|Projets|$)",
+        r"(?:EXPERIENCE|Expérience|Professional\s+Experience|PROFESSIONAL\s+EXPERIENCE|Work\s+Experience)\s*[:\-]?\s*\n(.*?)(?:\n\s*(?:SKILLS|EDUCATION|PROJECTS|CERTIFICATIONS|Compétences|Formation|Projets)|$)",
         texte,
         re.IGNORECASE | re.DOTALL
     )
     
     if match:
         experience = match.group(1).strip()
-        # Nettoyage
-        experience = re.sub(r'\s+', ' ', experience)
+        # Nettoyage des espaces multiples tout en gardant les retours à la ligne importants
+        experience = re.sub(r'[ \t]+', ' ', experience)
+        experience = re.sub(r'\n{3,}', '\n\n', experience)
         experience = experience[:max_length]
         
         if len(experience) > 20:
@@ -293,7 +306,7 @@ def extraire_projets(texte: str) -> str:
     
     # Recherche de la section Projects
     match = re.search(
-        r"Projects?\s*[:\-]?(.*?)(?:Skills|Education|Certifications|Languages|$)",
+        r"PROJECTS?\s*[:\-]?(.*?)(?:SKILLS|EDUCATION|CERTIFICATIONS|LANGUAGES|$)",
         texte,
         re.DOTALL | re.IGNORECASE
     )
@@ -303,14 +316,30 @@ def extraire_projets(texte: str) -> str:
     
     block = match.group(1)
     
-    # Extraction des noms de projets (patterns courants)
-    projets = re.findall(
-        r"([A-Z][\w\s\-\(\)]{10,100}(?:Application|Dashboard|System|Model|Platform|App|API|Website|Tool|Service|Portal|Solution|Framework))",
-        block
-    )
+    # Extraction des lignes de projets (format: "Nom du projet: Description")
+    projets = []
+    lines = block.split('\n')
     
-    # Nettoyage et limitation
-    projets = [p.strip() for p in projets[:5]]
+    for line in lines:
+        line = line.strip()
+        if not line or len(line) < 10:
+            continue
+        
+        # Pattern 1: "Project Name: Description"
+        match_colon = re.match(r'^([^:]{10,80}):\s*(.+)', line)
+        if match_colon:
+            projets.append(match_colon.group(1).strip())
+            continue
+        
+        # Pattern 2: Ligne commençant par une majuscule avec mots-clés
+        if any(keyword in line for keyword in ['Application', 'Dashboard', 'System', 'Platform', 'Tool', 'Website', 'Portal', 'Solution', 'Framework', 'API', 'App', 'Service']):
+            # Extrait jusqu'au premier : ou fin de ligne
+            proj_name = line.split(':')[0].strip()
+            if 10 < len(proj_name) < 100:
+                projets.append(proj_name)
+    
+    # Limitation à 5 projets
+    projets = projets[:5]
     
     return " | ".join(projets) if projets else ""
 
@@ -377,6 +406,22 @@ if __name__ == "__main__":
     print(f"💼 TITRE: {infos['titre_profil']}")
     print(f"📅 EXPÉRIENCE: {infos['annees_experience']} ans")
     print(f"📍 LOCALISATION: {infos['localisation']}")
-    print(f"📝 RÉSUMÉ: {infos['resume'][:100]}...")
-    print(f"💡 PROJETS: {infos['projets']}")
-    print(f"🏢 EXPÉRIENCE: {infos['description_experience'][:100]}...")
+    
+    if infos['resume']:
+        print(f"\n📝 RÉSUMÉ:")
+        print(f"   {infos['resume']}")
+    else:
+        print(f"\n📝 RÉSUMÉ: (vide)")
+    
+    if infos['projets']:
+        print(f"\n💡 PROJETS:")
+        print(f"   {infos['projets']}")
+    else:
+        print(f"\n💡 PROJETS: (aucun)")
+    
+    if infos['description_experience']:
+        print(f"\n🏢 EXPÉRIENCE:")
+        preview = infos['description_experience'][:200]
+        print(f"   {preview}...")
+    else:
+        print(f"\n🏢 EXPÉRIENCE: (vide)")
