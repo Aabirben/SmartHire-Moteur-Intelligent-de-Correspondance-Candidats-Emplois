@@ -3,4 +3,4 @@
 __pycache__/
 venv/
 .env.local
-.DS_Store
+.DS_StoreGIT
