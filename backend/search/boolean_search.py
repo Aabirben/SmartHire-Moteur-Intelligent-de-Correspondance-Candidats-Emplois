@@ -13,7 +13,7 @@ import json
 from whoosh.index import open_dir, exists_in
 from whoosh import query as wquery
 
-from backend.database.connection import get_db_connection
+from database.connection import get_db_connection
 from backend.config.settings import CV_INDEX, JOB_INDEX, BASE_DIR
 from backend.search.filter_processor import FilterProcessor
 

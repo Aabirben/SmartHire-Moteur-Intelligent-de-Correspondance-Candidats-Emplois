@@ -1,8 +1,6 @@
 """
 ============================================================================
-SMARTHIRE - Search Orchestrator (CORRIGÉ)
-✅ Imports corrigés
-✅ Utilise SearchQueryProcessor
+SMARTHIRE - Search Orchestrator (VECTORIEL + BOOLÉEN + HYBRIDE)
 ============================================================================
 """
 
@@ -10,21 +8,43 @@ import logging
 from typing import Dict, List, Optional
 
 from backend.search.boolean_search import BooleanSearchModel
+from backend.search.vectoriel_model import VectorielSearchModel
+from backend.search.hybrid_scorer import HybridScorer, analyze_score_distribution
 from backend.search.filter_processor import FilterProcessor
-from backend.search.query_processor import SearchQueryProcessor  # ✅ CORRIGÉ
+from backend.search.query_processor import SearchQueryProcessor
 
 logger = logging.getLogger(__name__)
 
+
 # ========================================================
-# ORCHESTRATEUR
+# ORCHESTRATEUR COMPLET
 # ========================================================
 class SearchOrchestrator:
-    """Décide automatiquement quel modèle utiliser"""
+    """
+    Chef d'orchestre de la recherche SmartHire
+    Gère 3 modes : Booléen, Vectoriel (BM25), Hybride
+    """
     
     def __init__(self):
-        self.boolean_model = BooleanSearchModel()
-        self.query_processor = SearchQueryProcessor()  # ✅ CORRIGÉ
+        """Initialise tous les modèles"""
+        logger.info("🔧 Initialisation SearchOrchestrator...")
+        
+        # Modules de base
+        self.query_processor = SearchQueryProcessor()
         self.filter_processor = FilterProcessor()
+        
+        # Modèles de recherche
+        self.boolean_model = BooleanSearchModel()
+        self.vectoriel_model = VectorielSearchModel()
+        
+        # Scorer hybride par défaut
+        self.hybrid_scorer = HybridScorer(
+            strategy="weighted",
+            boolean_weight=0.5,
+            bm25_weight=0.5
+        )
+        
+        logger.info("✅ SearchOrchestrator initialisé (booléen + vectoriel + hybride)")
     
     def search(
         self,
@@ -32,39 +52,46 @@ class SearchOrchestrator:
         filters: Dict = None,
         target: str = "cvs",
         mode: str = "auto",
-        auto_extract: bool = True
+        top_k: int = 20,
+        auto_extract: bool = True,
+        hybrid_strategy: str = "weighted",
+        boolean_weight: float = 0.5,
+        bm25_weight: float = 0.5
     ) -> Dict:
         """
-        Point d'entrée principal
+        Point d'entrée principal de la recherche
         
         Args:
-            query: "python django senior casablanca"
-            filters: {"experience": [5,10]}
+            query: Texte de recherche libre
+            filters: Dictionnaire de filtres {"skills": [...], "location": [...], ...}
             target: "cvs" ou "offres"
-            mode: "auto", "boolean", "vectoriel", "hybrid"
-            auto_extract: Si True, extrait skills/locations depuis query
+            mode: "auto", "boolean", "vectoriel", ou "hybrid"
+            top_k: Nombre de résultats à retourner
+            auto_extract: Extraire automatiquement filtres depuis query
+            hybrid_strategy: "weighted", "rrf", "max", "multiplicative"
+            boolean_weight: Poids booléen (si weighted)
+            bm25_weight: Poids BM25 (si weighted)
             
         Returns:
             {
-                "mode_used": "boolean",
-                "results": [...],
-                "stats": {...}
+                "mode_used": str,
+                "results": List[Dict],
+                "stats": Dict,
+                "config": Dict
             }
         """
-        logger.info(f"🔍 Recherche: query='{query}', filters={filters}")
         
-        # 1️⃣ PRÉTRAITEMENT QUERY
+        logger.info(f"🔍 Recherche: query='{query}', filters={filters}, mode={mode}")
+        
+        # 1. PRÉTRAITEMENT
         processed_query = {}
         enriched_filters = filters or {}
         
         if query:
             processed_query = self.query_processor.process(query)
-            logger.info(f"   Query processed:")
-            logger.info(f"     • Tokens: {processed_query['tokens'][:5]}")
-            logger.info(f"     • Skills: {processed_query['skills']}")
-            logger.info(f"     • Locations: {processed_query['locations']}")
+            logger.info(f"   Query processed: tokens={processed_query.get('tokens', [])[:5]}")
             
-            # 2️⃣ AUTO-EXTRACTION
+            # Auto-extraction
             if auto_extract:
                 enriched_filters = self._merge_query_into_filters(
                     processed_query,
@@ -72,31 +99,89 @@ class SearchOrchestrator:
                 )
                 logger.info(f"   Filters enrichis: {enriched_filters}")
         
-        # 3️⃣ DÉCISION MODE
+        # 2. DÉCISION MODE
         if mode == "auto":
             mode = self._decide_mode(query, processed_query, enriched_filters)
         
         logger.info(f"   Mode sélectionné: {mode.upper()}")
         
-        # 4️⃣ EXÉCUTION
+        # 3. CONFIGURATION HYBRIDE
+        if mode == "hybrid":
+            self.hybrid_scorer = HybridScorer(
+                strategy=hybrid_strategy,
+                boolean_weight=boolean_weight,
+                bm25_weight=bm25_weight
+            )
+        
+        # 4. EXÉCUTION
         if mode == "boolean":
-            return self._search_boolean(processed_query, enriched_filters, target)
+            return self._search_boolean(
+                processed_query, enriched_filters, target, top_k
+            )
+        
         elif mode == "vectoriel":
-            return self._search_vectoriel(query, target)
+            return self._search_vectoriel(
+                query, target, top_k
+            )
+        
         elif mode == "hybrid":
-            return self._search_hybrid(query, processed_query, enriched_filters, target)
+            return self._search_hybrid(
+                query, processed_query, enriched_filters, target, top_k
+            )
+        
         else:
             raise ValueError(f"Mode inconnu: {mode}")
+    
+    def _decide_mode(
+        self,
+        query: str,
+        processed_query: Dict,
+        filters: Dict
+    ) -> str:
+        """
+        Décide automatiquement le mode optimal
+        
+        Règles:
+        1. Filtres seuls (pas de query) → BOOLEAN
+        2. Query courte (≤3 tokens) + pas de filtres → BOOLEAN
+        3. Query longue (>3 tokens) + pas de filtres → VECTORIEL
+        4. Query + Filtres → HYBRID
+        """
+        
+        has_query = bool(query and query.strip())
+        has_filters = bool(filters and len(filters) > 0)
+        
+        # Règle 1: Filtres seuls
+        if has_filters and not has_query:
+            return "boolean"
+        
+        # Règles 2 & 3: Query seule
+        if has_query and not has_filters:
+            nb_tokens = len(processed_query.get("tokens", []))
+            
+            if nb_tokens <= 3:
+                return "boolean"
+            else:
+                return "vectoriel"
+        
+        # Règle 4: Query + Filtres
+        if has_query and has_filters:
+            return "hybrid"
+        
+        # Défaut
+        return "boolean"
     
     def _merge_query_into_filters(
         self,
         processed_query: Dict,
         filters: Dict
     ) -> Dict:
-        """Fusionne skills/locations détectés dans query avec filters"""
+        """
+        Enrichit automatiquement les filtres avec ce qui est extrait de la query
+        """
         enriched = dict(filters)
         
-        # 1. Skills
+        # 1. Compétences
         detected_skills = processed_query.get("skills", [])
         if detected_skills:
             if "skills" in enriched:
@@ -106,7 +191,7 @@ class SearchOrchestrator:
             else:
                 enriched["skills"] = detected_skills
         
-        # 2. Locations
+        # 2. Localisations
         detected_locations = processed_query.get("locations", [])
         if detected_locations:
             if "location" in enriched:
@@ -116,7 +201,7 @@ class SearchOrchestrator:
             else:
                 enriched["location"] = detected_locations
         
-        # 3. Levels
+        # 3. Niveaux
         detected_levels = processed_query.get("levels", [])
         if detected_levels:
             if "level" in enriched:
@@ -128,80 +213,78 @@ class SearchOrchestrator:
         
         return enriched
     
-    def _decide_mode(
-        self,
-        query: str,
-        processed_query: Dict,
-        filters: Dict
-    ) -> str:
-        """Décide automatiquement le mode"""
-        has_query = bool(query and query.strip())
-        has_filters = bool(filters and len(filters) > 0)
-        
-        if has_query and has_filters:
-            logger.info("→ Détection: Query + Filtres → HYBRIDE")
-            return "hybrid"
-        
-        if has_filters and not has_query:
-            logger.info("→ Détection: Filtres seuls → BOOLÉEN")
-            return "boolean"
-        
-        if has_query and not has_filters:
-            nb_tokens = len(processed_query.get("tokens", []))
-            
-            if nb_tokens <= 3:
-                logger.info(f"→ Détection: Query courte ({nb_tokens} tokens) → BOOLÉEN")
-                return "boolean"
-            else:
-                logger.info(f"→ Détection: Query longue ({nb_tokens} tokens) → VECTORIEL")
-                return "vectoriel"
-        
-        logger.info("→ Détection: Par défaut → BOOLÉEN")
-        return "boolean"
-    
     def _search_boolean(
         self,
         processed_query: Dict,
         filters: Dict,
-        target: str
+        target: str,
+        top_k: int
     ) -> Dict:
-        """Recherche booléenne pure"""
+        """Mode booléen pur"""
+        
         logger.info("🔍 Exécution: BOOLÉEN")
         
-        query_terms = {
-            "must_have": processed_query.get("tokens", []),
-            "should_have": [],
-            "must_not_have": []
-        }
+        # Construire query_terms depuis processed_query
+        query_terms = {}
         
+        if processed_query.get("skills"):
+            query_terms["must_have"] = processed_query["skills"]
+        
+        if processed_query.get("tokens"):
+            # Utiliser tokens comme should_have
+            query_terms["should_have"] = processed_query.get("tokens", [])
+        
+        # Recherche booléenne
         results = self.boolean_model.search(
             query_terms=query_terms,
-            filters=filters or {},
+            filters=filters,
             target=target
         )
         
+        # Top K
+        top_results = results[:top_k]
+        
+        # Statistiques
+        stats = {
+            "mode": "boolean",
+            "total_results": len(results),
+            "top_k": top_k,
+            "filters_applied": filters,
+            "query_terms": query_terms,
+            "source_breakdown": self._count_sources(results)
+        }
+        
         return {
             "mode_used": "boolean",
-            "results": results,
-            "stats": {
-                "total": len(results),
-                "source_breakdown": self._count_sources(results),
-                "query_terms": query_terms,
-                "filters_applied": filters
-            }
+            "results": top_results,
+            "stats": stats,
+            "config": {"target": target}
         }
     
-    def _search_vectoriel(self, query: str, target: str) -> Dict:
-        """Recherche vectorielle pure (TF-IDF)"""
+    def _search_vectoriel(
+        self,
+        query: str,
+        target: str,
+        top_k: int
+    ) -> Dict:
+        """Mode vectoriel pur (BM25)"""
+        
         logger.info("🔍 Exécution: VECTORIEL")
+        
+        result = self.vectoriel_model.search(
+            query=query,
+            target=target,
+            top_k=top_k
+        )
+        
+        # Enrichir stats
+        result["stats"]["mode"] = "vectoriel"
         
         return {
             "mode_used": "vectoriel",
-            "results": [],
-            "stats": {
-                "total": 0,
-                "note": "Vectoriel à implémenter"
-            }
+            "results": result["results"],
+            "stats": result["stats"],
+            "config": {"target": target}
         }
     
     def _search_hybrid(
@@ -209,47 +292,180 @@ class SearchOrchestrator:
         query: str,
         processed_query: Dict,
         filters: Dict,
-        target: str
+        target: str,
+        top_k: int
     ) -> Dict:
-        """Recherche hybride: Booléen (filtre) + Vectoriel (classe)"""
+        """Mode hybride: Booléen + Vectoriel fusionnés"""
+        
         logger.info("🔍 Exécution: HYBRIDE")
         
-        boolean_results = self._search_boolean(
-            processed_query,
-            filters,
-            target
-        )["results"]
+        # 1. Recherche booléenne
+        query_terms = {}
+        if processed_query.get("skills"):
+            query_terms["must_have"] = processed_query["skills"]
         
-        if not boolean_results:
-            logger.warning("⚠️ Aucun résultat après filtrage booléen")
-            return {
-                "mode_used": "hybrid",
-                "results": [],
-                "stats": {"total": 0, "note": "Filtres trop stricts"}
-            }
+        boolean_results = self.boolean_model.search(
+            query_terms=query_terms,
+            filters=filters,
+            target=target
+        )
+        
+        # 2. Recherche vectorielle
+        vectoriel_result = self.vectoriel_model.search(
+            query=query,
+            target=target,
+            top_k=100  # Prendre plus pour fusion
+        )
+        vectoriel_results = vectoriel_result["results"]
+        
+        # 3. Fusion hybride
+        fused_results = self.hybrid_scorer.fuse(
+            boolean_results=boolean_results,
+            bm25_results=vectoriel_results,
+            deduplicate=True
+        )
+        
+        # 4. Top K
+        top_results = fused_results[:top_k]
+        
+        # 5. Statistiques
+        stats = {
+            "mode": "hybrid",
+            "total_results": len(fused_results),
+            "top_k": top_k,
+            "query": query,
+            "query_tokens": processed_query.get("tokens", []),
+            "filters_applied": filters,
+            "boolean_count": len(boolean_results),
+            "vectoriel_count": len(vectoriel_results),
+            "fusion_strategy": self.hybrid_scorer.strategy,
+            "fusion_config": self.hybrid_scorer.get_config(),
+            "source_breakdown": self._count_sources(fused_results),
+            "overlap_stats": self._analyze_overlap(boolean_results, vectoriel_results)
+        }
         
         return {
             "mode_used": "hybrid",
-            "results": boolean_results,
-            "stats": {
-                "total": len(boolean_results),
-                "note": "Hybride simplifié (vectoriel à implémenter)"
+            "results": top_results,
+            "stats": stats,
+            "config": {
+                "target": target,
+                "fusion_strategy": self.hybrid_scorer.strategy,
+                "weights": {
+                    "boolean": self.hybrid_scorer.boolean_weight,
+                    "bm25": self.hybrid_scorer.bm25_weight
+                }
             }
         }
     
     def _count_sources(self, results: List[Dict]) -> Dict:
-        """Compte les sources des résultats"""
+        """Compte résultats par source"""
         counts = {"systeme": 0, "uploaded": 0}
+        
         for r in results:
-            if r.get("source_type") == "systeme":
-                counts["systeme"] += 1
-            elif r.get("source_type") == "uploaded":
-                counts["uploaded"] += 1
+            source_type = r.get("source_type", "unknown")
+            if source_type in counts:
+                counts[source_type] += 1
+        
         return counts
+    
+    def _analyze_overlap(
+        self,
+        boolean_results: List[Dict],
+        vectoriel_results: List[Dict]
+    ) -> Dict:
+        """Analyse le chevauchement entre résultats booléen et vectoriel"""
+        
+        bool_ids = {str(r.get("id") or r.get("doc_id")) for r in boolean_results}
+        vec_ids = {str(r.get("id") or r.get("doc_id")) for r in vectoriel_results}
+        
+        intersection = bool_ids & vec_ids
+        union = bool_ids | vec_ids
+        
+        return {
+            "boolean_only": len(bool_ids - vec_ids),
+            "vectoriel_only": len(vec_ids - bool_ids),
+            "both": len(intersection),
+            "jaccard_similarity": round(len(intersection) / len(union), 3) if union else 0
+        }
+    
+    def compare_modes(
+        self,
+        query: str,
+        filters: Dict = None,
+        target: str = "cvs",
+        top_k: int = 10
+    ) -> Dict:
+        """
+        Compare les 3 modes pour une même requête
+        """
+        
+        results = {}
+        
+        # Mode booléen
+        try:
+            results["boolean"] = self.search(
+                query=query,
+                filters=filters,
+                target=target,
+                mode="boolean",
+                top_k=top_k,
+                auto_extract=False
+            )
+        except Exception as e:
+            results["boolean"] = {"error": str(e)}
+            logger.error(f"Erreur mode boolean: {e}")
+        
+        # Mode vectoriel
+        try:
+            results["vectoriel"] = self.search(
+                query=query,
+                filters=filters,
+                target=target,
+                mode="vectoriel",
+                top_k=top_k,
+                auto_extract=False
+            )
+        except Exception as e:
+            results["vectoriel"] = {"error": str(e)}
+            logger.error(f"Erreur mode vectoriel: {e}")
+        
+        # Mode hybride
+        try:
+            results["hybrid"] = self.search(
+                query=query,
+                filters=filters,
+                target=target,
+                mode="hybrid",
+                top_k=top_k,
+                auto_extract=True
+            )
+        except Exception as e:
+            results["hybrid"] = {"error": str(e)}
+            logger.error(f"Erreur mode hybrid: {e}")
+        
+        return results
+    
+    def get_system_stats(self) -> Dict:
+        """Retourne statistiques globales du système"""
+        
+        return {
+            "boolean_model": {
+                "status": "active"
+            },
+            "vectoriel_model": {
+                "status": "active",
+                "bm25_indices": self.vectoriel_model.get_index_stats()
+            },
+            "hybrid_scorer": {
+                "default_strategy": self.hybrid_scorer.strategy,
+                "available_strategies": list(HybridScorer.STRATEGIES.keys())
+            }
+        }
 
 
 # ========================================================
-# API PUBLIQUE
+# API PUBLIQUE (pour compatibilité)
 # ========================================================
 def search(
     query: str = "",
@@ -257,26 +473,65 @@ def search(
     target: str = "cvs",
     mode: str = "auto"
 ) -> Dict:
-    """API publique de recherche"""
+    """
+    API publique simplifiée
+    """
     orchestrator = SearchOrchestrator()
     return orchestrator.search(query, filters, target, mode)
 
 
+# ========================================================
+# TESTS
+# ========================================================
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     print("="*80)
-    print("🚀 TEST ORCHESTRATEUR")
+    print("🚀 TEST ORCHESTRATEUR COMPLET")
     print("="*80)
     
-    result1 = search(
-        filters={
-            "skills": ["python", "java"],
-            "location": ["casablanca"],
-            "experience": [5, 10]
-        }
+    orchestrator = SearchOrchestrator()
+    
+    # Test 1: Mode auto avec filtres → Boolean
+    print("\n📝 Test 1: Filtres seuls (mode auto)")
+    result1 = orchestrator.search(
+        filters={"skills": ["python", "java"], "experience": [5, 10]},
+        mode="auto"
     )
     print(f"   Mode: {result1['mode_used']}")
-    print(f"   Résultats: {result1['stats']['total']}")
+    print(f"   Résultats: {result1['stats']['total_results']}")
     
-    print("\n✅ Tests terminés!")
+    # Test 2: Mode vectoriel explicite
+    print("\n📝 Test 2: Mode vectoriel explicite")
+    result2 = orchestrator.search(
+        query="développeur python django senior",
+        mode="vectoriel",
+        top_k=5
+    )
+    print(f"   Mode: {result2['mode_used']}")
+    print(f"   Résultats: {result2['stats']['total_results']}")
+    
+    # Test 3: Mode hybride
+    print("\n📝 Test 3: Mode hybride (query + filtres)")
+    result3 = orchestrator.search(
+        query="python django",
+        filters={"experience": [3, 10]},
+        mode="hybrid",
+        top_k=5
+    )
+    print(f"   Mode: {result3['mode_used']}")
+    print(f"   Résultats: {result3['stats']['total_results']}")
+    
+    # Test 4: Comparaison des modes
+    print("\n📝 Test 4: Comparaison des 3 modes")
+    comparison = orchestrator.compare_modes(
+        query="python docker",
+        filters={"experience": [5, 10]},
+        top_k=3
+    )
+    
+    for mode, result in comparison.items():
+        if "error" not in result:
+            print(f"   {mode}: {result['stats']['total_results']} résultats")
+    
+    print("\n✅ Tous les tests terminés!")
