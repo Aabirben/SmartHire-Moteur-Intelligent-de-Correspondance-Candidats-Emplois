@@ -6,6 +6,13 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 import json
+from backend.routes.cv_routes import cv_bp
+from backend.routes.job_routes import job_bp
+from backend.routes.search_routes import search_bp
+from backend.routes.matching_routes import matching_bp
+
+
+
 
 load_dotenv()
 
@@ -13,6 +20,13 @@ app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'dev-secret-key-change-in-production')
 CORS(app, supports_credentials=True)
 bcrypt = Bcrypt(app)
+
+app.register_blueprint(cv_bp)
+app.register_blueprint(job_bp)
+app.register_blueprint(search_bp)
+app.register_blueprint(matching_bp)
+
+
 
 # Configuration PostgreSQL
 DB_CONFIG = {

@@ -13,7 +13,21 @@ import json
 from whoosh.index import open_dir, exists_in
 from whoosh import query as wquery
 
+# Dans boolean_search.py, remplacez l'import par :
+import sys
+from pathlib import Path
+
+# Fix pour trouver database.connection
+current_dir = Path(__file__).parent  # backend/search/
+backend_dir = current_dir.parent     # backend/
+root_dir = backend_dir.parent        # racine/
+
+# Ajouter racine au path si nécessaire
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
+
 from database.connection import get_db_connection
+
 from backend.config.settings import CV_INDEX, JOB_INDEX, BASE_DIR
 from backend.search.filter_processor import FilterProcessor
 
@@ -65,7 +79,7 @@ class BooleanSearchModel:
         
         logger.info(f"🔍 Recherche booléenne sur {target}")
         
-        processed_filters = self.filter_processor.process(filters)
+        processed_filters = self.filter_processor.process(filters, target=target)
         
         combined_terms = self._combine_terms_and_filters(
             query_terms,
@@ -262,32 +276,42 @@ class BooleanSearchModel:
                 
                 # 1. MUST (AND)
                 for term in terms.get("must_have", []):
-                    q = wquery.Term("competences", term.lower())
+                    if target == "cvs":
+                        q = wquery.Term("competences", term.lower())
+                    else:
+                        q = wquery.Term("competences_requises", term.lower())
                     queries.append(q)
                 
                 # 2. SHOULD (OR)
                 should_terms = terms.get("should_have", [])
                 if should_terms:
-                    or_queries = [
-                        wquery.Term("competences", t.lower())
-                        for t in should_terms
-                    ]
+                    or_queries = []
+                    for t in should_terms:
+                        if target == "cvs":
+                             or_queries.append(wquery.Term("competences", t.lower()))
+                        else:
+                            or_queries.append(wquery.Term("competences_requises", t.lower()))
                     queries.append(wquery.Or(or_queries))
                 
                 # 3. NOT
                 for term in terms.get("must_not_have", []):
-                    queries.append(
-                        wquery.Not(wquery.Term("competences", term.lower()))
-                    )
+                    if target == "cvs":
+                           queries.append(wquery.Not(wquery.Term("competences", term.lower())))
+                    else:
+                           queries.append(wquery.Not(wquery.Term("competences_requises", term.lower())))
+                     
                 
                 # 4. Filtres range (expérience)
                 range_filters = processed_filters.get("range_filters", {})
                 if "experience" in range_filters:
                     min_exp, max_exp = range_filters["experience"]
-                    queries.append(
-                        wquery.NumericRange("annees", min_exp, max_exp)
-                    )
-                
+                    if target == "cvs":
+                       queries.append(
+                        wquery.NumericRange("annees_experience", min_exp, max_exp)
+                     )
+                    else:
+                        queries.append(wquery.NumericRange("annees_min", min_exp, max_exp))
+                 
                 # Combinaison AND
                 if queries:
                     final_query = wquery.And(queries)
@@ -300,22 +324,36 @@ class BooleanSearchModel:
                 
                 formatted = []
                 for hit in results:
-                    # ✅ CORRECTION: Utilise doc_id comme ID unique
-                    # doc_id = filename (ex: "CV_01_Amine_Tazi.pdf")
-                    doc_id = hit.get("doc_id", "")
-                    
-                    # ✅ CORRECTION: Ne pas utiliser user_id vide
-                    # user_id est vide pour les CVs système indexés dans Whoosh
-                    formatted.append({
-                        "id": doc_id,  # ✅ doc_id au lieu de user_id
+                    if target == "cvs":
+                        doc_id = hit.get("doc_id", "")
+                        formatted.append({
+                        "id": doc_id,
                         "doc_id": doc_id,
                         "nom": hit.get("nom", ""),
                         "email": "",
                         "competences": hit.get("competences", "").split(","),
                         "localisation": hit.get("localisation", ""),
                         "niveau": "",
-                        "experience": hit.get("annees", 0),
+                        "experience": hit.get("annees_experience", 0),
                         "texte": hit.get("texte_pretraite", ""),
+                        "score_boolean": hit.score,
+                        "source": "whoosh",
+                        "source_type": "uploaded"
+                        })
+
+                    else:
+                        # Format pour Offres
+                        job_id = hit.get("job_id", "")
+                        formatted.append({
+                        "id": job_id,
+                        "doc_id": job_id,
+                        "nom": hit.get("titre_poste", ""),  # titre_poste pour les offres
+                        "email": "",
+                        "competences": hit.get("competences_requises", "").split(","),
+                        "localisation": hit.get("localisation", ""),
+                        "niveau": hit.get("niveau_souhaite", ""),
+                        "experience": hit.get("annees_min", 0),  # annees_min pour les offres
+                        "texte": hit.get("description_processed", ""),
                         "score_boolean": hit.score,
                         "source": "whoosh",
                         "source_type": "uploaded"
@@ -326,6 +364,8 @@ class BooleanSearchModel:
         except Exception as e:
             logger.error(f"❌ Erreur Whoosh: {e}")
             return []
+    
+
     
     # ========================================================
     # SCORING
@@ -368,13 +408,15 @@ class BooleanSearchModel:
     # ========================================================
     # MATCHING CV ↔ OFFRE (CORRIGÉ)
     # ========================================================
+         # ========================================================
+    # MATCHING CV ↔ OFFRE (CORRIGÉ)
+    # ========================================================
     def match_cv_to_job(self, cv_id, job_id) -> Dict:
         """
         Matching booléen CV ↔ Offre
         
-        ✅ CORRECTION: Gestion des IDs vides et validation
+        ✅ CORRECTION: Accepte aussi les IDs Whoosh pour les offres
         """
-        # ✅ VALIDATION: Vérifier que les IDs ne sont pas vides
         if not cv_id or not job_id:
             return {
                 "error": "ID CV ou offre invalide (vide)",
@@ -385,8 +427,6 @@ class BooleanSearchModel:
                 "experience_ok": False
             }
         
-        # ✅ CORRECTION: Convertir en int si possible (PostgreSQL)
-        # Sinon, c'est un doc_id Whoosh (string)
         try:
             cv_id_int = int(cv_id)
             is_cv_pg = True
@@ -403,9 +443,8 @@ class BooleanSearchModel:
         
         cur = self.pg_conn.cursor()
         
-        # ✅ CORRECTION: Récupérer CV (PostgreSQL OU Whoosh)
+        # Récupérer CV
         if is_cv_pg:
-            # CV depuis PostgreSQL
             cur.execute("""
                 SELECT tags_manuels, competences, annees_experience, source_systeme
                 FROM cvs WHERE id = %s
@@ -419,7 +458,6 @@ class BooleanSearchModel:
             cv_tags = set(cv_row[0]) if cv_row[3] else set(cv_row[1])
             cv_exp = cv_row[2]
         else:
-            # CV depuis Whoosh (doc_id)
             if not self.whoosh_cv_index:
                 cur.close()
                 return {"error": "Index Whoosh CV non disponible"}
@@ -437,29 +475,51 @@ class BooleanSearchModel:
                     
                     hit = results[0]
                     cv_tags = set(hit.get("competences", "").split(","))
-                    cv_exp = hit.get("annees", 0)
+                    cv_exp = hit.get("annees_experience", 0)
             except Exception as e:
                 cur.close()
                 return {"error": f"Erreur lecture Whoosh CV: {e}"}
         
-        # ✅ CORRECTION: Récupérer offre (PostgreSQL)
-        if not is_job_pg:
-            cur.close()
-            return {"error": "job_id doit être un ID PostgreSQL (integer)"}
-        
-        cur.execute("""
-            SELECT tags_manuels, competences_requises, experience_min
-            FROM offres WHERE id = %s
-        """, (job_id_int,))
-        job_row = cur.fetchone()
+        # ✅ CORRECTION: Récupérer offre (PostgreSQL OU Whoosh)
+        if is_job_pg:
+            # Offre depuis PostgreSQL
+            cur.execute("""
+                SELECT tags_manuels, competences_requises, experience_min
+                FROM offres WHERE id = %s
+            """, (job_id_int,))
+            job_row = cur.fetchone()
+            
+            if not job_row:
+                cur.close()
+                return {"error": f"Offre #{job_id} introuvable en PostgreSQL"}
+            
+            job_tags = set(job_row[1])
+            job_exp_min = job_row[2]
+        else:
+            # Offre depuis Whoosh
+            if not self.whoosh_job_index:
+                cur.close()
+                return {"error": "Index Whoosh Offres non disponible"}
+            
+            try:
+                with self.whoosh_job_index.searcher() as searcher:
+                    from whoosh.qparser import QueryParser
+                    parser = QueryParser("job_id", self.whoosh_job_index.schema)
+                    query = parser.parse(str(job_id))
+                    results = searcher.search(query, limit=1)
+                    
+                    if len(results) == 0:
+                        cur.close()
+                        return {"error": f"Offre job_id='{job_id}' introuvable dans Whoosh"}
+                    
+                    hit = results[0]
+                    job_tags = set(hit.get("competences_requises", "").split(","))
+                    job_exp_min = hit.get("annees_min", 0)
+            except Exception as e:
+                cur.close()
+                return {"error": f"Erreur lecture Whoosh Offre: {e}"}
         
         cur.close()
-        
-        if not job_row:
-            return {"error": f"Offre #{job_id} introuvable"}
-        
-        job_tags = set(job_row[1])
-        job_exp_min = job_row[2]
         
         # Matching
         matches = cv_tags & job_tags

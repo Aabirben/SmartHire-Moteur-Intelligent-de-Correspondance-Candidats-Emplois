@@ -1,6 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FitCriterion } from "@/types";
+
+interface FitCriterion {
+  name: string;
+  required: string;
+  candidate: string;
+  matchPercent: number;
+}
 
 interface MatchHeatmapProps {
   fitCriteria: FitCriterion[];
@@ -16,50 +22,33 @@ export function MatchHeatmap({ fitCriteria, recommendation }: MatchHeatmapProps)
 
   return (
     <Card className="glass-strong p-6">
-      <h3 className="text-xl font-bold mb-6 text-gradient">Candidate Fit Analysis</h3>
+      <h3 className="text-xl font-bold mb-6 text-gradient">Analyse d'Adéquation</h3>
       
-      <div className="overflow-x-auto">
-        <table className="w-full">
-          <thead>
-            <tr className="border-b border-border">
-              <th className="text-left py-3 px-4 font-semibold">Criterion</th>
-              <th className="text-left py-3 px-4 font-semibold">Required</th>
-              <th className="text-left py-3 px-4 font-semibold">Candidate</th>
-              <th className="text-right py-3 px-4 font-semibold">Match</th>
-            </tr>
-          </thead>
-          <tbody>
-            {fitCriteria.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <tr 
-                  key={index} 
-                  className="border-b border-border/50 hover:bg-surface/50 transition-colors"
-                >
-                  <td className="py-3 px-4">
-                    <div className="flex items-center gap-2">
-                      <Icon className="w-4 h-4 text-primary" />
-                      <span className="font-medium">{item.name}</span>
-                    </div>
-                  </td>
-                  <td className="py-3 px-4 text-muted-foreground">{item.required}</td>
-                  <td className="py-3 px-4">{item.candidate}</td>
-                  <td className="py-3 px-4 text-right">
-                    <Badge className={getMatchColor(item.matchPercent)}>
-                      {item.matchPercent}%
-                    </Badge>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+      <div className="space-y-3">
+        {fitCriteria.map((item, index) => (
+          <div 
+            key={index}
+            className="flex items-center justify-between p-4 glass-strong rounded-lg hover:scale-[1.01] transition-all"
+          >
+            <div className="flex-1">
+              <div className="font-semibold mb-1">{item.name}</div>
+              <div className="text-sm text-muted-foreground">
+                <span className="text-primary">Requis:</span> {item.required} 
+                <span className="mx-2">•</span>
+                <span className="text-accent">Candidat:</span> {item.candidate}
+              </div>
+            </div>
+            <Badge className={getMatchColor(item.matchPercent)}>
+              {item.matchPercent}%
+            </Badge>
+          </div>
+        ))}
       </div>
 
       <div className="mt-6 p-4 glass-strong rounded-lg border-l-4 border-accent">
         <h4 className="font-semibold mb-2 flex items-center gap-2">
           <span className="text-accent">●</span>
-          Recommendation
+          Recommandation
         </h4>
         <p className="text-sm text-muted-foreground">{recommendation}</p>
       </div>

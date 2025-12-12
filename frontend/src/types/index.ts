@@ -13,6 +13,10 @@ export interface SkillData {
   skill: string;
   required: number;
   user: number;
+  candidateSkills: string[];
+  requiredSkills: string[];
+  matchedSkills: string[];
+  missingSkills: string[];
 }
 
 export interface ScoreBreakdown {
@@ -21,6 +25,10 @@ export interface ScoreBreakdown {
   score: number;
   contribution: number;
   detail: string;
+  skills: number;
+  experience: number;
+  location: number;
+  level: number;
 }
 
 export interface SkillGap {
@@ -37,6 +45,51 @@ export interface FitCriterion {
   required: string;
   candidate: string;
   matchPercent: number;
+  criteria: string;
+  value: string;
+  status: 'good' | 'warning' | 'critical';
+}
+
+export interface ScoreBreakdownItem {
+  category: string;
+  score: number;
+  contribution: number;
+  icon: React.ComponentType<{ className?: string }>;
+  detail: string;
+}
+
+export interface FitCriterionItem {
+  name: string;
+  icon: React.ComponentType<{ className?: string }>;
+  required: string;
+  candidate: string;
+  matchPercent: number;
+}
+
+export interface SkillDataItem {
+  skill: string;
+  required: number;
+  user: number;
+}
+
+// Types pour les détails offres
+export interface JobMatchAnalysis {
+  totalScore: number;
+  scoreBreakdown: {
+    skills: number;
+    experience: number;
+    location: number;
+    description: number;
+  };
+  skillsData: {
+    candidateSkills: string[];
+    requiredSkills: string[];
+    matchedSkills: string[];
+    missingSkills: string[];
+  };
+  missingSkills: string[];
+  strengths: string[];
+  weaknesses: string[];
 }
 
 export interface Job {
@@ -108,11 +161,37 @@ export interface MatchResult {
   recommendation: string;
 }
 
+// CORRECTION : Interface SearchFilters sans salary
 export interface SearchFilters {
   location: string;
-  experience: number[];
-  salary: number[];
+  experience: [number, number];
   skills: string[];
   booleanOperator: "AND" | "OR";
   remote: boolean;
 }
+
+export interface SearchState {
+  query: string;
+  filters: SearchFilters;
+  mode: "auto" | "boolean" | "vectoriel" | "hybrid";
+  isLoading: boolean;
+}
+
+// Interface pour gérer l'état global de recherche
+export interface SearchContextType {
+  searchState: SearchState;
+  setSearchQuery: (query: string) => void;
+  setSearchFilters: (filters: SearchFilters) => void;
+  setSearchMode: (mode: "auto" | "boolean" | "vectoriel" | "hybrid") => void;
+  executeSearch: () => Promise<void>;
+  resetSearch: () => void;
+}
+
+// Fonction utilitaire pour créer des filtres par défaut
+export const createDefaultSearchFilters = (): SearchFilters => ({
+  location: "Any",
+  experience: [0, 10],
+  skills: [],
+  booleanOperator: "AND",
+  remote: false
+});

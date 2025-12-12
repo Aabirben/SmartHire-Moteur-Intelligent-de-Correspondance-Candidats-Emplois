@@ -7,11 +7,11 @@ SMARTHIRE - Search Orchestrator (VECTORIEL + BOOLÉEN + HYBRIDE)
 import logging
 from typing import Dict, List, Optional
 
-from backend.search.boolean_search import BooleanSearchModel
-from backend.search.vectoriel_model import VectorielSearchModel
-from backend.search.hybrid_scorer import HybridScorer, analyze_score_distribution
-from backend.search.filter_processor import FilterProcessor
-from backend.search.query_processor import SearchQueryProcessor
+from search.boolean_search import BooleanSearchModel
+from search.vectoriel_model import VectorielSearchModel
+from search.hybrid_scorer import HybridScorer, analyze_score_distribution
+from search.filter_processor import FilterProcessor
+from search.query_processor import SearchQueryProcessor
 
 logger = logging.getLogger(__name__)
 

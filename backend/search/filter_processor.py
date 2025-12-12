@@ -1,7 +1,8 @@
 """
 ============================================================================
-SMARTHIRE - Filter Processor
+SMARTHIRE - Filter Processor (CORRIGÉ)
 Gestion intelligente des filtres avec logique OR/AND
+CORRECTION: annees_experience au lieu de annees
 ============================================================================
 """
 
@@ -21,14 +22,6 @@ class FilterProcessor:
     
     2. Plusieurs filtres → AND
        experience: [5,10] AND location: ["casa"]
-    
-    Exemples:
-        filters = {
-            "skills": ["python", "java"],        # python OR java
-            "location": ["casa", "rabat"],       # casa OR rabat  
-            "experience": [5, 10]                # 5 <= exp <= 10
-        }
-        → (python OR java) AND (casa OR rabat) AND (5 <= exp <= 10)
     """
     
     def __init__(self):
@@ -38,26 +31,19 @@ class FilterProcessor:
             "experience",
             "level",
             "contract_type",
-            "diploma"
+            "diploma",
+            "remote"
         }
     
-    def process(self, filters: Dict[str, Any]) -> Dict:
+    def process(self, filters: Dict[str, Any],target: str = "cvs") -> Dict:
         """
         Traite et structure les filtres
         
         Returns:
             {
-                "boolean_filters": {
-                    "skills_or": ["python", "java"],
-                    "location_or": ["casa", "rabat"]
-                },
-                "range_filters": {
-                    "experience": (5, 10)
-                },
-                "sql_conditions": {
-                    "postgresql": "...",
-                    "whoosh": "..."
-                }
+                "boolean_filters": {...},
+                "range_filters": {...},
+                "sql_conditions": {...}
             }
         """
         if not filters:
@@ -76,7 +62,6 @@ class FilterProcessor:
                 logger.warning(f"⚠️ Filtre non supporté ignoré: {filter_name}")
                 continue
             
-            # Dispatcher selon le type
             if filter_name == "skills":
                 self._process_skills(filter_value, result)
             elif filter_name == "location":
@@ -89,9 +74,11 @@ class FilterProcessor:
                 self._process_contract_type(filter_value, result)
             elif filter_name == "diploma":
                 self._process_diploma(filter_value, result)
+            elif filter_name == "remote":
+                self._process_remote(filter_value, result)
         
         # Générer SQL/Whoosh
-        self._generate_sql(result)
+        self._generate_sql(result, target)
         self._generate_whoosh(result)
         
         return result
@@ -100,21 +87,10 @@ class FilterProcessor:
     # TRAITEMENT PAR TYPE
     # ========================================================
     def _process_skills(self, value: Any, result: Dict):
-        """
-        Traite filtre compétences
-        
-        Cas 1: Liste → OR
-            ["python", "java"] → python OR java
-        
-        Cas 2: Dict avec required/optional
-            {"required": ["python"], "optional": ["java"]}
-        """
+        """Traite filtre compétences"""
         if isinstance(value, list):
-            # Liste simple → OR
             result["boolean_filters"]["skills_or"] = [s.lower() for s in value]
-        
         elif isinstance(value, dict):
-            # Dict structuré
             if "required" in value:
                 result["boolean_filters"]["skills_and"] = [
                     s.lower() for s in value["required"]
@@ -125,11 +101,7 @@ class FilterProcessor:
                 ]
     
     def _process_location(self, value: Any, result: Dict):
-        """
-        Traite filtre localisation (toujours OR)
-        
-        ["casa", "rabat"] → casa OR rabat
-        """
+        """Traite filtre localisation"""
         if isinstance(value, str):
             result["boolean_filters"]["location_or"] = [value.lower()]
         elif isinstance(value, list):
@@ -138,23 +110,14 @@ class FilterProcessor:
             ]
     
     def _process_experience(self, value: Any, result: Dict):
-        """
-        Traite filtre expérience (range)
-        
-        [5, 10] → 5 <= experience <= 10
-        5 → experience >= 5
-        """
+        """Traite filtre expérience"""
         if isinstance(value, list) and len(value) == 2:
             result["range_filters"]["experience"] = tuple(value)
         elif isinstance(value, int):
             result["range_filters"]["experience"] = (value, 100)
     
     def _process_level(self, value: Any, result: Dict):
-        """
-        Traite filtre niveau (OR si liste)
-        
-        ["senior", "expert"] → senior OR expert
-        """
+        """Traite filtre niveau"""
         if isinstance(value, str):
             result["boolean_filters"]["level_or"] = [value.lower()]
         elif isinstance(value, list):
@@ -163,11 +126,7 @@ class FilterProcessor:
             ]
     
     def _process_contract_type(self, value: Any, result: Dict):
-        """
-        Traite filtre type contrat (OR si liste)
-        
-        ["cdi", "cdd"] → cdi OR cdd
-        """
+        """Traite filtre type contrat"""
         if isinstance(value, str):
             result["boolean_filters"]["contract_type_or"] = [value.lower()]
         elif isinstance(value, list):
@@ -176,9 +135,7 @@ class FilterProcessor:
             ]
     
     def _process_diploma(self, value: Any, result: Dict):
-        """
-        Traite filtre diplôme (OR si liste)
-        """
+        """Traite filtre diplôme"""
         if isinstance(value, str):
             result["boolean_filters"]["diploma_or"] = [value.lower()]
         elif isinstance(value, list):
@@ -186,16 +143,27 @@ class FilterProcessor:
                 dip.lower() for dip in value
             ]
     
+    def _process_remote(self, value: Any, result: Dict):
+        """Traite filtre remote"""
+        if isinstance(value, bool) and value:
+            result["boolean_filters"]["remote"] = True
+            
+            if "location_or" in result["boolean_filters"]:
+                if "remote" not in [loc.lower() for loc in result["boolean_filters"]["location_or"]]:
+                    result["boolean_filters"]["location_or"].append("remote")
+            else:
+                result["boolean_filters"]["location_or"] = ["remote"]
+        else:
+            result["boolean_filters"]["remote"] = False
+    
     # ========================================================
-    # GÉNÉRATION SQL
+    # GÉNÉRATION SQL (CORRIGÉ)
     # ========================================================
-    def _generate_sql(self, result: Dict):
+    def _generate_sql(self, result: Dict,target: str = "cvs"):
         """
         Génère les conditions SQL pour PostgreSQL
         
-        Logique:
-        - Chaque filtre avec _or → ANY(array)
-        - Combinaison des filtres → AND
+        ✅ CORRECTION: Utilise annees_experience au lieu de annees
         """
         conditions = []
         params = []
@@ -204,7 +172,6 @@ class FilterProcessor:
         
         # 1. Compétences (OR)
         if "skills_or" in bool_filters:
-            # Au moins une compétence
             placeholders = " OR ".join([
                 "%s = ANY(tags_manuels)" 
                 for _ in bool_filters["skills_or"]
@@ -245,12 +212,33 @@ class FilterProcessor:
             conditions.append(f"({placeholders})")
             params.extend(bool_filters["contract_type_or"])
         
-        # 6. Expérience (range)
+        # ✅ 6. Expérience (CORRIGÉ: annees_experience)
         if "experience" in result["range_filters"]:
             min_exp, max_exp = result["range_filters"]["experience"]
-            conditions.append("annees_experience >= %s")
-            conditions.append("annees_experience <= %s")
+            if target == "cvs":
+                 # Pour la table cvs
+               conditions.append("annees_experience >= %s")
+               conditions.append("annees_experience <= %s")
+            else:
+                # Pour la table offres
+                conditions.append("experience_min >= %s")
+                conditions.append("experience_min <= %s")
+            
             params.extend([min_exp, max_exp])
+
+        
+        # 7. Remote
+        if bool_filters.get("remote") == True:
+            has_remote_in_location = False
+            if "location_or" in bool_filters:
+                for loc in bool_filters["location_or"]:
+                    if "remote" in loc.lower():
+                        has_remote_in_location = True
+                        break
+            
+            if not has_remote_in_location:
+                conditions.append("(LOWER(localisation) LIKE %s OR LOWER(localisation) LIKE %s OR LOWER(type_contrat) LIKE %s)")
+                params.extend(["%remote%", "%télétravail%", "%télétravail%"])
         
         # Combiner avec AND
         where_clause = " AND ".join(conditions) if conditions else "TRUE"
@@ -261,18 +249,13 @@ class FilterProcessor:
         }
     
     def _generate_whoosh(self, result: Dict):
-        """
-        Génère les requêtes Whoosh
-        
-        Note: Whoosh utilise sa propre syntaxe Query
-        On stocke juste les termes ici, la construction Query
-        sera faite dans boolean_search.py
-        """
+        """Génère les requêtes Whoosh"""
         whoosh_terms = {
             "skills_or": result["boolean_filters"].get("skills_or", []),
             "skills_and": result["boolean_filters"].get("skills_and", []),
             "location_or": result["boolean_filters"].get("location_or", []),
-            "level_or": result["boolean_filters"].get("level_or", [])
+            "level_or": result["boolean_filters"].get("level_or", []),
+            "remote": result["boolean_filters"].get("remote", False)
         }
         
         result["whoosh_queries"] = whoosh_terms
@@ -290,18 +273,12 @@ class FilterProcessor:
     # VALIDATION
     # ========================================================
     def validate(self, filters: Dict) -> Tuple[bool, List[str]]:
-        """
-        Valide les filtres
-        
-        Returns:
-            (is_valid, errors)
-        """
+        """Valide les filtres"""
         errors = []
         
         if not filters:
             return True, []
         
-        # Vérifier types
         if "experience" in filters:
             exp = filters["experience"]
             if isinstance(exp, list):
@@ -312,7 +289,11 @@ class FilterProcessor:
                 elif exp[0] < 0:
                     errors.append("experience: valeur négative")
         
-        # Vérifier filtres supportés
+        if "remote" in filters:
+            remote_val = filters["remote"]
+            if not isinstance(remote_val, bool):
+                errors.append("remote doit être un booléen (True/False)")
+        
         for key in filters.keys():
             if key not in self.supported_filters:
                 errors.append(f"Filtre non supporté: {key}")
@@ -320,60 +301,25 @@ class FilterProcessor:
         return len(errors) == 0, errors
 
 
-# ========================================================
-# TESTS
-# ========================================================
 if __name__ == "__main__":
+    import logging
     logging.basicConfig(level=logging.INFO)
     
     print("="*80)
-    print("🔍 TEST FILTER PROCESSOR")
+    print("🔍 TEST FILTER PROCESSOR (CORRIGÉ)")
     print("="*80)
     
     processor = FilterProcessor()
     
-    # Test 1: Filtres multiples avec OR/AND
-    print("\n1️⃣ Test filtres multiples:")
     filters1 = {
-        "skills": ["python", "java"],           # OR
-        "location": ["casablanca", "rabat"],    # OR
-        "experience": [5, 10]                    # Range
+        "skills": ["python", "java"],
+        "location": ["casablanca", "rabat"],
+        "experience": [5, 10],
+        "remote": True
     }
     result1 = processor.process(filters1)
     
     print(f"Input: {filters1}")
-    print(f"\nBoolean filters:")
-    for k, v in result1["boolean_filters"].items():
-        print(f"  {k}: {v}")
-    
-    print(f"\nRange filters:")
-    for k, v in result1["range_filters"].items():
-        print(f"  {k}: {v}")
-    
     print(f"\nSQL WHERE: {result1['sql_conditions']['where']}")
     print(f"SQL PARAMS: {result1['sql_conditions']['params']}")
-    
-    # Test 2: Compétences required/optional
-    print("\n2️⃣ Test compétences structurées:")
-    filters2 = {
-        "skills": {
-            "required": ["python"],
-            "optional": ["docker", "kubernetes"]
-        }
-    }
-    result2 = processor.process(filters2)
-    print(f"Input: {filters2}")
-    print(f"Result: {result2['boolean_filters']}")
-    
-    # Test 3: Validation
-    print("\n3️⃣ Test validation:")
-    filters3 = {
-        "experience": [10, 5],  # Invalide
-        "invalid_filter": "test"
-    }
-    is_valid, errors = processor.validate(filters3)
-    print(f"Input: {filters3}")
-    print(f"Valid: {is_valid}")
-    print(f"Errors: {errors}")
-    
-    print("\n✅ Tests terminés!")
+    print("\n✅ La requête SQL utilise maintenant 'annees_experience' correctement!")

@@ -15,26 +15,15 @@ export function LevelDetectionCard({ level, confidence, reasons }: LevelDetectio
           <TrendingUp className="w-6 h-6" />
         </div>
         <div>
-          <h4 className="font-semibold text-lg">{level} Level</h4>
-          <p className="text-sm text-muted-foreground">Auto-detected</p>
+          <h4 className="font-semibold text-lg">{level}</h4>
+          <p className="text-sm text-muted-foreground">Détecté automatiquement</p>
         </div>
       </div>
 
-      <div className="mb-4">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium">Confidence</span>
-          <span className="text-sm font-bold text-accent">{confidence}%</span>
-        </div>
-        <div className="relative h-2 bg-surface rounded-full overflow-hidden">
-          <div
-            className="absolute h-full bg-gradient-to-r from-primary to-accent transition-all duration-1000"
-            style={{ width: `${confidence}%` }}
-          />
-        </div>
-      </div>
+     
 
       <div className="space-y-2">
-        <h5 className="text-sm font-semibold">Detection Factors:</h5>
+        <h5 className="text-sm font-semibold">Facteurs de détection:</h5>
         <ul className="space-y-2">
           {reasons.map((reason, index) => (
             <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
