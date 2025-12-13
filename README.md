@@ -115,10 +115,6 @@ Projet réalisé par un groupe de **4 membres** :
 - [BAHAMD IMANE](https://github.com/imanebahamd)
 - [EZZAHRA FADYL](https://github.com/EzzahraF)
 
-
-
-> *(Liens GitHub à adapter si nécessaire)*
-
 ---
 
 ## 👩‍🏫 Encadrement
