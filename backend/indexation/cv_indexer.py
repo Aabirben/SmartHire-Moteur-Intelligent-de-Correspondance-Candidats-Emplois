@@ -2,6 +2,7 @@
 ============================================================================
 SMARTHIRE - CV Indexer Module (FIXED)
 Indexation automatique des CV avec preprocessing NLP
+CORRECTION APPLIQUÉE : Toutes les erreurs 'annees' → 'annees_experience'
 ============================================================================
 """
 
@@ -120,7 +121,7 @@ cv_schema = Schema(
     nom=TEXT(stored=True),
     titre_profil=TEXT(stored=True),
     localisation=TEXT(stored=True),
-    annees=NUMERIC(stored=True, sortable=True),
+    annees_experience=NUMERIC(stored=True, sortable=True),
     description_experience=TEXT(stored=True),
     competences=KEYWORD(commas=True, lowercase=True, stored=True),
     projets=TEXT(stored=True),
@@ -206,7 +207,7 @@ class CVIndexer:
                 'nom': infos.get('nom', 'Inconnu'),
                 'titre_profil': infos.get('titre_profil', 'Professional'),
                 'localisation': infos.get('localisation', ''),
-                'annees': infos.get('annees_experience', 0),
+                'annees_experience': infos.get('annees_experience', 0),
                 'description_experience': infos.get('description_experience', ''),
                 'competences': competences_str,
                 'competences_list': competences,
@@ -272,7 +273,7 @@ class CVIndexer:
                     nom=cv_data['nom'],
                     titre_profil=cv_data['titre_profil'],
                     localisation=cv_data['localisation'],
-                    annees=cv_data['annees'],
+                    annees_experience=cv_data['annees_experience'],
                     description_experience=cv_data['description_experience'],
                     competences=cv_data['competences'],
                     projets=cv_data['projets'],
@@ -326,7 +327,7 @@ class CVIndexer:
         print(f"  👤 NOM:              {cv_data['nom']}")
         print(f"  💼 TITRE:            {cv_data['titre_profil']}")
         print(f"  📍 LOCALISATION:     {cv_data['localisation']}")
-        print(f"  📅 EXPÉRIENCE:       {cv_data['annees']} ans")
+        print(f"  📅 EXPÉRIENCE:       {cv_data['annees_experience']} ans")
         print(f"  🛠️  COMPÉTENCES:      {len(skills_list)} skills → {skills_preview}")
         print(f"  📌 PROJETS:          {nb_projets} projets")
         print(f"  🔤 TOKENS NLP:       {cv_data['nb_tokens_original']} → {cv_data['nb_tokens_processed']} (-{reduction:.1f}%)")
@@ -384,6 +385,7 @@ def indexer_cv_depuis_texte(
     - Validation robuste de cv_id et texte
     - Gestion des doublons (suppression avant ajout)
     - Gestion d'erreurs complète
+    - CORRECTION : annees → annees_experience
     
     Args:
         cv_id: ID du CV dans PostgreSQL (devient doc_id dans Whoosh)
@@ -463,7 +465,7 @@ def indexer_cv_depuis_texte(
                 nom=infos.get('nom', 'Inconnu'),
                 titre_profil=infos.get('titre_profil', 'Professional'),
                 localisation=infos.get('localisation', ''),
-                annees=infos.get('annees_experience', 0),
+                annees_experience=infos.get('annees_experience', 0),  # ✅ CORRIGÉ
                 description_experience=infos.get('description_experience', ''),
                 competences=competences_str,
                 projets=infos.get('projets', ''),

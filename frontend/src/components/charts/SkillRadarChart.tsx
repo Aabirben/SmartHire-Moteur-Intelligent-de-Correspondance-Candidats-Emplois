@@ -1,70 +1,46 @@
 import { Card } from "@/components/ui/card";
-import { 
-  RadarChart, 
-  PolarGrid, 
-  PolarAngleAxis, 
-  PolarRadiusAxis, 
-  Radar, 
-  ResponsiveContainer,
-  Legend,
-  Tooltip
-} from "recharts";
-import { SkillData } from "@/types";
+
+interface SkillData {
+  skill: string;
+  required: number;
+  user: number;
+}
 
 interface SkillRadarChartProps {
   skillsData: SkillData[];
-  showLegend?: boolean;
 }
 
-export function SkillRadarChart({ skillsData, showLegend = true }: SkillRadarChartProps) {
+export function SkillRadarChart({ skillsData }: SkillRadarChartProps) {
   return (
     <Card className="glass-strong p-6">
-      <h3 className="text-xl font-bold mb-6 text-gradient">Skill Comparison Radar</h3>
-      <ResponsiveContainer width="100%" height={400}>
-        <RadarChart data={skillsData}>
-          <PolarGrid stroke="hsl(var(--border))" />
-          <PolarAngleAxis 
-            dataKey="skill" 
-            tick={{ fill: 'hsl(var(--foreground))', fontSize: 12 }}
-          />
-          <PolarRadiusAxis 
-            angle={90} 
-            domain={[0, 100]}
-            tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 10 }}
-          />
-          <Radar
-            name="Required"
-            dataKey="required"
-            stroke="hsl(var(--primary))"
-            fill="hsl(var(--primary))"
-            fillOpacity={0.3}
-            className="glow-primary"
-          />
-          <Radar
-            name="Your Level"
-            dataKey="user"
-            stroke="hsl(var(--accent))"
-            fill="hsl(var(--accent))"
-            fillOpacity={0.5}
-            className="glow-accent"
-          />
-          <Tooltip
-            contentStyle={{
-              backgroundColor: 'hsl(var(--surface))',
-              border: '1px solid hsl(var(--border))',
-              borderRadius: '0.5rem',
-              backdropFilter: 'blur(30px)',
-            }}
-            labelStyle={{ color: 'hsl(var(--foreground))' }}
-          />
-          {showLegend && (
-            <Legend 
-              wrapperStyle={{ paddingTop: '20px' }}
-              iconType="circle"
-            />
-          )}
-        </RadarChart>
-      </ResponsiveContainer>
+      <h3 className="text-xl font-bold mb-6 text-gradient">Compétences Techniques</h3>
+      <div className="space-y-4">
+        {skillsData.map((skill, index) => (
+          <div key={index}>
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-medium">{skill.skill}</span>
+              <div className="flex items-center gap-3">
+                <span className="text-xs text-muted-foreground">
+                  Requis: {skill.required}%
+                </span>
+                <span className="text-sm font-bold text-accent">
+                  Vous: {skill.user}%
+                </span>
+              </div>
+            </div>
+            <div className="relative h-3 bg-surface rounded-full overflow-hidden">
+              <div
+                className="absolute h-full bg-muted-foreground/30"
+                style={{ width: `${skill.required}%` }}
+              />
+              <div
+                className="absolute h-full bg-gradient-to-r from-primary to-accent transition-all duration-1000"
+                style={{ width: `${skill.user}%` }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </Card>
   );
 }
