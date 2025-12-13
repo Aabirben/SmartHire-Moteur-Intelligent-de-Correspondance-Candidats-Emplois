@@ -478,7 +478,7 @@ export default function CandidateDashboard() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1 flex items-center gap-2">
-                    {hasCV ? "✅ Votre CV est déposé" : "🚀 Améliorez vos correspondances !"}
+                    {hasCV ? "Votre CV est déposé" : "Améliorez vos correspondances !"}
                     {hasCV && (
                       <Badge variant="secondary" className="text-xs">
                         Mode: Matching avancé
