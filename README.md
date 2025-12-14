@@ -38,6 +38,13 @@ Le projet s’inscrit dans le cadre des **Systèmes de Recherche d’Information
 
 ---
 
+## 🎬 Démonstration de l’application
+
+🎥 Vidéo de démonstration (1–2 min) :  
+[Voir la démo SmartHire](https://youtu.be/pSaQZS3LN4A?si=Voj-4NbUNJ0f13zR)
+
+---
+
 ## 🧠 Moteur de recherche (vue d’ensemble)
 
 SmartHire repose sur une architecture modulaire orchestrée par un **Search Orchestrator**, chargé de :
